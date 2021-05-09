@@ -1,4 +1,11 @@
 .page {
+	/* --- Переменные --- */
+	--whiteColor: #fff;
+	--blackColor: #35383d;
+	/* --- Переменные --- */
+	width: 100%;
+	min-width: 320px;
+	box-sizing: border-box;
 	font-family: 'Inter', Arial, "Helvetica Neue", Helvetica, sans-serif;
 	-moz-osx-font-smoothing: grayscale;
 	-webkit-font-smoothing: antialiased;
@@ -6,9 +13,6 @@
 	-ms-text-size-adjust: 100%;
 	-moz-text-size-adjust: 100%;
 	text-rendering: optimizeLegibility;
-	color: #fee101;
-	background-color: #35383d;
-	box-sizing: border-box;
-	width: 100%;
-	min-width: 320px;
+	color: var(--whiteColor);
+	background-color: var(--blackColor);
 }
