@@ -2,17 +2,19 @@
 	/* --- Переменные --- */
 	--whiteColor: #fff;
 	--blackColor: #35383d;
+	--greyColor: #545454;
 	/* --- Переменные --- */
 	width: 100%;
 	min-width: 320px;
 	box-sizing: border-box;
-	font-family: 'Inter', Arial, "Helvetica Neue", Helvetica, sans-serif;
+	font-family: 'Rubik', Arial, "Helvetica Neue", Helvetica, sans-serif;
 	-moz-osx-font-smoothing: grayscale;
 	-webkit-font-smoothing: antialiased;
 	-webkit-text-size-adjust: 100%;
 	-ms-text-size-adjust: 100%;
 	-moz-text-size-adjust: 100%;
 	text-rendering: optimizeLegibility;
-	color: var(--whiteColor);
-	background-color: var(--blackColor);
+	font-weight: 400;
+	color: var(--greyColor);
+	background-color: var(--whiteColor);
 }
