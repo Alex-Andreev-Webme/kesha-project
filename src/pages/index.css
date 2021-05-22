@@ -1,4 +1,4 @@
 @import url("../vendor/normalize.css");
-@import url("../vendor/fonts/fonts.css");
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap');
 @import url("../blocks/page/page.css");
-@import url("../blocks/title/title.css");
+@import url("../blocks/page/__container/page__container.css");
