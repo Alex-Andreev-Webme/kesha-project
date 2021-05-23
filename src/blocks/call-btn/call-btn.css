@@ -1,0 +1,19 @@
+.call-btn {
+	margin-top: 30px;
+	padding: 20px 40px;
+	font-size: 15px;
+	font-weight: 500;
+	color: var(--whiteColor);
+	border: 2px dotted var(--tiffanyColor);
+	border-radius: 30px;
+	background-color: var(--tiffanyColor);
+	cursor: pointer;
+	transition: ease .5s;
+}
+
+.call-btn:hover {
+	color: var(--tiffanyColor);
+	background-color: transparent;
+}
+
+/* Надо классную анимацию на кнопку при наведении */
