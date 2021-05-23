@@ -2,7 +2,8 @@
 	/* --- Переменные --- */
 	--whiteColor: #fff;
 	--blackColor: #35383d;
-	--greyColor: #545454;
+	--greyColor: #747d8c;
+	--tiffanyColor: #63cdda;
 	/* --- Переменные --- */
 	width: 100%;
 	min-width: 320px;
@@ -16,5 +17,6 @@
 	text-rendering: optimizeLegibility;
 	font-weight: 400;
 	color: var(--greyColor);
+	line-height: 1.2;
 	background-color: var(--whiteColor);
 }

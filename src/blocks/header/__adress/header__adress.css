@@ -1,0 +1,6 @@
+.header__adress {
+	margin: 0 0 15px 0;
+	font-size: 15px;
+	font-weight: 500;
+	color: var(--greyColor);
+}

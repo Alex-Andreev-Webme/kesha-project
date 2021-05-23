@@ -1,0 +1,12 @@
+.header__mail {
+	display: inline-block;
+	font-size: 15px;
+	font-weight: 500;
+	color: var(--greyColor);
+	transition: ease .3s;
+}
+
+.header__mail:hover {
+	transform: translateX(5px);
+	color: var(--tiffanyColor);
+}
