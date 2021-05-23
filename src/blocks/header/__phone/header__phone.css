@@ -9,5 +9,5 @@
 
 .header__phone:hover {
 	transform: translateX(-5px);
-	color: var(--tiffanyColor);
+	color: var(--blueColor);
 }
