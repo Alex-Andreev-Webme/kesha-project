@@ -1,9 +1,8 @@
 .page {
 	/* --- Переменные --- */
 	--whiteColor: #fff;
-	--blackColor: #35383d;
 	--greyColor: #747d8c;
-	--tiffanyColor: #63cdda;
+	--blueColor: #51a1ff;
 	/* --- Переменные --- */
 	width: 100%;
 	min-width: 320px;

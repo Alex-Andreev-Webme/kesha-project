@@ -4,16 +4,15 @@
 	font-size: 15px;
 	font-weight: 500;
 	color: var(--whiteColor);
-	border: 2px dotted var(--tiffanyColor);
+	border: none;
 	border-radius: 30px;
-	background-color: var(--tiffanyColor);
+	background-color: var(--blueColor);
 	cursor: pointer;
-	transition: ease .5s;
+	transition: ease .3s;
 }
 
 .call-btn:hover {
-	color: var(--tiffanyColor);
-	background-color: transparent;
+	opacity: .8;
 }
 
 /* Надо классную анимацию на кнопку при наведении */

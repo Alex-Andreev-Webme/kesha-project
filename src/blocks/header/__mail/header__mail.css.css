@@ -8,5 +8,5 @@
 
 .header__mail:hover {
 	transform: translateX(5px);
-	color: var(--tiffanyColor);
+	color: var(--blueColor);
 }
