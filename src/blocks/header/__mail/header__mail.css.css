@@ -1,5 +1,5 @@
 .header__mail {
-	display: inline-block;
+	margin-top: 15px;
 	font-size: 15px;
 	font-weight: 500;
 	color: var(--greyColor);
@@ -7,6 +7,6 @@
 }
 
 .header__mail:hover {
-	transform: translateX(5px);
+	transform: translateX(-5px);
 	color: var(--blueColor);
 }

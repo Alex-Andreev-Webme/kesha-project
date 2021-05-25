@@ -11,18 +11,15 @@
 <body class="page">
 	<div class="page__container">
 		<header class="header">
-			<div class="header__left-area">
+			<div class="logo">
+				<a href="#" class="logo__link">
+					<img src="<%=require('./images/logo-test.svg')%>" alt="Логотип" class="logo__pic">
+				</a>
+				<p class="logo__text">Бегемотик</p>
+			</div>
+			<div class="header__contacts">
 				<p class="header__adress">г.&nbsp;Санкт-Петербург, ул.&nbsp;Пушкина, д.&nbsp;15</p>
 				<a href="mailto:begemotik.corporate@gmail.com" class="header__mail">begemotik@corporate.ru</a>
-			</div>
-			<div class="header__center-area">
-				<a href="#" class="logo">
-					<img src="<%=require('./images/logo.jpg')%>" alt="Логотип" class="logo__pic">
-					<!-- <img src="<%=require('./images/logo-test.svg')%>" alt="Логотип" class="logo__pic"> -->
-					<p class="logo__text">Бегемотик</p>
-				</a>
-			</div>
-			<div class="header__right-area">
 				<a href="tel:+78120000000" class="header__phone">+7&nbsp;(812)&nbsp;000-00-00</a>
 				<p class="header__phone-label">Приём звонков и заявок с&nbsp;10:00 до&nbsp;21:00</p>
 				<button type="button" class="call-btn shake-left">Заказать звонок</button>

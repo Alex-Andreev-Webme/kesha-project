@@ -1,5 +1,5 @@
 .header__phone {
-	display: inline-block;
+	margin-top: 15px;
 	font-size: 20px;
 	font-weight: 500;
 	color: var(--greyColor);
