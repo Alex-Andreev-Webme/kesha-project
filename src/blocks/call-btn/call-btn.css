@@ -5,7 +5,7 @@
 	font-weight: 500;
 	color: var(--whiteColor);
 	border: none;
-	border-radius: 30px;
+	border-radius: 10px;
 	background-color: var(--blueColor);
 	cursor: pointer;
 	transition: ease .3s;
