@@ -9,23 +9,47 @@
 </head>
 
 <body class="page">
-	<div class="page__container">
-		<header class="header">
-			<div class="logo">
-				<a href="#" class="logo__link">
-					<img src="<%=require('./images/logo-test.svg')%>" alt="Логотип" class="logo__pic">
-				</a>
-				<p class="logo__text">Бегемотик</p>
-			</div>
+	<header class="header">
+		<div class="container">
 			<div class="header__contacts">
-				<p class="header__adress">г.&nbsp;Санкт-Петербург, ул.&nbsp;Пушкина, д.&nbsp;15</p>
-				<a href="mailto:begemotik.corporate@gmail.com" class="header__mail">begemotik@corporate.ru</a>
-				<a href="tel:+78120000000" class="header__phone">+7&nbsp;(812)&nbsp;000-00-00</a>
-				<p class="header__phone-label">Приём звонков и заявок с&nbsp;10:00 до&nbsp;21:00</p>
-				<button type="button" class="call-btn shake-left">Заказать звонок</button>
+				<div class="header__flex-left">
+					<a href="mailto:begemotik.corporate@gmail.com" class="header__mail">begemotik@corporate.ru</a>
+					<p class="header__adress">г.&nbsp;Санкт-Петербург, ул.&nbsp;Пушкина, д.&nbsp;15</p>
+				</div>
+				<div class="header__flex-right">
+					<a href="tel:+78120000000" class="header__phone">+7 (812) 000-00-00</a>
+					<p class="header__phone-label">Приём звонков и заявок с&nbsp;10:00 до&nbsp;21:00</p>
+					<button type="button" class="call-btn shake-left">Заказать звонок</button>
+				</div>
 			</div>
-		</header>
-	</div>
+			<div class="header__middle-area">
+				<h1 class="header__title">Агенство нянь в&nbsp;Санкт-Петербурге и&nbsp;Ленинградской области</h1>
+				<img src="<%=require('./images/logo.svg')%>" alt="Логотип Бегемотик" class="logo">
+			</div>
+			<nav>
+				<ul class="header__list">
+					<a href="#" class="header__link wobble-hor-bottom">
+						<li class="header__list-el">Главная</li>
+					</a>
+					<a href="#" class="header__link wobble-hor-bottom">
+						<li class="header__list-el">Услуги</li>
+					</a>
+					<a href="#" class="header__link wobble-hor-bottom">
+						<li class="header__list-el">Отзывы</li>
+					</a>
+					<a href="#" class="header__link wobble-hor-bottom">
+						<li class="header__list-el">Вакансии</li>
+					</a>
+					<a href="#" class="header__link wobble-hor-bottom">
+						<li class="header__list-el">Контакты</li>
+					</a>
+					<a href="#" class="header__link wobble-hor-bottom">
+						<li class="header__list-el">О нас</li>
+					</a>
+				</ul>
+			</nav>
+		</div>
+	</header>
 </body>
 
 </html>

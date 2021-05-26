@@ -1,8 +1,31 @@
 .header {
 	box-sizing: border-box;
-	padding: 30px;
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	border-bottom: 1px solid rgba(116, 125, 140, .5);
+	height: 100vh;
+	padding-top: 30px;
+	background-image: url("../../images/bg-spot.svg");
+	background-position: top right;
+	background-repeat: no-repeat;
+	position: relative;
+}
+
+.header::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	background-image: linear-gradient(180deg, #fff 0%, #e1faff 100%);
+	z-index: -100;
+}
+
+@media screen and (min-width: 1900px) {
+	.header::after {
+		content: url("../../images/baby-boy.svg");
+		position: absolute;
+		bottom: 0;
+		left: -100px;
+		opacity: .6;
+		z-index: -100;
+	}
 }
