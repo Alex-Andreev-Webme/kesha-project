@@ -19,6 +19,7 @@
 @import url("../blocks/header/__list/header__list.css");
 @import url("../blocks/header/__link/header__link.css");
 @import url("../blocks/wobble-hor-bottom/wobble-hor-bottom.css");
+
 /* Services */
 
 @import url("../blocks/services/services.css");
@@ -30,6 +31,7 @@
 @import url("../blocks/cards/__text/cards__text.css");
 @import url("../blocks/cards/__title/cards__title.css");
 @import url("../blocks/cards/__description/cards__description.css");
+
 /* Features */
 
 @import url("../blocks/features/features.css");
@@ -46,6 +48,9 @@
 @import url("../blocks/features/__text/features__text.css");
 @import url("../blocks/features/__title/features__title.css");
 @import url("../blocks/features/__description/features__description.css");
+@import url(../blocks/about/about.css);
+@import url(../blocks/about/__container/about__container.css);
+
 /* Nanny */
 
 @import url("../blocks/nanny/nanny.css");
