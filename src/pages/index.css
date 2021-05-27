@@ -35,3 +35,14 @@
 
 @import url("../blocks/features/features.css");
 @import url("../blocks/section/__title/section__title.css");
+@import url("../blocks/features/__list/features__list.css");
+@import url("../blocks/features/__list-el/features__list-el.css");
+@import url("../blocks/features/__icon/features__icon.css");
+@import url("../blocks/features/__icon/_type/features__icon_type_contract.css");
+@import url("../blocks/features/__icon/_type/features__icon_type_freeday.css");
+@import url("../blocks/features/__icon/_type/features__icon_type_documents.css");
+@import url("../blocks/features/__icon/_type/features__icon_type_change.css");
+@import url("../blocks/features/__icon/_type/features__icon_type_interview.css");
+@import url("../blocks/features/__icon/_type/features__icon_type_check.css");
+@import url("../blocks/features/__title/features__title.css");
+@import url("../blocks/features/__description/features__description.css");
