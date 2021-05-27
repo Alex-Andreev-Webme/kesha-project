@@ -4,9 +4,9 @@
 	font-size: 15px;
 	font-weight: 500;
 	color: var(--whiteColor);
+	background-color: var(--blueColor);
 	border: none;
 	border-radius: 10px;
-	background-color: var(--blueColor);
 	cursor: pointer;
 	transition: ease .3s;
 }

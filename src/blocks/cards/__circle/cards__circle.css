@@ -1,8 +1,8 @@
 .cards__circle {
 	width: 200px;
 	height: 200px;
+	display: flex;
 	background-color: var(--greyColor);
 	border-radius: 50%;
-	display: flex;
 	overflow: hidden;
 }
