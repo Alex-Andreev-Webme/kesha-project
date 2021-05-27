@@ -1,5 +1,4 @@
 .cards__circle {
-	box-sizing: border-box;
 	width: 200px;
 	height: 200px;
 	background-color: var(--greyColor);

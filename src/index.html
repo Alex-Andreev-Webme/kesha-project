@@ -9,118 +9,125 @@
 </head>
 
 <body class="page">
+	<div class="page__wrapper">
 
-	<header class="header">
-		<div class="container">
-			<div class="header__contacts">
-				<div class="header__flex-left">
-					<a href="mailto:begemotik.corporate@gmail.com" class="header__mail">begemotik@corporate.ru</a>
-					<p class="header__adress">г.&nbsp;Санкт-Петербург, ул.&nbsp;Пушкина, д.&nbsp;15</p>
+		<header class="header">
+			<div class="header__container">
+				<div class="header__contacts">
+					<div class="header__flex-left">
+						<a href="mailto:begemotik.corporate@gmail.com" class="header__mail">begemotik@corporate.ru</a>
+						<p class="header__adress">г.&nbsp;Санкт-Петербург, ул.&nbsp;Пушкина, д.&nbsp;15</p>
+					</div>
+					<div class="header__flex-right">
+						<a href="tel:+78120000000" class="header__phone">+7 (812) 000-00-00</a>
+						<p class="header__phone-label">Приём звонков и заявок с&nbsp;10:00 до&nbsp;21:00</p>
+						<button type="button" class="call-btn shake-left">Заказать звонок</button>
+					</div>
 				</div>
-				<div class="header__flex-right">
-					<a href="tel:+78120000000" class="header__phone">+7 (812) 000-00-00</a>
-					<p class="header__phone-label">Приём звонков и заявок с&nbsp;10:00 до&nbsp;21:00</p>
-					<button type="button" class="call-btn shake-left">Заказать звонок</button>
+				<div class="header__middle-area">
+					<h1 class="header__title">Агенство нянь в&nbsp;Санкт-Петербурге и&nbsp;Ленинградской области</h1>
+					<img src="<%=require('./images/logo.svg')%>" alt="Логотип Бегемотик" class="logo">
 				</div>
+				<nav class="header__menu">
+					<ul class="header__list">
+						<a href="#" class="header__link wobble-hor-bottom">
+							<li class="header__list-el">Главная</li>
+						</a>
+						<a href="#" class="header__link wobble-hor-bottom">
+							<li class="header__list-el">Услуги</li>
+						</a>
+						<a href="#" class="header__link wobble-hor-bottom">
+							<li class="header__list-el">Отзывы</li>
+						</a>
+						<a href="#" class="header__link wobble-hor-bottom">
+							<li class="header__list-el">Вакансии</li>
+						</a>
+						<a href="#" class="header__link wobble-hor-bottom">
+							<li class="header__list-el">Контакты</li>
+						</a>
+						<a href="#" class="header__link wobble-hor-bottom">
+							<li class="header__list-el">О нас</li>
+						</a>
+					</ul>
+				</nav>
 			</div>
-			<div class="header__middle-area">
-				<h1 class="header__title">Агенство нянь в&nbsp;Санкт-Петербурге и&nbsp;Ленинградской области</h1>
-				<img src="<%=require('./images/logo.svg')%>" alt="Логотип Бегемотик" class="logo">
-			</div>
-			<nav>
-				<ul class="header__list">
-					<a href="#" class="header__link wobble-hor-bottom">
-						<li class="header__list-el">Главная</li>
-					</a>
-					<a href="#" class="header__link wobble-hor-bottom">
-						<li class="header__list-el">Услуги</li>
-					</a>
-					<a href="#" class="header__link wobble-hor-bottom">
-						<li class="header__list-el">Отзывы</li>
-					</a>
-					<a href="#" class="header__link wobble-hor-bottom">
-						<li class="header__list-el">Вакансии</li>
-					</a>
-					<a href="#" class="header__link wobble-hor-bottom">
-						<li class="header__list-el">Контакты</li>
-					</a>
-					<a href="#" class="header__link wobble-hor-bottom">
-						<li class="header__list-el">О нас</li>
-					</a>
-				</ul>
-			</nav>
-		</div>
-	</header>
+		</header>
 
-	<main class="main">
-		<section class="services">
-			<div class="container">
-				<ul class="cards">
-					<li class="cards__item">
-						<div class="cards__circle">
-							<img src="<%=require('./images/baby.svg')%>" class="cards__pic">
-						</div>
-						<div class="cards__text">
-							<h2 class="cards__title">Няня для младенца</h2>
-							<p class="cards__description">от 4 недель до 1 года</p>
-							<p class="cards__description">от 350 &#8381;/час до 450 &#8381;/час</p>
-						</div>
-					</li>
-					<li class="cards__item">
-						<div class="cards__circle">
-							<img src="<%=require('./images/baby.svg')%>" class="cards__pic">
-						</div>
-						<div class="cards__text">
-							<h2 class="cards__title">Няня для младенца</h2>
-							<p class="cards__description">от 4 недель до 1 года</p>
-							<p class="cards__description">от 350 &#8381;/час до 450 &#8381;/час</p>
-						</div>
-					</li>
-					<li class="cards__item">
-						<div class="cards__circle">
-							<img src="<%=require('./images/baby.svg')%>" class="cards__pic">
-						</div>
-						<div class="cards__text">
-							<h2 class="cards__title">Няня для младенца</h2>
-							<p class="cards__description">от 4 недель до 1 года</p>
-							<p class="cards__description">от 350 &#8381;/час до 450 &#8381;/час</p>
-						</div>
-					</li>
-					<li class="cards__item">
-						<div class="cards__circle">
-							<img src="<%=require('./images/baby.svg')%>" class="cards__pic">
-						</div>
-						<div class="cards__text">
-							<h2 class="cards__title">Няня для младенца</h2>
-							<p class="cards__description">от 4 недель до 1 года</p>
-							<p class="cards__description">от 350 &#8381;/час до 450 &#8381;/час</p>
-						</div>
-					</li>
-					<li class="cards__item">
-						<div class="cards__circle">
-							<img src="<%=require('./images/baby.svg')%>" class="cards__pic">
-						</div>
-						<div class="cards__text">
-							<h2 class="cards__title">Няня для младенца</h2>
-							<p class="cards__description">от 4 недель до 1 года</p>
-							<p class="cards__description">от 350 &#8381;/час до 450 &#8381;/час</p>
-						</div>
-					</li>
-					<li class="cards__item">
-						<div class="cards__circle">
-							<img src="<%=require('./images/baby.svg')%>" class="cards__pic">
-						</div>
-						<div class="cards__text">
-							<h2 class="cards__title">Няня для младенца</h2>
-							<p class="cards__description">от 4 недель до 1 года</p>
-							<p class="cards__description">от 350 &#8381;/час до 450 &#8381;/час</p>
-						</div>
-					</li>
-				</ul>
-			</div>
-		</section>
-	</main>
+		<main class="main">
+			<section class="services">
+				<div class="section">
+					<ul class="cards">
+						<li class="cards__item">
+							<div class="cards__circle">
+								<img src="<%=require('./images/baby.svg')%>" class="cards__pic">
+							</div>
+							<div class="cards__text">
+								<h2 class="cards__title">Няня для младенца</h2>
+								<p class="cards__description">от 4 недель до 1 года</p>
+								<p class="cards__description">от 350 &#8381;/час до 450 &#8381;/час</p>
+							</div>
+						</li>
+						<li class="cards__item">
+							<div class="cards__circle">
+								<img src="<%=require('./images/baby.svg')%>" class="cards__pic">
+							</div>
+							<div class="cards__text">
+								<h2 class="cards__title">Няня для младенца</h2>
+								<p class="cards__description">от 4 недель до 1 года</p>
+								<p class="cards__description">от 350 &#8381;/час до 450 &#8381;/час</p>
+							</div>
+						</li>
+						<li class="cards__item">
+							<div class="cards__circle">
+								<img src="<%=require('./images/baby.svg')%>" class="cards__pic">
+							</div>
+							<div class="cards__text">
+								<h2 class="cards__title">Няня для младенца</h2>
+								<p class="cards__description">от 4 недель до 1 года</p>
+								<p class="cards__description">от 350 &#8381;/час до 450 &#8381;/час</p>
+							</div>
+						</li>
+						<li class="cards__item">
+							<div class="cards__circle">
+								<img src="<%=require('./images/baby.svg')%>" class="cards__pic">
+							</div>
+							<div class="cards__text">
+								<h2 class="cards__title">Няня для младенца</h2>
+								<p class="cards__description">от 4 недель до 1 года</p>
+								<p class="cards__description">от 350 &#8381;/час до 450 &#8381;/час</p>
+							</div>
+						</li>
+						<li class="cards__item">
+							<div class="cards__circle">
+								<img src="<%=require('./images/baby.svg')%>" class="cards__pic">
+							</div>
+							<div class="cards__text">
+								<h2 class="cards__title">Няня для младенца</h2>
+								<p class="cards__description">от 4 недель до 1 года</p>
+								<p class="cards__description">от 350 &#8381;/час до 450 &#8381;/час</p>
+							</div>
+						</li>
+						<li class="cards__item">
+							<div class="cards__circle">
+								<img src="<%=require('./images/baby.svg')%>" class="cards__pic">
+							</div>
+							<div class="cards__text">
+								<h2 class="cards__title">Няня для младенца</h2>
+								<p class="cards__description">от 4 недель до 1 года</p>
+								<p class="cards__description">от 350 &#8381;/час до 450 &#8381;/час</p>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</section>
 
+			<sectioon class="features">
+				<div class="section">
+					<h2 class="section__title">Наши преимущества</h2>
+				</div>
+			</sectioon>
+		</main>
+	</div>
 </body>
 
 </html>
