@@ -1,8 +1,8 @@
-.terms-link {
+.link {
 	color: inherit;
 	transition: ease .3s;
 }
 
-.terms-link:hover {
+.link:hover {
 	color: var(--blueColor);
 }
