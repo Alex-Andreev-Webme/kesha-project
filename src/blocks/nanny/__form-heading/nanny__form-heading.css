@@ -14,7 +14,6 @@
 }
 
 .nanny__form-heading::before {
-	/* display: inline-block; */
 	content: "";
 	margin-right: 5px;
 	width: 20px;
