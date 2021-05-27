@@ -34,7 +34,7 @@
 
 @import url("../blocks/features/features.css");
 @import url("../blocks/section/__title/section__title.css");
-@import url("../blocks/features/__list/features__list.css");
+@import url("../blocks/features/__grid/features__grid.css");
 @import url("../blocks/features/__list-el/features__list-el.css");
 @import url("../blocks/features/__icon/features__icon.css");
 @import url("../blocks/features/__icon/_type/features__icon_type_contract.css");
