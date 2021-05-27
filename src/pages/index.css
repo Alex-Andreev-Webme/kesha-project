@@ -47,6 +47,10 @@
 @import url("../blocks/features/__text/features__text.css");
 @import url("../blocks/features/__title/features__title.css");
 @import url("../blocks/features/__description/features__description.css");
+
+@import url(../blocks/about/about.css);
+@import url(../blocks/about/__container/about__container.css);
+=======
 /* Nanny */
 
 @import url("../blocks/nanny/nanny.css");
