@@ -1,0 +1,25 @@
+.nanny__form-heading {
+	margin: 0;
+	padding: 45px 0;
+	font-size: 24px;
+	font-weight: 500;
+	color: #fff;
+	background-color: var(--blueColor);
+	background-image: url("../../../images/bg-circle.svg");
+	background-repeat: no-repeat;
+	background-position: top right;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 30px;
+}
+
+.nanny__form-heading::before {
+	display: inline-block;
+	content: "";
+	width: 20px;
+	height: 20px;
+	margin-right: 5px;
+	border-radius: 50%;
+	background-color: #fff;
+}

@@ -47,3 +47,14 @@
 @import url("../blocks/features/__text/features__text.css");
 @import url("../blocks/features/__title/features__title.css");
 @import url("../blocks/features/__description/features__description.css");
+/* Nanny */
+
+@import url("../blocks/nanny/nanny.css");
+@import url("../blocks/nanny/__form-wrapper/nanny__form-wrapper.css");
+@import url("../blocks/nanny/__form-heading/nanny__form-heading.css");
+@import url("../blocks/nanny/__form/nanny__form.css");
+@import url("../blocks/nanny/__field/nanny__field.css");
+@import url("../blocks/nanny/__checkbox-collect/nanny__checkbox-collect.css");
+@import url("../blocks/nanny/__checkbox/nanny__checkbox.css");
+@import url("../blocks/terms-link/terms-link.css");
+@import url("../blocks/nanny/__submit/nanny__submit.css");
