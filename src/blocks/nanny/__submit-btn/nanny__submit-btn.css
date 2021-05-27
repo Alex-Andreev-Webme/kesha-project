@@ -1,0 +1,22 @@
+.nanny__submit-btn {
+	box-sizing: border-box;
+	margin-top: 30px;
+	padding: 15px 0;
+	font-size: 24px;
+	font-weight: 500;
+	color: var(--whiteColor);
+	background-color: var(--blueColor);
+	border: none;
+	border-radius: 12px;
+	outline: none;
+	cursor: pointer;
+	transition: ease .3s;
+}
+
+.nanny__submit-btn:hover {
+	opacity: .8;
+}
+
+.nanny__submit-btn:focus {
+	opacity: .8;
+}
