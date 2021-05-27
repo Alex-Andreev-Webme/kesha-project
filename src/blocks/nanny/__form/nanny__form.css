@@ -1,3 +1,5 @@
 .nanny__form {
-	padding: 50px 45px 30px;
+	padding: 45px;
+	display: flex;
+	flex-direction: column;
 }

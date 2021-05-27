@@ -6,13 +6,10 @@
 
 .nanny__form-checkbox+label {
 	display: inline-flex;
-	align-items: flex-start;
-	user-select: none;
 }
 
 .nanny__form-checkbox+label::before {
 	content: "";
-	display: inline-block;
 	width: 20px;
 	height: 20px;
 	flex-shrink: 0;
@@ -24,15 +21,11 @@
 	background-position: center center;
 	background-size: 50% 50%;
 	cursor: pointer;
-	transition: ease .2s;
+	transition: ease .3s;
 }
 
 .nanny__form-checkbox:checked+label::before {
 	border-color: var(--blueColor);
 	background-color: var(--blueColor);
 	background-image: url("../../../images/check-mark.svg");
-}
-
-.nanny__form-checkbox:not(:disabled):not(:checked)+label:hover::before {
-	box-shadow: 0 0 0 4px rgba(0, 0, 0, 0.2);
 }

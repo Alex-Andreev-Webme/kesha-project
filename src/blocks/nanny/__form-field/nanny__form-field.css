@@ -9,7 +9,7 @@
 	border: none;
 	outline: none;
 	border-radius: 4px;
-	transition: ease .2s;
+	transition: ease .3s;
 }
 
 .nanny__form-field:focus {
