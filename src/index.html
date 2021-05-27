@@ -54,6 +54,7 @@
 		</header>
 
 		<main class="main">
+
 			<section class="services">
 				<div class="section">
 					<ul class="cards">
@@ -169,8 +170,33 @@
 						</li>
 					</ul>
 				</div>
+
+
+
+
 			</section>
 
+			<section class="nanny">
+				<div class="section">
+					<h2 class="section__title">Порекомендовать няню</h2>
+					<div class="nanny__form-wrapper">
+						<p class="nanny__form-heading">Заполните форму</p>
+						<form name="callback-form" action="#" class="nanny__form">
+							<input type="text" class="nanny__field" placeholder="Введите имя" required>
+							<input type="text" class="nanny__field" placeholder="Телефон" required>
+							<div class="nanny__checkbox-collect">
+								<input type="checkbox" class="nanny__checkbox" id="terms-of-use" required>
+								<label for="terms-of-use">
+									согласен на обработку персональных данных в соответствии с
+									<a href="#" target="_blank" class="terms-link">политикой конфидициальности</a>
+								</label>
+							</div>
+							<button class="nanny__submit">Отправить</button>
+						</form>
+					</div>
+				</div>
+			</section>
+    
 			<section class="about">
         <div class="section">
           <h2 id="about" class="section__title">
@@ -188,6 +214,7 @@
           </p>
         </div>
       </section>
+
 		</main>
 	</div>
 </body>
