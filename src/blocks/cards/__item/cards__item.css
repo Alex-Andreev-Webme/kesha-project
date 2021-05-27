@@ -1,0 +1,8 @@
+.cards__item {
+	padding: 30px;
+	display: flex;
+	align-items: center;
+	background-color: #fff;
+	border-radius: 40px;
+	overflow: hidden;
+}
