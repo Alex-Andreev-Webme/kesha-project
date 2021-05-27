@@ -19,3 +19,13 @@
 @import url("../blocks/header/__list/header__list.css");
 @import url("../blocks/header/__link/header__link.css");
 @import url("../blocks/wobble-hor-bottom/wobble-hor-bottom.css");
+/* Services */
+
+@import url("../blocks/services/services.css");
+@import url("../blocks/cards/cards.css");
+@import url("../blocks/cards/__item/cards__item.css");
+@import url("../blocks/cards/__circle/cards__circle.css");
+@import url("../blocks/cards/__pic/cards__pic.css");
+@import url("../blocks/cards/__text/cards__text.css");
+@import url("../blocks/cards/__title/cards__title.css");
+@import url("../blocks/cards/__description/cards__description.css");
