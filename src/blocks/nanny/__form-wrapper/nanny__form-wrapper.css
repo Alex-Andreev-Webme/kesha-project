@@ -1,0 +1,8 @@
+.nanny__form-wrapper {
+	margin: 45px auto 0 auto;
+	width: 380px;
+	border-radius: 30px;
+	background-color: #fff;
+	box-shadow: 0 5px 5px -5px rgba(0, 0, 0, .5);
+	overflow: hidden;
+}
