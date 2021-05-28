@@ -1,0 +1,7 @@
+.process__grid {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	display: grid;
+	gap: 45px;
+}

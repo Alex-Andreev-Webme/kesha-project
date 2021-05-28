@@ -59,3 +59,11 @@
 @import url("../blocks/callback/__form-label/callback__form-label.css");
 @import url("../blocks/callback/__link/callback__link.css");
 @import url("../blocks/callback/__submit-btn/callback__submit-btn.css");
+/* Process */
+
+@import url("../blocks/process/process.css");
+@import url("../blocks/process/__grid/process__grid.css");
+@import url("../blocks/process/__grid-item/process__grid-item.css");
+@import url("../blocks/process/__round/process__round.css");
+@import url("../blocks/process/__number/process__number.css");
+@import url("../blocks/process/__text/process__text.css");
