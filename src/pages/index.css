@@ -1,6 +1,7 @@
 @import url("../vendor/normalize.css");
 @import url("../vendor/fonts/fonts.css");
 @import url("../blocks/page/page.css");
+@import url("../blocks/page/page__figure/page__figure.css");
 /* Header */
 
 @import url("../blocks/header/header.css");
@@ -80,3 +81,11 @@
 
 @import url("../blocks/about/about.css");
 @import url("../blocks/about/__text/about__text.css");
+/* Footer */
+
+@import url("../blocks/footer/footer.css");
+@import url("../blocks/footer/__content/footer__content.css");
+@import url("../blocks/footer/__copyright/footer__copyright.css");
+@import url("../blocks/footer/__text/footer__text.css");
+@import url("../blocks/footer/__social/footer__social.css");
+@import url("../blocks/footer/__link/footer__link.css");

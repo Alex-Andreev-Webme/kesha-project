@@ -1,0 +1,14 @@
+.footer__link {
+	margin-right: 15px;
+	color: inherit;
+	text-decoration: none;
+	transition: ease .3s;
+}
+
+.footer__link:last-child {
+	margin-right: 0;
+}
+
+.footer__link:hover {
+	opacity: .6;
+}
