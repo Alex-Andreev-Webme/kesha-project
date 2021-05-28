@@ -51,11 +51,11 @@
 /* Nanny */
 
 @import url("../blocks/nanny/nanny.css");
-@import url("../blocks/nanny/__form-wrapper/nanny__form-wrapper.css");
-@import url("../blocks/nanny/__form-heading/nanny__form-heading.css");
-@import url("../blocks/nanny/__form/nanny__form.css");
-@import url("../blocks/nanny/__form-field/nanny__form-field.css");
-@import url("../blocks/nanny/__form-checkbox/nanny__form-checkbox.css");
-@import url("../blocks/nanny/__form-label/nanny__form-label.css");
-@import url("../blocks/link/link.css");
-@import url("../blocks/nanny/__submit-btn/nanny__submit-btn.css");
+@import url("../blocks/callback/callback.css");
+@import url("../blocks/callback/__form-heading/callback__form-heading.css");
+@import url("../blocks/callback/__form/callback__form.css");
+@import url("../blocks/callback/__form-field/callback__form-field.css");
+@import url("../blocks/callback/__form-checkbox/callback__form-checkbox.css");
+@import url("../blocks/callback/__form-label/callback__form-label.css");
+@import url("../blocks/callback/__link/callback__link.css");
+@import url("../blocks/callback/__submit-btn/callback__submit-btn.css");

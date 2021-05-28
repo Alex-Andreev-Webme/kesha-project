@@ -1,4 +1,4 @@
-.nanny__form-field {
+.callback__form-field {
 	box-sizing: border-box;
 	margin: 0 0 20px 0;
 	padding: 10px;
@@ -12,6 +12,6 @@
 	transition: ease .3s;
 }
 
-.nanny__form-field:focus {
+.callback__form-field:focus {
 	box-shadow: 0 0 0 4px rgba(0, 0, 0, 0.2);
 }
