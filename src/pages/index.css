@@ -51,6 +51,7 @@
 /* Nanny */
 
 @import url("../blocks/nanny/nanny.css");
+@import url("../blocks/nanny/__content/nanny__content.css");
 @import url("../blocks/callback/callback.css");
 @import url("../blocks/callback/__form-heading/callback__form-heading.css");
 @import url("../blocks/callback/__form/callback__form.css");
@@ -67,3 +68,10 @@
 @import url("../blocks/process/__round/process__round.css");
 @import url("../blocks/process/__number/process__number.css");
 @import url("../blocks/process/__text/process__text.css");
+/* Quetion */
+
+@import url("../blocks/question/question.css");
+@import url("../blocks/question/__content/question__content.css");
+@import url("../blocks/section/__title/_align/section__title_align_left.css");
+@import url("../blocks/question/__text/question__text.css");
+@import url("../blocks/question/__paragraph/question__paragraph.css");

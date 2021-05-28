@@ -1,8 +1,8 @@
 .features__grid {
-	margin: 0;
+	margin: 50px 0 0 0;
 	padding: 0;
 	list-style: none;
 	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+	grid-template-columns: repeat(3, minmax(240px, 1fr));
 	gap: 30px;
 }
