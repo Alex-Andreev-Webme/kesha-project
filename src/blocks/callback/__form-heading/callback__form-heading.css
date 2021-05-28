@@ -1,4 +1,4 @@
-.nanny__form-heading {
+.callback__form-heading {
 	margin: 0;
 	padding: 45px 0;
 	font-size: 24px;
@@ -13,7 +13,7 @@
 	justify-content: center;
 }
 
-.nanny__form-heading::before {
+.callback__form-heading::before {
 	content: "";
 	margin-right: 5px;
 	width: 20px;

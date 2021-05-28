@@ -1,14 +1,14 @@
-.nanny__form-checkbox {
+.callback__form-checkbox {
 	position: absolute;
 	z-index: -100;
 	opacity: 0;
 }
 
-.nanny__form-checkbox+label {
+.callback__form-checkbox+label {
 	display: inline-flex;
 }
 
-.nanny__form-checkbox+label::before {
+.callback__form-checkbox+label::before {
 	content: "";
 	width: 20px;
 	height: 20px;
@@ -24,8 +24,7 @@
 	transition: ease .3s;
 }
 
-.nanny__form-checkbox:checked+label::before {
-	border-color: var(--blueColor);
+.callback__form-checkbox:checked+label::before {
 	background-color: var(--blueColor);
 	background-image: url("../../../images/check-mark.svg");
 }
