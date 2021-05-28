@@ -1,0 +1,16 @@
+.process__round {
+	min-width: 140px;
+	min-height: 140px;
+	border-radius: 50%;
+	background-color: #b4f1ff;
+	box-shadow: 0 5px 20px rgba(0, 0, 0, .15);
+	position: relative;
+}
+
+.process__round::after {
+	content: url("../../../images/dashes-icon.svg");
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	transform: translate(-50%, 100%);
+}
