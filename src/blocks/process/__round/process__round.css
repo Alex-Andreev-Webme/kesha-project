@@ -14,3 +14,7 @@
 	left: 50%;
 	transform: translate(-50%, 100%);
 }
+
+.process__grid-item:last-of-type .process__round::after {
+	content: "";
+}
