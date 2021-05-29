@@ -1,8 +1,7 @@
 .cards__description_bordered {
-	padding: 15px 0;
-	border-radius: 30px;
-	background-color: rgba(252, 124, 178, .2);
-	background-color: #9980fa;
-	text-align: center;
+	padding: 15px;
 	color: var(--whiteColor);
+	text-align: center;
+	background-color: #9980fa;
+	border-radius: 30px;
 }
