@@ -3,6 +3,8 @@
 	--whiteColor: #fff;
 	--greyColor: #747d8c;
 	--blueColor: #51a1ff;
+	--gradientDefault: linear-gradient(180deg, var(--blueColor) 0%, #fff 100%);
+	--gradientReverse: linear-gradient(180deg, #fff 0%, var(--blueColor) 100%);
 	/* --- Переменные --- */
 	width: 100%;
 	min-width: 320px;
