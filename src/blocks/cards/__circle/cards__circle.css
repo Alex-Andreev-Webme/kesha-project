@@ -2,7 +2,7 @@
 	width: 200px;
 	height: 200px;
 	display: flex;
-	background-color: var(--greyColor);
+	background-color: var(--whiteColor);
 	border-radius: 50%;
 	overflow: hidden;
 }
