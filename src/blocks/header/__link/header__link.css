@@ -1,6 +1,6 @@
 .header__link {
 	font-size: 20px;
-	color: inherit;
+	color: var(--greyColor);
 	text-decoration: none;
 	transition: ease .3s;
 }
