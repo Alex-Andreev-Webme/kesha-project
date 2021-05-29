@@ -3,8 +3,9 @@
 	padding: 20px 40px;
 	font-size: 15px;
 	font-weight: 500;
-	color: var(--whiteColor);
-	background-color: var(--blueColor);
+	color: var(--blueColor);
+	background-color: var(--whiteColor);
+	box-shadow: 0 0 5px rgba(0, 0, 0, .2);
 	border: none;
 	border-radius: 10px;
 	cursor: pointer;
@@ -12,5 +13,6 @@
 }
 
 .call-btn:hover {
-	opacity: .8;
+	background-color: var(--blueColor);
+	color: var(--whiteColor);
 }
