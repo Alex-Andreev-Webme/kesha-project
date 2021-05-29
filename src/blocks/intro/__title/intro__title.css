@@ -1,0 +1,7 @@
+.intro__title {
+	margin: 0;
+	max-width: 720px;
+	font-size: 60px;
+	font-weight: 500;
+	text-transform: uppercase;
+}
