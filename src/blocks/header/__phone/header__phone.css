@@ -1,5 +1,5 @@
 .header__phone {
-	font-size: 20px;
+	font-size: 24px;
 	font-weight: 500;
 	color: var(--greyColor);
 	text-decoration: none;
@@ -7,6 +7,5 @@
 }
 
 .header__phone:hover {
-	/* transform: translateX(-5px); */
 	color: var(--blueColor);
 }

@@ -52,6 +52,26 @@ module.exports = {
 		new HtmlWebpackPlugin({
 			template: './src/index.html'
 		}),
+		new HtmlWebpackPlugin({
+			filename: 'services.html',
+			template: './src/services.html'
+		}),
+		new HtmlWebpackPlugin({
+			filename: 'reviews.html',
+			template: './src/reviews.html'
+		}),
+		new HtmlWebpackPlugin({
+			filename: 'vacancies.html',
+			template: './src/vacancies.html'
+		}),
+		new HtmlWebpackPlugin({
+			filename: 'contacts.html',
+			template: './src/contacts.html'
+		}),
+		new HtmlWebpackPlugin({
+			filename: 'about.html',
+			template: './src/about.html'
+		}),
 		new CleanWebpackPlugin(),
 		new MiniCssExtractPlugin(),
 
