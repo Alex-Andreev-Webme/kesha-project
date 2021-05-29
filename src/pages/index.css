@@ -1,6 +1,7 @@
 @import url("../vendor/normalize.css");
 @import url("../vendor/fonts/fonts.css");
 @import url("../blocks/page/page.css");
+@import url("../blocks/page/__wrapper/page__wrapper.css");
 /* Header */
 
 @import url("../blocks/header/header.css");
@@ -38,6 +39,7 @@
 @import url("../blocks/cards/__text/cards__text.css");
 @import url("../blocks/cards/__title/cards__title.css");
 @import url("../blocks/cards/__description/cards__description.css");
+@import url("../blocks/cards/__description/_bordered/cards__description_bordered.css");
 /* Features */
 
 @import url("../blocks/features/features.css");

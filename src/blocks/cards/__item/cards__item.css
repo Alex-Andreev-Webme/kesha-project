@@ -3,6 +3,11 @@
 	display: flex;
 	align-items: center;
 	background-color: #fff;
+	box-shadow: 0 0 5px rgba(0, 0, 0, .2);
 	border-radius: 40px;
 	overflow: hidden;
+	background-image: url("../../../images/bg-card.png");
+	background-repeat: no-repeat;
+	background-position: center left;
+	background-size: contain;
 }
