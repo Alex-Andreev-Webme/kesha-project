@@ -1,0 +1,9 @@
+.callback__info {
+	text-decoration: underline;
+	cursor: pointer;
+	transition: ease .3s;
+}
+
+.callback__info:hover {
+	color: var(--blueColor);
+}

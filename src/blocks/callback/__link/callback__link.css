@@ -1,8 +1,0 @@
-.callback__link {
-	color: inherit;
-	transition: ease .3s;
-}
-
-.callback__link:hover {
-	color: var(--blueColor);
-}

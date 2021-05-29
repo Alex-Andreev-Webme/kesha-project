@@ -7,6 +7,6 @@
 }
 
 .header__phone:hover {
-	transform: translateX(-5px);
+	/* transform: translateX(-5px); */
 	color: var(--blueColor);
 }

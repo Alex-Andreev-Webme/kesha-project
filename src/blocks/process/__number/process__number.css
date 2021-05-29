@@ -6,7 +6,7 @@
 	font-weight: 700;
 	color: var(--whiteColor);
 	background-color: var(--blueColor);
-	box-shadow: 0 5px 20px rgba(0, 0, 0, .15);
+	box-shadow: 0 0 5px rgba(0, 0, 0, .2);
 	display: flex;
 	justify-content: center;
 	align-items: center;
