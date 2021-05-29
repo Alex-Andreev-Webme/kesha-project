@@ -5,8 +5,3 @@
 .header__link_type_social:last-child {
 	margin-right: 0;
 }
-
-.header__link_type_social:hover {
-	opacity: .8;
-	transform: scale(1.1);
-}

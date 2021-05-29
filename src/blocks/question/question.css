@@ -1,1 +1,3 @@
-.question {}
+.question {
+	background-image: var(--gradientDefault);
+}

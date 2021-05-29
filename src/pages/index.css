@@ -22,10 +22,15 @@
 @import url("../blocks/header/__menu/header__menu.css");
 @import url("../blocks/header/__list/_type/header__list_type_menu.css");
 @import url("../blocks/header/__link/_type/header__link_type_menu.css");
+/* Intro */
+
+@import url("../blocks/intro/intro.css");
+@import url("../blocks/section/section.css");
+@import url("../blocks/intro/__content/intro__content.css");
+@import url("../blocks/intro/__title/intro__title.css");
 /* Services */
 
 @import url("../blocks/services/services.css");
-@import url("../blocks/section/section.css");
 @import url("../blocks/cards/cards.css");
 @import url("../blocks/cards/__item/cards__item.css");
 @import url("../blocks/cards/__circle/cards__circle.css");
