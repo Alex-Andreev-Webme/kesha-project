@@ -2,8 +2,10 @@
 	min-width: 140px;
 	min-height: 140px;
 	border-radius: 50%;
-	background-color: #b4f1ff;
-	box-shadow: 0 5px 20px rgba(0, 0, 0, .15);
+	/* background-color: #b4f1ff; */
+	background-color: #fff;
+	/* background-image: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%); */
+	box-shadow: 0 0 5px rgba(0, 0, 0, .2);
 	position: relative;
 }
 

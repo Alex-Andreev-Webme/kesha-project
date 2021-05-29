@@ -6,6 +6,6 @@
 
 .header__phone-label::before {
 	content: url("../../../images/phone-icon.svg");
-	margin-right: 10px;
+	margin-right: 5px;
 	vertical-align: middle;
 }

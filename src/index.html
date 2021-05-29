@@ -13,7 +13,7 @@
 
 		<header class="header">
 			<div class="header__container">
-				<div class="header__row">
+				<div class="header__contacts">
 					<div class="header__col">
 						<a href="mailto:begemotik.corporate@gmail.com" class="header__mail">begemotik@corporate.ru</a>
 						<p class="header__adress">г.&nbsp;Санкт-Петербург, ул.&nbsp;Пушкина, д.&nbsp;15</p>
@@ -21,7 +21,7 @@
 					<div class="header__col header__col_aligned">
 						<a href="tel:+78120000000" class="header__phone">+7 (812) 000-00-00</a>
 						<p class="header__phone-label">Приём звонков и заявок с&nbsp;10:00 до&nbsp;21:00</p>
-						<button type="button" class="call-btn shake-left">Заказать звонок</button>
+						<button type="button" class="call-btn shake">Заказать звонок</button>
 					</div>
 				</div>
 				<div class="header__middle-area">
@@ -170,10 +170,6 @@
 						</li>
 					</ul>
 				</div>
-
-
-
-
 			</section>
 
 			<section class="nanny">
@@ -183,14 +179,14 @@
 						<div class="callback">
 							<p class="callback__form-heading">Заполните форму ниже</p>
 							<form action="#" name="callback-form" class="callback__form">
-								<input type="text" name="user-name" class="callback__form-field" placeholder="Имя" require>
+								<input type="text" name="user-name" class="callback__form-field" placeholder="Ваше имя" require>
 								<input type="text" name="user-phone" class="callback__form-field" placeholder="Телефон" require>
 								<input type="checkbox" name="terms-of-use" id="terms-of-use" class="callback__form-checkbox"
 									require>
 								<label for="terms-of-use" class="callback__form-label">
 									<div class="callback__label-wrap">
 										согласен на обработку персональных данных в соответствии c
-										<a href="#" target="_blank" class="callback__link">политикой конфиденциальности</a>
+										<span class="callback__info">политикой конфиденциальности</span>
 									</div>
 								</label>
 								<button type="submit" class="callback__submit-btn">Отправить</button>
@@ -262,14 +258,14 @@
 						<div class="callback">
 							<p class="callback__form-heading">Заполните форму ниже</p>
 							<form action="#" name="callback-form" class="callback__form">
-								<input type="text" name="user-name" class="callback__form-field" placeholder="Имя" require>
+								<input type="text" name="user-name" class="callback__form-field" placeholder="Ваше имя" require>
 								<input type="text" name="user-phone" class="callback__form-field" placeholder="Телефон" require>
-								<input type="checkbox" name="terms-of-use" id="terms-of-use" class="callback__form-checkbox"
+								<input type="checkbox" name="terms-of-use" id="terms-of-use-2" class="callback__form-checkbox"
 									require>
-								<label for="terms-of-use" class="callback__form-label">
+								<label for="terms-of-use-2" class="callback__form-label">
 									<div class="callback__label-wrap">
 										согласен на обработку персональных данных в соответствии c
-										<a href="#" target="_blank" class="callback__link">политикой конфиденциальности</a>
+										<span href="#" target="_blank" class="callback__info">политикой конфиденциальности</span>
 									</div>
 								</label>
 								<button type="submit" class="callback__submit-btn">Отправить</button>
@@ -318,10 +314,12 @@
 						</div>
 						<div class="footer__social">
 							<a href="#" target="_blank" class="footer__link">
-								<img src="<%=require('./images/vk-icon.svg')%>" alt="ВКонтакте" class="footer__social-icon">
+								<img src="<%=require('./images/vkontakte-icon.svg')%>" alt="ВКонтакте"
+									class="footer__social-icon">
 							</a>
 							<a href="#" target="_blank" class="footer__link">
-								<img src="<%=require('./images/insta-icon.svg')%>" alt="Инстаграм" class="footer__social-icon">
+								<img src="<%=require('./images/instagram-icon.svg')%>" alt="Инстаграм"
+									class="footer__social-icon">
 							</a>
 							<a href="#" target="_blank" class="footer__link">
 								<img src="<%=require('./images/facebook-icon.svg')%>" alt="Фейсбук" class="footer__social-icon">
@@ -329,7 +327,6 @@
 						</div>
 					</div>
 			</footer>
-
 		</main>
 	</div>
 </body>

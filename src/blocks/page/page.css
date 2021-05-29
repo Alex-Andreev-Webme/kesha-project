@@ -3,7 +3,6 @@
 	--whiteColor: #fff;
 	--greyColor: #747d8c;
 	--blueColor: #51a1ff;
-	--seaColor: #e1faff;
 	/* --- Переменные --- */
 	width: 100%;
 	min-width: 320px;
@@ -18,5 +17,4 @@
 	-ms-text-size-adjust: 100%;
 	-moz-text-size-adjust: 100%;
 	text-rendering: optimizeLegibility;
-	background-color: var(--whiteColor);
 }
