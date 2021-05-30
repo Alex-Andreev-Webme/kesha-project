@@ -16,7 +16,7 @@
 				<div class="header__contacts">
 					<div class="header__col">
 						<a href="mailto:begemotik.corporate@gmail.com" class="header__mail">begemotik@corporate.ru</a>
-						<p class="header__adress">г.&nbsp;Санкт-Петербург, ул.&nbsp;Пушкина, д.&nbsp;15</p>
+						<p class="header__adress">г.&nbsp;Санкт-Петербург, ул.&nbsp;Пушкинская, д.&nbsp;15</p>
 						<div class="header__social">
 							<ul class="header__list">
 								<a href="https://yandex.ru/" target="_blank" class="header__link header__link_type_social">
@@ -57,7 +57,7 @@
 						<a href="reviews.html" class="header__link header__link_type_menu">
 							<li class="header__list-el">Отзывы</li>
 						</a>
-						<a href="vacant.html" class="header__link header__link_type_menu">
+						<a href="vacancies.html" class="header__link header__link_type_menu">
 							<li class="header__list-el">Вакансии</li>
 						</a>
 						<a href="contacts.html" class="header__link header__link_type_menu">
@@ -100,9 +100,9 @@
 								<img src="<%=require('./images/baby.svg')%>" class="cards__pic">
 							</div>
 							<div class="cards__text">
-								<h2 class="cards__title">Няня для младенца</h2>
-								<p class="cards__description">от 4 недель до 1 года</p>
-								<p class="cards__description cards__description_bordered">от 350 до 450 &#8381;/час</p>
+								<h2 class="cards__title">Няня-воспитатель</h2>
+								<p class="cards__description">от 1 года до 7 лет</p>
+								<p class="cards__description cards__description_bordered">от 300 до 350 &#8381;/час</p>
 							</div>
 						</li>
 						<li class="cards__item">
@@ -110,9 +110,9 @@
 								<img src="<%=require('./images/baby.svg')%>" class="cards__pic">
 							</div>
 							<div class="cards__text">
-								<h2 class="cards__title">Няня для младенца</h2>
-								<p class="cards__description">от 4 недель до 1 года</p>
-								<p class="cards__description cards__description_bordered">от 350 до 450 &#8381;/час</p>
+								<h2 class="cards__title">Няня-воспитатель</h2>
+								<p class="cards__description">со знанием иностранного языка</p>
+								<p class="cards__description cards__description_bordered">от 500 до 1000 &#8381;/час</p>
 							</div>
 						</li>
 						<li class="cards__item">
@@ -120,9 +120,9 @@
 								<img src="<%=require('./images/baby.svg')%>" class="cards__pic">
 							</div>
 							<div class="cards__text">
-								<h2 class="cards__title">Няня для младенца</h2>
-								<p class="cards__description">от 4 недель до 1 года</p>
-								<p class="cards__description cards__description_bordered">от 350 до 450 &#8381;/час</p>
+								<h2 class="cards__title">Гувернантка для школьника</h2>
+								<p class="cards__description">ребенку от 7 лет</p>
+								<p class="cards__description cards__description_bordered">от 400 до 500 &#8381;/час</p>
 							</div>
 						</li>
 						<li class="cards__item">
@@ -130,9 +130,9 @@
 								<img src="<%=require('./images/baby.svg')%>" class="cards__pic">
 							</div>
 							<div class="cards__text">
-								<h2 class="cards__title">Няня для младенца</h2>
-								<p class="cards__description">от 4 недель до 1 года</p>
-								<p class="cards__description cards__description_bordered">от 350 до 450 &#8381;/час</p>
+								<h2 class="cards__title">Няня-логопед</h2>
+								<p class="cards__description">какой-то текст</p>
+								<p class="cards__description cards__description_bordered">от 500 до 1500 &#8381;/час</p>
 							</div>
 						</li>
 						<li class="cards__item">
@@ -140,9 +140,9 @@
 								<img src="<%=require('./images/baby.svg')%>" class="cards__pic">
 							</div>
 							<div class="cards__text">
-								<h2 class="cards__title">Няня для младенца</h2>
-								<p class="cards__description">от 4 недель до 1 года</p>
-								<p class="cards__description cards__description_bordered">от 350 до 450 &#8381;/час</p>
+								<h2 class="cards__title">Няня особым детям</h2>
+								<p class="cards__description">с медицинским образованием</p>
+								<p class="cards__description cards__description_bordered">от 450 до 650 &#8381;/час</p>
 							</div>
 						</li>
 					</ul>
@@ -336,6 +336,21 @@
 						<img src="<%=require('./images/logo.svg')%>" alt="Логотип Бегемотик" class="logo logo_place_footer">
 						<nav class="footer__nav">
 							<div class="footer__col">
+								<h4 class="footer__col-title">Связаться с нами</h4>
+								<ul class="footer__list">
+									<li class="footer__list-el">
+										<a href="mailto:begemotik@corporate.ru" class="footer__link">
+											begemotik@corporate.ru
+										</a>
+									</li>
+									<li class="footer__list-el">
+										<a href="tel:+78120000000" class="footer__link">
+											+7 (812) 000-00-00
+										</a>
+									</li>
+								</ul>
+							</div>
+							<div class="footer__col">
 								<h4 class="footer__col-title">Навигация</h4>
 								<ul class="footer__list">
 									<li class="footer__list-el">
@@ -383,14 +398,17 @@
 					</div>
 					<div class="footer__bottom">
 						<p class="footer__paragraph">
-							2021 &copy; Бегемотик – агенство нянь в Санкт-Петербурге и ЛО
+							2021 &copy; Бегемотик,
+							<a href="https://yandex.ru/maps/-/CCUaeUupOA" target="_blank" class="footer__link">
+								г.&nbsp;Санкт-Петербург, ул.&nbsp;Пушкинская,&nbsp;д.&nbsp;15
+							</a>
 						</p>
 						<p class="footer__paragraph">
 							Прием звонков и заявок с 10:00 до 21:00
 						</p>
-						<p class="footer__paragraph">
+						<!-- <p class="footer__paragraph">
 							&copy; Developed by Dobrie Zemlyane
-						</p>
+						</p> -->
 					</div>
 				</div>
 			</footer>

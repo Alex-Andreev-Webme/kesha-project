@@ -102,8 +102,5 @@
 @import url("../blocks/footer/__list/footer__list.css");
 @import url("../blocks/footer/__list-el/footer__list-el.css");
 @import url("../blocks/footer/__link/footer__link.css");
-@import url("../blocks/footer/__link/_type/footer__link_type_vk.css");
-@import url("../blocks/footer/__link/_type/footer__link_type_instagram.css");
-@import url("../blocks/footer/__link/_type/footer__link_type_telegram.css");
 @import url("../blocks/footer/__bottom/footer__bottom.css");
 @import url("../blocks/footer/__paragraph/footer__paragraph.css");
