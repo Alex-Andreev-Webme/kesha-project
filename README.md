@@ -7,10 +7,7 @@
 Технологии:
 
 ----
-
-[Ссылка на проект](ссылка)
-test
-
+[Ссылка на проект](https://Alex-Andreev-Webme.github.io/kesha-project/index.html)
 ----
 
 # Инструкция по созданию веток:
