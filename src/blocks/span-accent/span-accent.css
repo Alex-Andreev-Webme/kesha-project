@@ -1,0 +1,9 @@
+.span-accent {
+	text-decoration: underline;
+	cursor: pointer;
+	transition: ease .3s;
+}
+
+.span-accent:hover {
+	opacity: .8;
+}
