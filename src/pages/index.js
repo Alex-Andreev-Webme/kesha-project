@@ -1,5 +1,6 @@
 "use strict";
 
+// import { forEach } from "core-js/core/array";
 import "./index.css";
 import "../utils/constants";
 import Section from "../components/Section";
@@ -95,49 +96,69 @@ if (window.location.pathname === "/reviews.html") {
 // -- Попап c формой обратной связи -- //
 
 const callBtns = document.querySelectorAll('.call-btn')
-const popup = document.querySelector('.popup')
-const popupCloseBtns = popup.querySelectorAll('.popup__close-btn')
+const popups = document.querySelectorAll('.popup')
+const popupCallback = document.querySelector('.popup_type_callback')
+const popupCloseBtns = document.querySelectorAll('.popup__close-btn')
 const body = document.querySelector('.page')
 const ESCAPE_KEY = 'Escape'
 
 function openPopup(popupEl) {
   popupEl.classList.add('popup_visible')
   document.addEventListener('keydown', handleEscClose)
-  switchScroll()
+  ableScroll()
 }
 
 function closePopup(popupEl) {
   popupEl.classList.remove('popup_visible')
   document.removeEventListener('keydown', handleEscClose)
-  switchScroll()
+  disableScroll()
 }
 
 function handleEscClose(event) {
   if (event.key === ESCAPE_KEY) {
+    const popup = document.querySelector('.popup_visible')
     closePopup(popup)
   }
 }
 
-function switchScroll() {
-  body.classList.toggle('page_noscroll')
+function ableScroll() {
+  body.classList.add('page_noscroll')
+}
+
+function disableScroll() {
+  body.classList.remove('page_noscroll')
 }
 
 callBtns.forEach((button) => {
   button.addEventListener('click', () => {
-    openPopup(popup)
+    openPopup(popupCallback)
   })
 })
 
 popupCloseBtns.forEach((button) => {
-  button.addEventListener('click', () => {
+  button.addEventListener('click', (event) => {
+    const popup = event.target.closest('.popup')
     closePopup(popup)
   })
 })
 
-popup.addEventListener('mousedown', (event) => {
-  if (event.target.classList.contains('popup') || event.target.classList.contains('popupCloseBtns')) {
-    closePopup(popup)
-  }
+popups.forEach((popup) => {
+  popup.addEventListener('mousedown', (event) => {
+    if (event.target.classList.contains('popup')) {
+      closePopup(popup)
+    }
+  })
 })
 
 // -- Попап c формой обратной связи -- //
+
+// -- Попап с документами/проверкой кандидатов -- //
+
+const docsPopupTrigger = document.querySelector('.span-accent_type_docs')
+const docsPopup = document.querySelector('.popup_type_docs')
+
+docsPopupTrigger.addEventListener('click', () => {
+  openPopup(docsPopup)
+})
+
+

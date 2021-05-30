@@ -1,0 +1,11 @@
+.popup__list {
+	box-sizing: border-box;
+	max-width: 320px;
+	max-height: 500px;
+	margin: 0;
+	padding: 15px 30px;
+	list-style: none;
+	background-color: var(--blueColor);
+	border-radius: 0 30px 30px 30px;
+	overflow: scroll;
+}

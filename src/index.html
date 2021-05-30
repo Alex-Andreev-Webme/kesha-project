@@ -10,15 +10,15 @@
 
 <body class="page">
 
-	<div class="popup">
-		<div class="popup__container liquid">
+	<div class="popup popup_type_callback">
+		<div class="popup__container">
 			<button type="button" class="popup__close-btn"></button>
 			<div class="callback">
 				<p class="callback__form-heading">Заполните форму ниже</p>
 				<form action="#" name="callback-form" class="callback__form">
-					<input type="text" name="userName" class="callback__form-field" placeholder="Ваше имя" require>
-					<input type="text" name="userPhone" class="callback__form-field" placeholder="Телефон" require>
-					<input type="checkbox" name="termsOfUse" id="terms-of-use" class="callback__form-checkbox" require>
+					<input type="text" name="userName" class="callback__form-field" placeholder="Ваше имя" required>
+					<input type="text" name="userPhone" class="callback__form-field" placeholder="Телефон" required>
+					<input type="checkbox" name="termsOfUse" id="terms-of-use" class="callback__form-checkbox" required>
 					<label for="terms-of-use" class="callback__form-label">
 						<div class="callback__label-wrap">
 							согласен на обработку персональных данных в соответствии c
@@ -28,6 +28,64 @@
 					<button type="submit" class="callback__submit-btn">Отправить</button>
 				</form>
 			</div>
+		</div>
+	</div>
+
+	<div class="popup popup_type_docs">
+		<div class="popup__container">
+			<button type="button" class="popup__close-btn"></button>
+			<ul class="popup__list">
+				<li class="popup__list-el">
+					Паспорт
+				</li>
+				<li class="popup__list-el">
+					Диплом об образовании
+				</li>
+				<li class="popup__list-el">
+					Сертификаты о пройденных курсах
+				</li>
+				<li class="popup__list-el">
+					Рекомендации с предыдущего места работы
+				</li>
+				<li class="popup__list-el">
+					Медицинские справки (при наличии)
+				</li>
+				<li class="popup__list-el">
+					Справка об отсутствии судимости
+				</li>
+				<li class="popup__list-el">
+					Справка об отсутствии судимости
+				</li>
+				<li class="popup__list-el">
+					Справка об отсутствии судимости
+				</li>
+			</ul>
+		</div>
+	</div>
+
+	<div class="popup popup_type_check">
+		<div class="popup__container">
+			<button type="button" class="popup__close-btn"></button>
+			<ul class="popup__list">
+				<li class="popup__list-el">
+					Уголовные, гражданские, административные дела
+				</li>
+				<li class="popup__list-el">
+					Архив судов общей юриспруденции
+				</li>
+				<li class="popup__list-el">
+					ФССП
+				</li>
+				<li class="popup__list-el">
+					Арбитражные суды
+				</li>
+				<li class="popup__list-el">
+					Банкротство
+				</li>
+				<li class="popup__list-el">
+					Налоговые задолженности
+				</li>
+			</ul>
 		</div>
 	</div>
 
@@ -189,7 +247,9 @@
 					<li class="features__list-el">
 						<div class="features__icon features__icon_type_documents"></div>
 						<div class="features__text">
-							<h3 class="features__title">Предоставление документов кандидата</h3>
+							<h3 class="features__title">
+								Предоставление <span class="span-accent span-accent_type_docs">документов</span> кандидата
+							</h3>
 							<p class="features__description">Замещающий текст под развернутое описание</p>
 						</div>
 					</li>
@@ -211,7 +271,9 @@
 					<li class="features__list-el">
 						<div class="features__icon features__icon_type_check"></div>
 						<div class="features__text">
-							<h3 class="features__title">Проверка кандидатов</h3>
+							<h3 class="features__title">
+								<span class="span-accent span-accent_type_check">Проверка</span> кандидатов
+							</h3>
 							<p class="features__description">Поправить вёрстку позже</p>
 						</div>
 					</li>
@@ -226,9 +288,10 @@
 					<div class="callback">
 						<p class="callback__form-heading">Заполните форму ниже</p>
 						<form action="#" name="callback-form" class="callback__form">
-							<input type="text" name="userName" class="callback__form-field" placeholder="Ваше имя" require>
-							<input type="text" name="userPhone" class="callback__form-field" placeholder="Телефон" require>
-							<input type="checkbox" name="termsOfUse" id="terms-of-use" class="callback__form-checkbox" require>
+							<input type="text" name="userName" class="callback__form-field" placeholder="Ваше имя*" required>
+							<input type="text" name="userPhone" class="callback__form-field" placeholder="Телефон*" required>
+							<input type="checkbox" name="termsOfUse" id="terms-of-use" class="callback__form-checkbox"
+								required>
 							<label for="terms-of-use" class="callback__form-label">
 								<div class="callback__label-wrap">
 									согласен на обработку персональных данных в соответствии c
@@ -304,10 +367,10 @@
 					<div class="callback">
 						<p class="callback__form-heading">Заполните форму ниже</p>
 						<form action="#" name="callback-form" class="callback__form">
-							<input type="text" name="userName" class="callback__form-field" placeholder="Ваше имя" require>
-							<input type="text" name="userPhone" class="callback__form-field" placeholder="Телефон" require>
+							<input type="text" name="userName" class="callback__form-field" placeholder="Ваше имя*" required>
+							<input type="text" name="userPhone" class="callback__form-field" placeholder="Телефон*" required>
 							<input type="checkbox" name="termsOfUse" id="terms-of-use-2" class="callback__form-checkbox"
-								require>
+								required>
 							<label for="terms-of-use-2" class="callback__form-label">
 								<div class="callback__label-wrap">
 									согласен на обработку персональных данных в соответствии c

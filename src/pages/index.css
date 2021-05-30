@@ -69,6 +69,9 @@
 @import url("../blocks/features/__icon/_type/features__icon_type_check.css");
 @import url("../blocks/features/__text/features__text.css");
 @import url("../blocks/features/__title/features__title.css");
+@import url("../blocks/span-accent/span-accent.css");
+@import url("../blocks/popup/__list/popup__list.css");
+@import url("../blocks/popup/__list-el/popup__list-el.css");
 @import url("../blocks/features/__description/features__description.css");
 /* Nanny */
 
