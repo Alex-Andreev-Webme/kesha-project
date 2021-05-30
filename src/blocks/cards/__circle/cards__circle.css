@@ -2,6 +2,8 @@
 	width: 200px;
 	height: 200px;
 	display: flex;
+	flex-grow: 0;
+	flex-shrink: 0;
 	background-color: var(--whiteColor);
 	border-radius: 50%;
 	overflow: hidden;

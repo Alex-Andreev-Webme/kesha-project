@@ -1,6 +1,8 @@
 .header__list {
 	margin: 0;
 	padding: 0;
+	line-height: 1;
 	list-style: none;
 	display: flex;
+	align-items: flex-end;
 }
