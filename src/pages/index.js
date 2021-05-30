@@ -68,4 +68,54 @@ buttons.forEach(btn => {
     submitHandle(evt)
   })
 })
-// - Обработка сабмита формы -
+// -- Обработка сабмита формы --
+
+// -- Попап c формой обратной связи -- //
+
+const callBtns = document.querySelectorAll('.call-btn')
+const popup = document.querySelector('.popup')
+const popupCloseBtns = popup.querySelectorAll('.popup__close-btn')
+const body = document.querySelector('.page')
+const ESCAPE_KEY = 'Escape'
+
+function openPopup(popupEl) {
+  popupEl.classList.add('popup_visible')
+  document.addEventListener('keydown', handleEscClose)
+  switchScroll()
+}
+
+function closePopup(popupEl) {
+  popupEl.classList.remove('popup_visible')
+  document.removeEventListener('keydown', handleEscClose)
+  switchScroll()
+}
+
+function handleEscClose(event) {
+  if (event.key === ESCAPE_KEY) {
+    closePopup(popup)
+  }
+}
+
+function switchScroll() {
+  body.classList.toggle('page_noscroll')
+}
+
+callBtns.forEach((button) => {
+  button.addEventListener('click', () => {
+    openPopup(popup)
+  })
+})
+
+popupCloseBtns.forEach((button) => {
+  button.addEventListener('click', () => {
+    closePopup(popup)
+  })
+})
+
+popup.addEventListener('mousedown', (event) => {
+  if (event.target.classList.contains('popup') || event.target.classList.contains('popupCloseBtns')) {
+    closePopup(popup)
+  }
+})
+
+// -- Попап c формой обратной связи -- //
