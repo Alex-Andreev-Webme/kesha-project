@@ -1,6 +1,10 @@
 "use strict";
 
 import "./index.css";
+import "../utils/constants";
+import Section from "../components/Section";
+import { reviews } from "../utils/constants";
+import Card from "../components/Card";
 
 // -- Плавная прокрутка до элемента --
 const header = document.querySelector(".header");
@@ -27,48 +31,66 @@ for (let anchor of anchors) {
 // -- Плавная прокрутка до элемента --
 
 // -- Обработка сабмита формы --
-function getInputValues(evt) {
-  const inputValues = {}
-  const form = evt.target.closest('.callback__form')
-  const inputList = form.querySelectorAll('.callback__form-field')
+function getInputValues(form) {
+  const inputValues = {};
+  const inputList = form.querySelectorAll(".callback__form-field");
 
   inputList.forEach((input) => {
-    inputValues[input.name] = input.value
-  })
+    inputValues[input.name] = input.value;
+  });
 
-  return inputValues
+  return inputValues;
 }
 
 function sendData(data) {
-  return fetch(`http://localhost:3000/api/send`, {
+  // return fetch(`http://localhost:5000/api/send`, {
+  return fetch(`http://84.38.180.241/api/send`, {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
     },
     body: JSON.stringify(data),
-  })
+  });
 }
 
 function submitHandle(evt) {
-  const data = getInputValues(evt)
-  console.log(data)
+  const form = evt.target.closest(".callback__form");
+  const data = getInputValues(form);
 
   sendData(data)
-    .then(res => {
-      console.log(res)
+    .then((res) => {
+      if (res.ok) {
+        form.reset();
+        return res.json();
+      }
+      return Promise.reject(`Ошибка ${res.status}`);
     })
-    .catch(err => console.log(err))
+    .catch((err) => console.log(err));
 }
 
-const buttons = document.querySelectorAll('.callback__submit-btn')
+const buttons = document.querySelectorAll(".callback__submit-btn");
 
-buttons.forEach(btn => {
-  btn.addEventListener('click', evt => {
-    evt.preventDefault()
-    submitHandle(evt)
-  })
-})
-// -- Обработка сабмита формы --
+buttons.forEach((btn) => {
+  btn.addEventListener("click", (evt) => {
+    evt.preventDefault();
+    submitHandle(evt);
+  });
+});
+// - Обработка сабмита формы -
+
+// reviews
+if (window.location.pathname === "/reviews.html") {
+  function getCard(data) {
+    const card = new Card(data);
+    return card.generateCard();
+  }
+
+  const reviewsSection = new Section(getCard, ".reviews__list");
+
+  reviewsSection.setItems(reviews);
+  reviewsSection.renderItems();
+}
+// reviews
 
 // -- Попап c формой обратной связи -- //
 

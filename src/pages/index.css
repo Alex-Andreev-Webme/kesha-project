@@ -111,3 +111,15 @@
 @import url("../blocks/footer/__link/footer__link.css");
 @import url("../blocks/footer/__bottom/footer__bottom.css");
 @import url("../blocks/footer/__paragraph/footer__paragraph.css");
+
+/*reviews*/
+@import url("../blocks/reviews/reviews.css");
+@import url("../blocks/reviews/__list/reviews__list.css");
+@import url("../blocks/reviews/__created/reviews__created.css");
+@import url("../blocks/reviews/__header/reviews__header.css");
+@import url("../blocks/reviews/__item/reviews__item.css");
+@import url("../blocks/reviews/__name/reviews__name.css");
+@import url("../blocks/reviews/__rank/reviews__rank.css");
+@import url("../blocks/reviews/__text/reviews__text.css");
+@import url("../blocks/reviews/__top/reviews__top.css");
+@import url("../blocks/reviews/__answer/reviews__answer.css");
