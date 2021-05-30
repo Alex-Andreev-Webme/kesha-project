@@ -12,7 +12,7 @@
 	<div class="page__wrapper">
 
 		<header class="header">
-			<div class="header__container">
+			<div class="section">
 				<div class="header__contacts">
 					<div class="header__col">
 						<a href="mailto:begemotik.corporate@gmail.com" class="header__mail">begemotik@corporate.ru</a>
@@ -21,7 +21,7 @@
 							<ul class="header__list">
 								<a href="https://yandex.ru/" target="_blank" class="header__link header__link_type_social">
 									<li class="header__list-el">
-										<img src="<%=require('./images/vkontakte-icon.svg')%>" alt="Ссылка Вконтакте"
+										<img src="<%=require('./images/vk-icon.svg')%>" alt="Ссылка Вконтакте"
 											class="social-icon">
 									</li>
 								</a>
@@ -33,7 +33,7 @@
 								</a>
 								<a href="https://yandex.ru/" target="_blank" class="header__link header__link_type_social">
 									<li class="header__list-el">
-										<img src="<%=require('./images/facebook-icon.svg')%>" alt="Ссылка Телеграм"
+										<img src="<%=require('./images/telegram-icon.svg')%>" alt="Ссылка Телеграм"
 											class="social-icon">
 									</li>
 								</a>
@@ -68,6 +68,7 @@
 						</a>
 					</ul>
 				</nav>
+			</div>
 		</header>
 
 		<main class="main">
@@ -309,6 +310,7 @@
 			<section class="partners">
 				<div class="section">
 					<h2 class="section__title">Наши партнеры</h2>
+					<img src="<%=require('./images/baby-girl.svg')%>" class="partners__pic"></img>
 				</div>
 			</section>
 
@@ -316,16 +318,14 @@
 				<div class="section">
 					<h2 class="section__title">О нас</h2>
 					<p class="about__text">
-						С другой стороны укрепление и развитие структуры позволяет оценить значение новых предложений.
-						Задача
-						организации, в особенности же укрепление и развитие структуры способствует подготовки и реализации
-						соответствующий условий активизации. Товарищи! реализация намеченных плановых заданий требуют
-						определения и уточнения новых предложений. Идейные соображения высшего порядка, а также дальнейшее
-						развитие различных форм деятельности играет важную роль в формировании позиций, занимаемых
-						участниками
-						в отношении поставленных задач. С другой стороны реализация намеченных плановых заданий в
-						значительной
-						степени обуславливает создание новых предложений.
+						Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellat eveniet eius deleniti quam aut?
+						Atque mollitia animi incidunt optio, excepturi autem cupiditate, placeat in saepe sint eum consectetur
+						nam, repellat laudantium molestiae eius pariatur assumenda labore repellendus laboriosam. Dicta,
+						laborum beatae? Aperiam dolores ab laudantium. Consectetur, neque libero eaque porro, illo sed
+						distinctio exercitationem illum voluptatem corporis molestias dolor obcaecati voluptas ipsam fuga
+						dolores eum expedita voluptatibus esse nostrum non ab dignissimos. Enim nihil distinctio, iste nobis
+						tenetur culpa consequuntur dolore iusto cum dicta autem accusamus explicabo consectetur odio esse
+						omnis ut, deleniti ducimus laboriosam! Iste ut laboriosam maiores nobis.
 					</p>
 				</div>
 			</section>
@@ -334,26 +334,65 @@
 				<div class="section">
 					<div class="footer__content">
 						<img src="<%=require('./images/logo.svg')%>" alt="Логотип Бегемотик" class="logo logo_place_footer">
-						<div class="footer__copyright">
-							<p class="footer__text">
-								&copy;2021 Бегемотик – Агенство нянь в Санкт-Петербурге и ЛО
-							</p>
-							<p class="footer__text">
-								Прием звонков и заявок с 10:00 до 21:00
-							</p>
-						</div>
-						<div class="footer__social">
-							<a href="#" target="_blank" class="footer__link">
-								<img src="<%=require('./images/vkontakte-icon.svg')%>" alt="ВКонтакте" class="social-icon">
-							</a>
-							<a href="#" target="_blank" class="footer__link">
-								<img src="<%=require('./images/instagram-icon.svg')%>" alt="Инстаграм" class="social-icon">
-							</a>
-							<a href="#" target="_blank" class="footer__link">
-								<img src="<%=require('./images/facebook-icon.svg')%>" alt="Фейсбук" class="social-icon">
-							</a>
-						</div>
+						<nav class="footer__nav">
+							<div class="footer__col">
+								<h4 class="footer__col-title">Навигация</h4>
+								<ul class="footer__list">
+									<li class="footer__list-el">
+										<a href="services.html" class="footer__link">Услуги</a>
+									</li>
+									<li class="footer__list-el">
+										<a href="reviews.html" class="footer__link">Отзывы</a>
+									</li>
+									<li class="footer__list-el">
+										<a href="vacancies.html" class="footer__link">Вакансии</a>
+									</li>
+									<li class="footer__list-el">
+										<a href="contacts.html" class="footer__link">Контакты</a>
+									</li>
+									<li class="footer__list-el">
+										<a href="about.html" class="footer__link">О компании</a>
+									</li>
+								</ul>
+							</div>
+							<div class="footer__col">
+								<div class="footer__social">
+									<h4 class="footer__col-title">Социальные сети</h4>
+									<ul class="footer__list">
+										<li class="footer__list-el">
+											<a href="https://yandex.ru/" target="_blank" class="footer__link footer__link_type_vk">
+												ВКонтакте
+											</a>
+										</li>
+										<li class="footer__list-el">
+											<a href="https://yandex.ru/" target="_blank"
+												class="footer__link footer__link_type_instagram">
+												Инстаграм
+											</a>
+										</li>
+										<li class="footer__list-el">
+											<a href="https://yandex.ru/" target="_blank"
+												class="footer__link footer__link_type_telegram">
+												Телеграм
+											</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</nav>
 					</div>
+					<div class="footer__bottom">
+						<p class="footer__paragraph">
+							2021 &copy; Бегемотик – агенство нянь в Санкт-Петербурге и ЛО
+						</p>
+						<p class="footer__paragraph">
+							Прием звонков и заявок с 10:00 до 21:00
+						</p>
+						<p class="footer__paragraph">
+							&copy; Developed by Dobrie Zemlyane
+						</p>
+					</div>
+				</div>
 			</footer>
 		</main>
 	</div>

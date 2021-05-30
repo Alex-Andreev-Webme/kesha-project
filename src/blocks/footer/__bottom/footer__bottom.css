@@ -1,0 +1,8 @@
+.footer__bottom {
+	box-sizing: border-box;
+	margin-top: 30px;
+	padding-top: 15px;
+	border-top: 1px solid rgba(255, 255, 255, .5);
+	display: flex;
+	justify-content: space-between;
+}

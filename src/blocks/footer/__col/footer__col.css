@@ -1,0 +1,7 @@
+.footer__col {
+	margin-right: 50px;
+}
+
+.footer__col:last-child {
+	margin-right: 0;
+}

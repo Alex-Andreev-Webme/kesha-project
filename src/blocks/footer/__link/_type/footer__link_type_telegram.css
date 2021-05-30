@@ -1,0 +1,14 @@
+.footer__link_type_telegram {
+	display: flex;
+	align-items: center;
+}
+
+.footer__link_type_telegram::before {
+	content: "";
+	margin-right: 2px;
+	width: 20px;
+	height: 20px;
+	background-image: url("../../../../images/telegram-icon.svg");
+	background-repeat: no-repeat;
+	background-size: cover;
+}

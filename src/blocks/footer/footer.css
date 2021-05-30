@@ -1,3 +1,4 @@
 .footer {
-	/* background-color: var(--greyColor); */
+	padding: 30px 0 15px 0;
+	background-color: var(--greyColor);
 }
