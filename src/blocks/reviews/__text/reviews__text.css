@@ -1,2 +1,7 @@
 .reviews__text {
+   margin: 30px 0 0 0;
+   font-size: 20px;
+   /* color: var(--whiteColor); */
+   line-height: 1.5;
+   text-justify: auto;
 }
