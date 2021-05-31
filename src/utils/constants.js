@@ -5,7 +5,7 @@ const reviews = [
     lastName: "Иванова",
     created: "2021-05-30",
     text: " Отзыв 1  Отзыв 1 Отзыв 1 Отзыв 1 Отзыв 1 Отзыв 1 Отзыв 1",
-    answer: "",
+    answer: "Ответ 1",
   },
   {
     rank: 4,
@@ -29,13 +29,9 @@ const reviews = [
     lastName: "Овсянникова",
     created: "2021-05-30",
     text: `
-    На первом этапе собеседования, девочки очень приветливы и положительно настроены, выслушали, помогли в заполнении анкеты, сразу сказали все о сотрудничестве с ними. Поиск семьи начался уже на следующий день!
-Чтоб найти хорошую семью, удобную по графику, по территориальному расположению - потребовалось чуть больше недели.
-Менеджер Виктория очень контактная, открытая и приятная девушка! Она прекрасно справилась, теперь я работаю на постоянной основе в замечательной семье с малышкой 2х лет!
-Хочу сказать - большое спасибо! 
-Я рекомендую агенство «Ваша няня», именно там Вам помогут найти работу по душе!
+         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellat eveniet eius deleniti quam aut? Atque mollitia animi incidunt optio, excepturi autem cupiditate, placeat in saepe sint eum consectetur nam, repellat laudantium molestiae eius pariatur assumenda labore repellendus laboriosam. Dicta, laborum beatae? Aperiam dolores ab laudantium. Consectetur, neque libero eaque porro, illo sed distinctio exercitationem illum voluptatem corporis molestias dolor obcaecati voluptas ipsam fuga dolores eum expedita voluptatibus esse nostrum non ab dignissimos. Enim nihil distinctio, iste nobis tenetur culpa consequuntur dolore iusto cum dicta autem accusamus explicabo consectetur odio esse omnis ut, deleniti ducimus laboriosam! Iste ut laboriosam maiores nobis.
     `,
-    answer: "Рады сотрудничеству",
+    answer: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellat eveniet eius deleniti quam aut? Atque mollitia animi incidunt optio, excepturi autem cupiditate, placeat in saepe sint eum consectetur nam, repellat laudantium molestiae eius pariatur assumenda labore repellendus laboriosam. Dicta, laborum beatae? Aperiam dolores ab laudantium. Consectetur, neque libero eaque porro, illo sed distinctio exercitationem illum voluptatem corporis molestias dolor obcaecati voluptas ipsam fuga dolores eum expedita voluptatibus esse nostrum non ab dignissimos. Enim nihil distinctio, iste nobis tenetur culpa consequuntur dolore iusto cum dicta autem accusamus explicabo consectetur odio esse omnis ut, deleniti ducimus laboriosam! Iste ut laboriosam maiores nobis.",
   },
 ];
 
