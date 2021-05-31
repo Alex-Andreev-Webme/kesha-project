@@ -1,5 +1,7 @@
 .reviews__answer {
    margin-top: 15px;
+   padding: 15px 80px 50px 50px;
    background-color: #f2f2f2;
    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+   border-radius: 0 80px 80px 80px;
 }

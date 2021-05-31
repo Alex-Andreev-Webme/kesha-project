@@ -138,6 +138,7 @@
 @import url("../blocks/reviews/__item/reviews__item.css");
 @import url("../blocks/reviews/__name/reviews__name.css");
 @import url("../blocks/reviews/__rank/reviews__rank.css");
+@import url("../blocks/reviews/__heart-icon/reviews__heart-icon.css");
 @import url("../blocks/reviews/__date/reviews__date.css");
 @import url("../blocks/reviews/__text/reviews__text.css");
 @import url("../blocks/reviews/__top/reviews__top.css");
