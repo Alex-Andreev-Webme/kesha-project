@@ -1,4 +1,7 @@
 .reviews__header {
-  display: flex;
-  justify-content: space-between;
+   font-size: 20px;
+   font-weight: 500;
+   /* color: var(--whiteColor); */
+   display: flex;
+   justify-content: space-between;
 }

@@ -128,12 +128,17 @@
 /*Reviews*/
 
 @import url("../blocks/reviews/reviews.css");
+@import url("../blocks/reviews/__filter/reviews__filter.css");
+@import url("../blocks/reviews/__filter-btn/reviews__filter-btn.css");
+@import url("../blocks/reviews/__filter-btn/_type/reviews__filter-btn_type_good.css");
+@import url("../blocks/reviews/__filter-btn/_type/reviews__filter-btn_type_neutral.css");
+@import url("../blocks/reviews/__filter-btn/_type/reviews__filter-btn_type_negative.css");
 @import url("../blocks/reviews/__list/reviews__list.css");
-@import url("../blocks/reviews/__created/reviews__created.css");
 @import url("../blocks/reviews/__header/reviews__header.css");
 @import url("../blocks/reviews/__item/reviews__item.css");
 @import url("../blocks/reviews/__name/reviews__name.css");
 @import url("../blocks/reviews/__rank/reviews__rank.css");
+@import url("../blocks/reviews/__date/reviews__date.css");
 @import url("../blocks/reviews/__text/reviews__text.css");
 @import url("../blocks/reviews/__top/reviews__top.css");
 @import url("../blocks/reviews/__answer/reviews__answer.css");

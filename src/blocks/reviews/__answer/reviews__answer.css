@@ -1,5 +1,5 @@
 .reviews__answer {
-  background-color: #b7d1da;
-  border-radius: 10px;
-  grid-area: answer;
+   margin-top: 15px;
+   background-color: #f2f2f2;
+   box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
 }

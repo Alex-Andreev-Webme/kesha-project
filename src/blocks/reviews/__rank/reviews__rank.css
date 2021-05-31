@@ -1,2 +1,7 @@
 .reviews__rank {
+   margin: 0;
+   width: 30px;
+   height: 30px;
+   background-color: #fff;
+   background: url("../../../images/like-sweet.svg") no-repeat center / contain;
 }
