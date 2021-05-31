@@ -24,7 +24,7 @@ const reviews = [
     answer: "Вам будет предоставлена скидка",
   },
   {
-    rank: 5,
+    rank: 3,
     firstName: "Любовь",
     lastName: "Овсянникова",
     created: "2021-05-30",

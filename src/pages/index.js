@@ -81,12 +81,39 @@ buttons.forEach((btn) => {
 
 // reviews
 if (window.location.pathname === "/reviews.html") {
+  const filterBtns = document.querySelectorAll(".reviews__filter-btn");
+  const reviewsSection = new Section(getCard, ".reviews__list");
+
   function getCard(data) {
     const card = new Card(data);
     return card.generateCard();
   }
 
-  const reviewsSection = new Section(getCard, ".reviews__list");
+  function filterCards(evt) {
+    const filter = evt.target.dataset.filter;
+    let cards = [];
+
+    switch (filter) {
+      case "good":
+        cards = reviews.filter(review => review.rank > 3);
+        break;
+      case "neutral":
+        cards = reviews.filter(review => review.rank === 3)
+        break;
+      case "negative":
+        cards = reviews.filter(review => review.rank < 3)
+        break;
+      default:
+        cards = reviews
+        break;
+    }
+    reviewsSection.setItems(cards);
+    reviewsSection.renderItems();
+  }
+
+  filterBtns.forEach(btn => {
+    btn.addEventListener("click", filterCards)
+  })
 
   reviewsSection.setItems(reviews);
   reviewsSection.renderItems();
