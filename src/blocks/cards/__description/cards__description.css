@@ -1,9 +1,9 @@
 .cards__description {
-	margin: 0 0 15px 0;
-	font-size: 20px;
-	color: var(--greyColor);
+  margin: 0 0 15px 0;
+  font-size: 20px;
+  color: var(--greyColor);
 }
 
 .cards__description:last-child {
-	margin-bottom: 0;
+  margin-bottom: 0;
 }

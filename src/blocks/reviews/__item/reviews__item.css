@@ -1,12 +1,12 @@
 .reviews__item {
-    margin-bottom: 30px;
-    display: grid;
-    grid-template-columns: 3% 1fr;
-    grid-template-areas:
-      "top top"
-      ". answer";
+  margin-bottom: 30px;
+  display: grid;
+  grid-template-columns: 3% 1fr;
+  grid-template-areas:
+    "top top"
+    ". answer";
 }
 
 .reviews__item:last-of-type {
-    margin-bottom: 0
+  margin-bottom: 0;
 }

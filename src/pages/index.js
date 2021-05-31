@@ -95,25 +95,25 @@ if (window.location.pathname === "/reviews.html") {
 
     switch (filter) {
       case "good":
-        cards = reviews.filter(review => review.rank > 3);
+        cards = reviews.filter((review) => review.rank > 3);
         break;
       case "neutral":
-        cards = reviews.filter(review => review.rank === 3)
+        cards = reviews.filter((review) => review.rank === 3);
         break;
       case "negative":
-        cards = reviews.filter(review => review.rank < 3)
+        cards = reviews.filter((review) => review.rank < 3);
         break;
       default:
-        cards = reviews
+        cards = reviews;
         break;
     }
     reviewsSection.setItems(cards);
     reviewsSection.renderItems();
   }
 
-  filterBtns.forEach(btn => {
-    btn.addEventListener("click", filterCards)
-  })
+  filterBtns.forEach((btn) => {
+    btn.addEventListener("click", filterCards);
+  });
 
   reviewsSection.setItems(reviews);
   reviewsSection.renderItems();
@@ -122,88 +122,88 @@ if (window.location.pathname === "/reviews.html") {
 
 // -- Попап c формой обратной связи -- //
 
-const callBtns = document.querySelectorAll('.call-btn')
-const popups = document.querySelectorAll('.popup')
-const callbackPopup = document.querySelector('.popup_type_callback')
-const popupCloseBtns = document.querySelectorAll('.popup__close-btn')
-const body = document.querySelector('.page')
-const ESCAPE_KEY = 'Escape'
-const callbackForm = document.querySelector('.callback__form')
+const callBtns = document.querySelectorAll(".call-btn");
+const popups = document.querySelectorAll(".popup");
+const callbackPopup = document.querySelector(".popup_type_callback");
+const popupCloseBtns = document.querySelectorAll(".popup__close-btn");
+const body = document.querySelector(".page");
+const ESCAPE_KEY = "Escape";
+const callbackForm = document.querySelector(".callback__form");
 
 function openPopup(popupEl) {
-  popupEl.classList.add('popup_visible')
-  document.addEventListener('keydown', handleEscClose)
-  ableScroll()
+  popupEl.classList.add("popup_visible");
+  document.addEventListener("keydown", handleEscClose);
+  ableScroll();
 }
 
 function closePopup(popupEl) {
-  popupEl.classList.remove('popup_visible')
-  document.removeEventListener('keydown', handleEscClose)
-  disableScroll()
-  callbackForm.reset()
+  popupEl.classList.remove("popup_visible");
+  document.removeEventListener("keydown", handleEscClose);
+  disableScroll();
+  callbackForm.reset();
 }
 
 function handleEscClose(event) {
   if (event.key === ESCAPE_KEY) {
-    const popup = document.querySelector('.popup_visible')
-    closePopup(popup)
+    const popup = document.querySelector(".popup_visible");
+    closePopup(popup);
   }
 }
 
 function ableScroll() {
-  body.classList.add('page_noscroll')
+  body.classList.add("page_noscroll");
 }
 
 function disableScroll() {
-  body.classList.remove('page_noscroll')
+  body.classList.remove("page_noscroll");
 }
 
 callBtns.forEach((button) => {
-  button.addEventListener('click', () => {
-    openPopup(callbackPopup)
-  })
-})
+  button.addEventListener("click", () => {
+    openPopup(callbackPopup);
+  });
+});
 
 popupCloseBtns.forEach((button) => {
-  button.addEventListener('click', (event) => {
-    const popup = event.target.closest('.popup')
-    closePopup(popup)
-  })
-})
+  button.addEventListener("click", (event) => {
+    const popup = event.target.closest(".popup");
+    closePopup(popup);
+  });
+});
 
 popups.forEach((popup) => {
-  popup.addEventListener('mousedown', (event) => {
-    if (event.target.classList.contains('popup')) {
-      closePopup(popup)
+  popup.addEventListener("mousedown", (event) => {
+    if (event.target.classList.contains("popup")) {
+      closePopup(popup);
     }
-  })
-})
+  });
+});
 
 // -- Попап c формой обратной связи -- //
 
 // -- Попап с документами/проверкой кандидатов -- //
 
-const docsPopupTrigger = document.querySelector('.span-accent_type_docs')
-const docsPopup = document.querySelector('.popup_type_docs')
+const docsPopupTrigger = document.querySelector(".span-accent_type_docs");
+const docsPopup = document.querySelector(".popup_type_docs");
 
-docsPopupTrigger.addEventListener('click', () => {
-  openPopup(docsPopup)
-})
+docsPopupTrigger.addEventListener("click", () => {
+  openPopup(docsPopup);
+});
 
-const checkPopupTrigger = document.querySelector('.span-accent_type_check')
-const checkPopup = document.querySelector('.popup_type_check')
+const checkPopupTrigger = document.querySelector(".span-accent_type_check");
+const checkPopup = document.querySelector(".popup_type_check");
 
-checkPopupTrigger.addEventListener('click', () => {
-  openPopup(checkPopup)
-})
+checkPopupTrigger.addEventListener("click", () => {
+  openPopup(checkPopup);
+});
 
 // -- Попап с пользовательским соглашением -- //
 
-const privacyPopupTriggers = document.querySelectorAll('.callback__info')
-const privacyPopup = document.querySelector('.popup_type_privacy')
+const privacyPopupTriggers = document.querySelectorAll(".callback__info");
+const privacyPopup = document.querySelector(".popup_type_privacy");
 
 privacyPopupTriggers.forEach((trigger) => {
-  trigger.addEventListener('click', () => {
-    openPopup(privacyPopup)
-  })
-})
+  trigger.addEventListener("click", () => {
+    openPopup(privacyPopup);
+  });
+});

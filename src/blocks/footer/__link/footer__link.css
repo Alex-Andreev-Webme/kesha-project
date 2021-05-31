@@ -1,9 +1,9 @@
 .footer__link {
-	color: var(--whiteColor);
-	text-decoration: none;
-	transition: ease .3s;
+  color: var(--whiteColor);
+  text-decoration: none;
+  transition: ease 0.3s;
 }
 
 .footer__link:hover {
-	opacity: .8;
+  opacity: 0.8;
 }
