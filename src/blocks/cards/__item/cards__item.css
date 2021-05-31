@@ -1,13 +1,13 @@
 .cards__item {
-	padding: 30px;
-	display: flex;
-	align-items: center;
-	background-color: #fff;
-	background-image: url("../../../images/bg-card.png");
-	background-repeat: no-repeat;
-	background-position: center left;
-	background-size: contain;
-	box-shadow: 0 0 5px rgba(0, 0, 0, .2);
-	border-radius: 30px;
-	overflow: hidden;
+  padding: 30px;
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  background-image: url("../../../images/bg-card.png");
+  background-repeat: no-repeat;
+  background-position: center left;
+  background-size: contain;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  border-radius: 30px;
+  overflow: hidden;
 }

@@ -1,7 +1,7 @@
 .cards__description_bordered {
-	padding: 15px;
-	color: var(--whiteColor);
-	text-align: center;
-	background-color: #9980fa;
-	border-radius: 30px;
+  padding: 15px;
+  color: var(--whiteColor);
+  text-align: center;
+  background-color: #9980fa;
+  border-radius: 30px;
 }

@@ -1,16 +1,16 @@
 .call-btn {
-	padding: 20px 40px;
-	font-size: 15px;
-	font-weight: 500;
-	color: var(--whiteColor);
-	background-color: var(--blueColor);
-	border: none;
-	border-radius: 30px;
-	outline: none;
-	cursor: pointer;
-	transition: ease .3s;
+  padding: 20px 40px;
+  font-size: 15px;
+  font-weight: 500;
+  color: var(--whiteColor);
+  background-color: var(--blueColor);
+  border: none;
+  border-radius: 30px;
+  outline: none;
+  cursor: pointer;
+  transition: ease 0.3s;
 }
 
 .call-btn:hover {
-	opacity: .8;
+  opacity: 0.8;
 }

@@ -1,18 +1,19 @@
 .popup__close-btn {
-	padding: 0;
-	position: absolute;
-	top: -40px;
-	right: -40px;
-	width: 40px;
-	height: 40px;
-	background: var(--blueColor) url("../../../images/close-form-icon.svg") no-repeat center / contain;
-	border: none;
-	border-radius: 50%;
-	outline: none;
-	cursor: pointer;
-	transition: ease .3s;
+  padding: 0;
+  position: absolute;
+  top: -40px;
+  right: -40px;
+  width: 40px;
+  height: 40px;
+  background: var(--blueColor) url("../../../images/close-form-icon.svg")
+    no-repeat center / contain;
+  border: none;
+  border-radius: 50%;
+  outline: none;
+  cursor: pointer;
+  transition: ease 0.3s;
 }
 
 .popup__close-btn:hover {
-	opacity: .8;
+  opacity: 0.8;
 }

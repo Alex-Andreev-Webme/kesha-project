@@ -2,6 +2,7 @@
 @import url("../vendor/fonts/fonts.css");
 @import url("../blocks/page/page.css");
 @import url("../blocks/page/_noscroll/page_noscroll.css");
+
 /* Popup */
 
 @import url("../blocks/popup/popup.css");
@@ -16,6 +17,7 @@
 @import url("../blocks/callback/__form-label/callback__form-label.css");
 @import url("../blocks/callback/__info/callback__info.css");
 @import url("../blocks/callback/__submit-btn/callback__submit-btn.css");
+
 /* Header */
 
 @import url("../blocks/header/header.css");
@@ -38,11 +40,13 @@
 @import url("../blocks/header/__menu/header__menu.css");
 @import url("../blocks/header/__list/_type/header__list_type_menu.css");
 @import url("../blocks/header/__link/_type/header__link_type_menu.css");
+
 /* Intro */
 
 @import url("../blocks/intro/intro.css");
 @import url("../blocks/intro/__content/intro__content.css");
 @import url("../blocks/intro/__title/intro__title.css");
+
 /* Services */
 
 @import url("../blocks/services/services.css");
@@ -54,6 +58,7 @@
 @import url("../blocks/cards/__title/cards__title.css");
 @import url("../blocks/cards/__description/cards__description.css");
 @import url("../blocks/cards/__description/_bordered/cards__description_bordered.css");
+
 /* Features */
 
 @import url("../blocks/features/features.css");
@@ -73,11 +78,13 @@
 @import url("../blocks/popup/__list/popup__list.css");
 @import url("../blocks/popup/__list-el/popup__list-el.css");
 @import url("../blocks/features/__description/features__description.css");
+
 /* Nanny */
 
 @import url("../blocks/nanny/nanny.css");
 @import url("../blocks/section/__title/_light/section__title_light.css");
 @import url("../blocks/nanny/__content/nanny__content.css");
+
 /* Process */
 
 @import url("../blocks/process/process.css");
@@ -93,14 +100,17 @@
 @import url("../blocks/section/__title/_align/section__title_align_left.css");
 @import url("../blocks/question/__text/question__text.css");
 @import url("../blocks/question/__paragraph/question__paragraph.css");
+
 /* Partners */
 
 @import url("../blocks/partners/partners.css");
 @import url("../blocks/partners/__pic/partners__pic.css");
+
 /* About */
 
 @import url("../blocks/about/about.css");
 @import url("../blocks/about/__text/about__text.css");
+
 /* Footer */
 
 @import url("../blocks/footer/footer.css");
@@ -114,7 +124,8 @@
 @import url("../blocks/footer/__link/footer__link.css");
 @import url("../blocks/footer/__bottom/footer__bottom.css");
 @import url("../blocks/footer/__paragraph/footer__paragraph.css");
-/*reviews*/
+
+/*Reviews*/
 
 @import url("../blocks/reviews/reviews.css");
 @import url("../blocks/reviews/__list/reviews__list.css");

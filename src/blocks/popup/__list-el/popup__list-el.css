@@ -1,10 +1,10 @@
 .popup__list-el {
-	padding: 15px 0;
-	font-size: 20px;
-	color: var(--whiteColor);
-	border-bottom: 2px solid rgba(255, 255, 255, .2);
+  padding: 15px 0;
+  font-size: 20px;
+  color: var(--whiteColor);
+  border-bottom: 2px solid rgba(255, 255, 255, 0.2);
 }
 
 .popup__list-el:last-child {
-	border-bottom: none;
+  border-bottom: none;
 }
