@@ -97,10 +97,11 @@ if (window.location.pathname === "/reviews.html") {
 
 const callBtns = document.querySelectorAll('.call-btn')
 const popups = document.querySelectorAll('.popup')
-const popupCallback = document.querySelector('.popup_type_callback')
+const callbackPopup = document.querySelector('.popup_type_callback')
 const popupCloseBtns = document.querySelectorAll('.popup__close-btn')
 const body = document.querySelector('.page')
 const ESCAPE_KEY = 'Escape'
+const callbackForm = document.querySelector('.callback__form')
 
 function openPopup(popupEl) {
   popupEl.classList.add('popup_visible')
@@ -112,6 +113,7 @@ function closePopup(popupEl) {
   popupEl.classList.remove('popup_visible')
   document.removeEventListener('keydown', handleEscClose)
   disableScroll()
+  callbackForm.reset()
 }
 
 function handleEscClose(event) {
@@ -131,7 +133,7 @@ function disableScroll() {
 
 callBtns.forEach((button) => {
   button.addEventListener('click', () => {
-    openPopup(popupCallback)
+    openPopup(callbackPopup)
   })
 })
 
@@ -161,4 +163,20 @@ docsPopupTrigger.addEventListener('click', () => {
   openPopup(docsPopup)
 })
 
+const checkPopupTrigger = document.querySelector('.span-accent_type_check')
+const checkPopup = document.querySelector('.popup_type_check')
 
+checkPopupTrigger.addEventListener('click', () => {
+  openPopup(checkPopup)
+})
+
+// -- Попап с пользовательским соглашением -- //
+
+const privacyPopupTriggers = document.querySelectorAll('.callback__info')
+const privacyPopup = document.querySelector('.popup_type_privacy')
+
+privacyPopupTriggers.forEach((trigger) => {
+  trigger.addEventListener('click', () => {
+    openPopup(privacyPopup)
+  })
+})
