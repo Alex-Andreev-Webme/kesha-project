@@ -5,3 +5,7 @@
    margin-right: 5px;
    background: url("../../../images/like-sweet.svg") no-repeat center / contain;
 }
+
+.reviews__heart-icon:last-child {
+   margin-right: 0;
+}
