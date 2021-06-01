@@ -1,0 +1,7 @@
+.about__text-item {
+   margin: 0;
+}
+
+.about__text-item:first-of-type {
+   text-decoration: line-through;
+}
