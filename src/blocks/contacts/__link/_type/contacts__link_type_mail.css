@@ -1,0 +1,7 @@
+.contacts__link_type_mail {
+}
+
+.contacts__link_type_mail::before {
+   content: url("../../../../images/mail-icon.svg");
+   margin-right: 15px;
+}

@@ -1,0 +1,7 @@
+.contacts__link_type_phone {
+}
+
+.contacts__link_type_phone::before {
+   content: url("../../../../images/call-icon.svg");
+   margin-right: 15px;
+}
