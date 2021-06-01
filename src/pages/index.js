@@ -1,6 +1,5 @@
 "use strict";
 
-// import { forEach } from "core-js/core/array";
 import "./index.css";
 import "../utils/constants";
 import Section from "../components/Section";
@@ -205,17 +204,13 @@ if (checkPopupTrigger) {
 
 // Таб на странице «О нас»
 
-const tabButtons = document.querySelectorAll(".about__question");
-const tabAnswer = document.querySelector(".about__answer");
+const tabTitles = document.querySelectorAll(".about__question");
 
-function showAnswer() {
-   tabAnswer.classList.toggle("about__answer_visible");
-}
-
-if (tabButtons) {
-   tabButtons.forEach((triggerEl) => {
-      triggerEl.addEventListener("click", () => {
-         showAnswer();
+if (tabTitles) {
+   tabTitles.forEach((item) => {
+      item.addEventListener("click", () => {
+         item.classList.toggle("about__question_opened");
+         item.nextElementSibling.classList.toggle("about__answer_visible");
       });
    });
 }

@@ -11,4 +11,6 @@
 
 .about__question::after {
    content: url("../../../images/arrow-icon.svg");
+   transform: rotate(-90deg);
+   transition: ease-in-out 0.1s;
 }
