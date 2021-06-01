@@ -2,25 +2,4 @@
    display: block;
    margin-top: 15px;
    overflow: hidden;
-   animation: roll-in ease 2s;
-}
-
-@keyframes roll-in {
-   from {
-      height: 0;
-   }
-
-   to {
-      height: auto;
-   }
-}
-
-@keyframes roll-out {
-   from {
-      height: auto;
-   }
-
-   to {
-      height: 0;
-   }
 }
