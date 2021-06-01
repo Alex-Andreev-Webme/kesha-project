@@ -1,0 +1,11 @@
+.contacts__adress {
+   margin: 15px 0 0 0;
+   line-height: 1;
+   display: flex;
+   align-items: center;
+}
+
+.contacts__adress::before {
+   content: url("../../../images/geo-icon.svg");
+   margin-right: 15px;
+}

@@ -1,0 +1,13 @@
+.contacts__link {
+   margin-top: 15px;
+   color: var(--greyColor);
+   line-height: 1;
+   text-decoration: none;
+   display: flex;
+   align-items: center;
+   transition: ease 0.3s;
+}
+
+.contacts__link:hover {
+   color: var(--blueColor);
+}
