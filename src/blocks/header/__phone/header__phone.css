@@ -9,3 +9,12 @@
 .header__phone:hover {
 	color: var(--blueColor);
 }
+
+@media (max-width: 768px) {
+	.header__phone {
+		display: none;
+		font-size: 20px;
+		margin-top: 10px;
+		margin-left: 5px;
+	}
+}

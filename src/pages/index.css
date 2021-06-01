@@ -41,12 +41,22 @@
 @import url("../blocks/header/__menu/header__menu.css");
 @import url("../blocks/header/__list/_type/header__list_type_menu.css");
 @import url("../blocks/header/__link/_type/header__link_type_menu.css");
+@import url("../blocks/header/__burger/header__burger.css");
+@import url("../blocks/header/__wrap-for-btn-and-burger/header__wrap-for-btn-and-burger.css");
+@import url("../blocks/header/__response-menu/header__response-menu.css");
+@import url("../blocks/header/__response-menu/_opened/header__response-menu_opened.css");
+@import url("../blocks/header/__list-response/header__list-response.css");
+@import url("../blocks/header/__burger/_opened/header__burger_opened.css");
+@import url("../blocks/header/__list-response/_opened/header__list-response_opened.css");
 
 /* Intro */
 
 @import url("../blocks/intro/intro.css");
 @import url("../blocks/intro/__content/intro__content.css");
 @import url("../blocks/intro/__title/intro__title.css");
+
+/* Logo */
+@import url("../blocks/logo/logo.css");
 
 /* Services */
 

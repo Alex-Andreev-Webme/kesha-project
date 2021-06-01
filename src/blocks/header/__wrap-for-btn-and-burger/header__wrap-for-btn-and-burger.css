@@ -1,0 +1,14 @@
+@media (max-width: 768px) {
+    .header__wrap-for-btn-and-burger {
+        position: fixed;
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        background-color: #fff;
+        margin-top: -58px;
+    }
+}

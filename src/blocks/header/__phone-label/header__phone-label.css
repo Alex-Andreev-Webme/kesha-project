@@ -8,3 +8,22 @@
 	margin-right: 5px;
 	vertical-align: middle;
 }
+
+@media (max-width: 768px) {
+	.header__phone-label {
+		display: none;
+		font-size: 12px;
+		margin-top: 0;
+		margin-left: 5px;
+	}
+
+	.header__phone-label::before {
+		content: none;
+	}
+
+	.header__phone-label::after {
+		content: url("../../../images/phone-icon.svg");
+		margin-left: 5px;
+		vertical-align: middle;
+	}
+}
