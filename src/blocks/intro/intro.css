@@ -1,3 +1,21 @@
 .intro {
   padding-top: 100px;
 }
+
+@media (max-width: 1063px) {
+  .intro {
+    padding-top: 60px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .intro {
+    padding-top: 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  .intro {
+    padding-top: 30px;
+  }
+}

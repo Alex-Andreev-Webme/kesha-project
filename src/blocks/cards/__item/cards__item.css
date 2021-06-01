@@ -11,3 +11,30 @@
   border-radius: 30px;
   overflow: hidden;
 }
+
+@media (max-width: 1024px) {
+  .cards__item {
+    padding: 10px 30px;
+    height: 156px;
+  }
+}
+
+@media (max-width: 768px) {
+  .cards__item {
+    padding: 20px 30px;
+  }
+}
+
+@media (max-width: 450px) {
+  .cards__item {
+    flex-direction: column;
+    justify-content: center;
+    height: auto;
+    padding: 20px 5px;
+
+    background-image: url("../../../images/vertical_donut.svg");
+    background-repeat: no-repeat;
+    background-position: center -120px;
+    background-size: 252px;
+  }
+}

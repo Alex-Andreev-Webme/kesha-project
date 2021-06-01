@@ -2,5 +2,21 @@
 	padding-bottom: 30px;
 	display: flex;
 	justify-content: space-between;
-	border-bottom: 1px solid rgba(0, 0, 0, .15)
+	border-bottom: 1px solid rgba(0, 0, 0, .15);
+}
+
+@media (min-width: 769px) and (max-width: 1280px) {
+	.header__contacts {
+		margin-left: 15px;
+		margin-right: 15px;
+	}
+}
+
+@media (max-width: 768px) {
+	.header__contacts {
+		flex-direction: column;
+		padding-bottom: 0;
+		margin: 0;
+		border-bottom: 0;
+	}
 }

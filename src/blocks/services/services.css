@@ -1,3 +1,17 @@
 .services {
   padding-top: 100px;
 }
+
+@media (max-width: 1023px) {
+  .services {
+    padding-top: 50px;
+  }
+}
+
+@media (max-width: 768px) {
+  .services {
+    padding-top: 40px;
+    display: flex;
+  }
+}
+

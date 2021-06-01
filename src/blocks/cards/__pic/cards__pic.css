@@ -2,3 +2,22 @@
   margin: auto;
   width: 100px;
 }
+
+@media (max-width: 1150px) {
+  .cards__pic {
+    width: 75px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .cards__pic {
+    width: 50px;
+  }
+}
+
+@media (max-width: 768px) {
+  .cards__pic {
+    width: 75px;
+  }
+}
+
