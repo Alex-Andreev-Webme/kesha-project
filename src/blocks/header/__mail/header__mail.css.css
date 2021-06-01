@@ -8,3 +8,9 @@
 .header__mail:hover {
 	color: var(--blueColor);
 }
+
+@media (max-width: 768px) {
+	.header__mail {
+		margin-left: 5px;
+	}
+}

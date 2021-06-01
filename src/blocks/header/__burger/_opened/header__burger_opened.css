@@ -1,0 +1,20 @@
+.header__burger_opened {
+    position: absolute;
+    left: 0;
+    z-index: 1;
+}
+
+.header__burger_opened span:nth-of-type(1) {
+    transform: rotate(45deg);
+    top: calc(50% - 2px);
+}
+
+.header__burger_opened span:nth-of-type(2) {
+    opacity: 0;
+    width: 0%;
+}
+
+.header__burger_opened span:nth-of-type(3) {
+    transform: rotate(-45deg);
+    bottom: calc(50% - 2px);
+}

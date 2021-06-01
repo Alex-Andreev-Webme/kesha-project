@@ -1,0 +1,48 @@
+.header__burger {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .header__burger {
+        display: flex;
+        padding: 0;
+        margin: 0;
+        margin-right: auto;
+        margin-left: 5px;
+        width: 35px;
+        height: 28px;
+        background-color: #fff;
+        cursor: pointer;
+        transition: .3s ease;
+        position: relative;
+    }
+
+    .header__burger:hover span{
+        background-color: var(--blueColor);
+    }
+
+    /* черточки бургера */
+    .header__burger span {
+        width: 100%;
+        height: 4px;
+        background-color: var(--greyColor);
+        position: absolute;
+        transition: .3s ease;
+        border-radius: 2px;
+    }
+
+    .header__burger span:nth-of-type(1) {
+        top: 0;
+        transition-delay:.1s;
+    }
+     
+    .header__burger span:nth-of-type(2) {
+        top: calc(50% - 2px);
+        transition-delay:.1s;
+    }
+
+    .header__burger span:nth-of-type(3) {
+        bottom: 0;
+        transition-delay:.1s;
+    }
+}

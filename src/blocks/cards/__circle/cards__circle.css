@@ -8,3 +8,24 @@
   border-radius: 50%;
   overflow: hidden;
 }
+
+@media (max-width: 1150px) {
+  .cards__circle {
+    width: 150px;
+    height: 150px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .cards__circle {
+    width: 100px;
+    height: 100px;
+  }
+}
+
+@media (max-width: 768px) {
+  .cards__circle {
+    width: 150px;
+    height: 150px;
+  }
+}

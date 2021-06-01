@@ -207,3 +207,16 @@ privacyPopupTriggers.forEach((trigger) => {
     openPopup(privacyPopup);
   });
 });
+
+
+// -- Бургер меню -- //
+
+const burgerBtn = document.querySelector(".header__burger");
+const responseMenu = document.querySelector(".header__response-menu");
+
+burgerBtn.addEventListener("click", handleBurgerMenu);
+
+function handleBurgerMenu() {
+  responseMenu.classList.toggle("header__response-menu_opened");
+  burgerBtn.classList.toggle("header__burger_opened");
+}
