@@ -1,0 +1,5 @@
+.about__answer_visible {
+   display: block;
+   margin-top: 15px;
+   overflow: hidden;
+}

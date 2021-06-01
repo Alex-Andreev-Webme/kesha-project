@@ -1,0 +1,21 @@
+.reviews__filter-btn {
+   margin-right: 5px;
+   padding: 10px 15px;
+   font-size: 15px;
+   font-weight: 500;
+   color: var(--whiteColor);
+   border: none;
+   border-radius: 30px;
+   background-color: var(--blueColor);
+   outline: none;
+   cursor: pointer;
+   transition: ease 0.3s;
+}
+
+.reviews__filter-btn:last-child {
+   margin-right: 0;
+}
+
+.reviews__filter-btn:hover {
+   opacity: 0.8;
+}

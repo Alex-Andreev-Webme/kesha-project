@@ -2,6 +2,7 @@
 @import url("../vendor/fonts/fonts.css");
 @import url("../blocks/page/page.css");
 @import url("../blocks/page/_noscroll/page_noscroll.css");
+@import url("../blocks/page/__wrapper/page__wrapper.css");
 
 /* Popup */
 
@@ -138,12 +139,40 @@
 /*Reviews*/
 
 @import url("../blocks/reviews/reviews.css");
+@import url("../blocks/reviews/__filter/reviews__filter.css");
+@import url("../blocks/reviews/__filter-btn/reviews__filter-btn.css");
+@import url("../blocks/reviews/__filter-btn/_type/reviews__filter-btn_type_good.css");
+@import url("../blocks/reviews/__filter-btn/_type/reviews__filter-btn_type_neutral.css");
+@import url("../blocks/reviews/__filter-btn/_type/reviews__filter-btn_type_negative.css");
 @import url("../blocks/reviews/__list/reviews__list.css");
-@import url("../blocks/reviews/__created/reviews__created.css");
 @import url("../blocks/reviews/__header/reviews__header.css");
-@import url("../blocks/reviews/__item/reviews__item.css");
 @import url("../blocks/reviews/__name/reviews__name.css");
 @import url("../blocks/reviews/__rank/reviews__rank.css");
+@import url("../blocks/reviews/__heart-icon/reviews__heart-icon.css");
+@import url("../blocks/reviews/__date/reviews__date.css");
 @import url("../blocks/reviews/__text/reviews__text.css");
 @import url("../blocks/reviews/__top/reviews__top.css");
 @import url("../blocks/reviews/__answer/reviews__answer.css");
+
+/* Contacts */
+
+@import url("../blocks/contacts/contacts.css");
+@import url("../blocks/contacts/__map/contacts__map.css");
+@import url("../blocks/contacts/__info/contacts__info.css");
+@import url("../blocks/contacts/__title/contacts__title.css");
+@import url("../blocks/contacts/__adress/contacts__adress.css");
+@import url("../blocks/contacts/__link/contacts__link.css");
+@import url("../blocks/contacts/__link/_type/contacts__link_type_mail.css");
+@import url("../blocks/contacts/__link/_type/contacts__link_type_phone.css");
+@import url("../blocks/contacts/__form/contacts__form.css");
+@import url("../blocks/contacts/__text/contacts__text.css");
+@import url("../blocks/contacts/__paragraph/contacts__paragraph.css");
+
+/* Внутренняя страница About */
+
+@import url("../blocks/about/__faq/about__faq.css");
+@import url("../blocks/about/__list/about__list.css");
+@import url("../blocks/about//__list-el/about__list-el.css");
+@import url("../blocks/about/__question/about__question.css");
+@import url("../blocks/about/__answer/about__answer.css");
+@import url("../blocks/about/__answer/_visible/about__answer_visible.css");

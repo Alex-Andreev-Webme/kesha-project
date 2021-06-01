@@ -1,0 +1,7 @@
+.about__list-el {
+   padding: 15px 30px;
+   color: var(--whiteColor);
+   background-color: var(--blueColor);
+   border-radius: 30px;
+   user-select: none;
+}

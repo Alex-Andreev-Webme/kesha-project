@@ -1,0 +1,14 @@
+.about__question {
+   margin: 0;
+   font-size: 30px;
+   font-weight: 500;
+   line-height: 1;
+   cursor: pointer;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+
+.about__question::after {
+   content: url("../../../images/arrow-icon.svg");
+}

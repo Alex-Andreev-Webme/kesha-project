@@ -80,7 +80,7 @@ buttons.forEach((btn) => {
 // - Обработка сабмита формы -
 
 // reviews
-if (window.location.pathname === "/reviews.html") {
+if (window.location.pathname.indexOf("reviews.html") != -1) {
   const filterBtns = document.querySelectorAll(".reviews__filter-btn");
   const reviewsSection = new Section(getCard, ".reviews__list");
 
@@ -186,21 +186,26 @@ popups.forEach((popup) => {
 const docsPopupTrigger = document.querySelector(".span-accent_type_docs");
 const docsPopup = document.querySelector(".popup_type_docs");
 
-docsPopupTrigger.addEventListener("click", () => {
-  openPopup(docsPopup);
-});
+if (docsPopupTrigger) {
+  docsPopupTrigger.addEventListener("click", () => {
+    openPopup(docsPopup);
+  });
+}
 
 const checkPopupTrigger = document.querySelector(".span-accent_type_check");
 const checkPopup = document.querySelector(".popup_type_check");
 
-checkPopupTrigger.addEventListener("click", () => {
-  openPopup(checkPopup);
-});
+if (checkPopupTrigger) {
+  checkPopupTrigger.addEventListener("click", () => {
+    openPopup(checkPopup);
+  });
+}
 
-// -- Попап с пользовательским соглашением -- //
+// Таб на странице «О нас»
 
-const privacyPopupTriggers = document.querySelectorAll(".callback__info");
-const privacyPopup = document.querySelector(".popup_type_privacy");
+const tabButtons = document.querySelectorAll(".about__question");
+const tabAnswer = document.querySelector(".about__answer");
+
 
 privacyPopupTriggers.forEach((trigger) => {
   trigger.addEventListener("click", () => {
@@ -222,3 +227,16 @@ function handleBurgerMenu() {
   burgerBtn.classList.toggle("header__burger_opened");
   responseList.classList.toggle("header__list-response_opened");
 }
+
+function showAnswer() {
+   tabAnswer.classList.toggle("about__answer_visible");
+}
+
+if (tabButtons) {
+   tabButtons.forEach((triggerEl) => {
+      triggerEl.addEventListener("click", () => {
+         showAnswer();
+      });
+   });
+}
+

@@ -1,6 +1,7 @@
 .reviews__top {
-  background-color: #e2e8dd;
-  margin-bottom: 10px;
-  border-radius: 10px;
-  grid-area: top;
+   max-width: 80%;
+   padding: 15px 80px 50px 50px;
+   background-color: #f4f4f4;
+   box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+   border-radius: 0 80px 80px 80px;
 }

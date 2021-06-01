@@ -19,9 +19,16 @@ export default class Card {
     this._element = this._getTemplate();
 
     this._element.querySelector(".reviews__name").textContent = this._getFio();
-    this._element.querySelector(".reviews__rank").textContent =
-      "Оценка " + this._card.rank;
-    this._element.querySelector(".reviews__created").textContent =
+
+    const rank = this._element.querySelector(".reviews__rank");
+    for (let i = 0; i < this._card.rank; i++) {
+      rank.insertAdjacentHTML(
+        "beforeend",
+        '<span class="reviews__heart-icon"></span>'
+      );
+    }
+
+    this._element.querySelector(".reviews__date").textContent =
       this._card.created;
 
     this._element.querySelector(".reviews__text").textContent = this._card.text;
