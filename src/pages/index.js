@@ -200,3 +200,20 @@ if (checkPopupTrigger) {
     openPopup(checkPopup);
   });
 }
+
+// Таб на странице «О нас»
+
+const tabButtons = document.querySelectorAll(".about__question");
+const tabAnswer = document.querySelector(".about__answer");
+
+function showAnswer() {
+   tabAnswer.classList.toggle("about__answer_visible");
+}
+
+if (tabButtons) {
+   tabButtons.forEach((triggerEl) => {
+      triggerEl.addEventListener("click", () => {
+         showAnswer();
+      });
+   });
+}
