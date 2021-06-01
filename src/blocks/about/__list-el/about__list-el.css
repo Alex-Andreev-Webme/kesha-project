@@ -1,0 +1,5 @@
+.about__list-el {
+   padding: 15px 30px;
+   background-color: var(--blueColor);
+   border-radius: 30px;
+}

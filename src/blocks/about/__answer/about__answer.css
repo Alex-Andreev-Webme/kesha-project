@@ -1,0 +1,6 @@
+.about__answer {
+   display: none;
+   margin: 0;
+   font-size: 24px;
+   color: var(--whiteColor);
+}

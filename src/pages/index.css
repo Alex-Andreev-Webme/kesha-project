@@ -157,3 +157,13 @@
 @import url("../blocks/contacts/__form/contacts__form.css");
 @import url("../blocks/contacts/__text/contacts__text.css");
 @import url("../blocks/contacts/__paragraph/contacts__paragraph.css");
+
+/* Внутренняя страница About */
+
+@import url("../blocks/about/__faq/about__faq.css");
+@import url("../blocks/about/__list/about__list.css");
+@import url("../blocks/about//__list-el/about__list-el.css");
+@import url("../blocks/about/__question/about__question.css");
+@import url("../blocks/about/__answer/about__answer.css");
+@import url("../blocks/about/__answer/_visible/about__answer_visible.css");
+@import url("../blocks/roll-in/roll-in.css");
