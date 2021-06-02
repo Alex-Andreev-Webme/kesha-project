@@ -312,9 +312,11 @@
 				<div class="nanny__content">
 					<div class="callback">
 						<p class="callback__form-heading">Заполните форму ниже</p>
-						<form action="#" name="callback-form" class="callback__form">
-							<input type="text" name="userName" class="callback__form-field" placeholder="Ваше имя*" required>
-							<input type="text" name="userPhone" class="callback__form-field" placeholder="Телефон*" required>
+						<form action="#" name="callbackForm" class="callback__form" novalidate>
+							<input type="text" name="userName" class="callback__form-field" placeholder="Ваше имя*" required minlength="3">
+							<span class="callback__form-field-error">userName</span>
+							<input type="text" name="userPhone" class="callback__form-field" placeholder="Телефон*" required minlength="7">
+							<span class="popup__input-error name-profile-error">userPhone</span>
 							<input type="checkbox" name="termsOfUse" id="terms-of-use-2" class="callback__form-checkbox"
 								required>
 							<label for="terms-of-use-2" class="callback__form-label">

@@ -3,8 +3,9 @@
 import "./index.css";
 import "../utils/constants";
 import Section from "../components/Section";
-import { reviews } from "../utils/constants";
+import {reviews, VALIDATION_SETTINGS} from "../utils/constants";
 import Card from "../components/Card";
+import FormValidator from "../components/FormValidator";
 
 // -- Плавная прокрутка до элемента --
 const header = document.querySelector(".header");
@@ -228,3 +229,11 @@ function handleBurgerMenu() {
    burgerBtn.classList.toggle("header__burger_opened");
    responseList.classList.toggle("header__list-response_opened");
 }
+
+// Валидация форм
+
+const cbForm = document.forms.callbackForm;
+const cbFormValidator = new FormValidator(VALIDATION_SETTINGS, cbForm);
+cbFormValidator.enableValidation();
+
+// Валидация форм
