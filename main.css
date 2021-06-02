@@ -15,7 +15,7 @@
 .callback__form-field{background-color:#f5f5f5;border:none;border-radius:4px;box-sizing:border-box;color:var(--blueColor);font-size:20px;margin-bottom:30px;outline:none;padding:10px;transition:.3s ease;width:100%}.callback__form-field:focus{box-shadow:0 0 0 2px rgba(0,0,0,.2)}
 .callback__form-checkbox{opacity:0;position:absolute;z-index:-100}.callback__form-checkbox+label{display:inline-flex;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}.callback__form-checkbox+label:before{background-color:#f5f5f5;background-position:50%;background-repeat:no-repeat;background-size:50% 50%;border-radius:4px;content:"";cursor:pointer;flex-grow:0;flex-shrink:0;height:20px;margin-right:10px;transition:.3s ease;width:20px}.callback__form-checkbox:checked+label:before{background-color:var(--blueColor);background-image:url(ac419f70bf60ab87db4f.svg)}
 .callback__form-label{font-size:15px}
-.callback__info{cursor:pointer;text-decoration:underline;transition:.3s ease}.callback__info:hover{color:var(--blueColor)}
+.callback__info{color:var(--greyColor);transition:.3s ease}.callback__info:hover{color:var(--blueColor)}
 .callback__submit-btn{background-color:var(--blueColor);border:none;border-radius:12px;box-sizing:border-box;color:var(--whiteColor);cursor:pointer;font-size:24px;font-weight:500;margin-top:30px;outline:none;padding:15px 0;transition:.3s ease}.callback__submit-btn:focus,.callback__submit-btn:hover{opacity:.8}
 .header{padding-top:15px}@media (max-width:768px){.header{padding-top:58px}}
 .section{margin:0 auto;max-width:1200px}@media (min-width:768px) and (max-width:1280px){.header__contacts{margin-left:15px;margin-right:15px}}
@@ -137,4 +137,13 @@
 .about__question_opened:after{transform:rotate(0)}
 .about__answer{display:none;font-size:24px;margin:15px 0 0}
 .about__answer_visible{display:block}
+.services__text{margin-top:100px}
+.services__paragraph{font-size:24px;margin:0 0 30px}.services__paragraph:last-of-type{margin-bottom:0}
+.services__cards{margin:100px 0}
+.partners_page_services{padding-bottom:100px}
+.vacancies{padding:100px 0}
+.vacancies__text{margin-top:100px}
+.vacancies__paragraph{font-size:24px;margin:0 0 30px}.vacancies__paragraph:last-of-type{border-bottom:1px solid rgba(0,0,0,.2);padding-bottom:50px}
+.vacancies__action{align-items:flex-start;display:flex;flex-direction:column;margin-top:50px}
+.vacancies__link{background-color:#1dd1a1;border-radius:30px;color:var(--whiteColor);font-size:15px;font-weight:500;margin-top:15px;padding:20px 40px;text-decoration:none;transition:.3s ease}.vacancies__link:hover{opacity:.8}@media (max-width:768px){.vacancies__link{margin-right:5px;padding:15px 25px}}
 
