@@ -15,3 +15,22 @@
   right: 0;
   transform: translateX(20px);
 }
+
+@media (max-width: 768px) {
+  .process__number {
+    width: 40px;
+    height: 40px;
+    right: 15px;
+  }
+}
+
+@media (max-width: 420px) {
+  .process__number {
+    width: 35px;
+    height: 35px;
+    right: 20px;
+    color: var(--blueColor);
+    background-color: #fff;
+    font-size: 20px;
+  }
+}

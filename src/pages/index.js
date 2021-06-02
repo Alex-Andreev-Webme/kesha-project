@@ -206,24 +206,14 @@ if (checkPopupTrigger) {
 const tabButtons = document.querySelectorAll(".about__question");
 const tabAnswer = document.querySelector(".about__answer");
 
-
-privacyPopupTriggers.forEach((trigger) => {
-  trigger.addEventListener("click", () => {
-    openPopup(privacyPopup);
-  });
-});
-
-
 // -- Бургер меню -- //
 
 const burgerBtn = document.querySelector(".header__burger");
-// const responseMenu = document.querySelector(".header__response-menu");
 const responseList = document.querySelector(".header__list-response");
 
 burgerBtn.addEventListener("click", handleBurgerMenu);
 
 function handleBurgerMenu() {
-  // responseMenu.classList.toggle("header__response-menu_opened");
   burgerBtn.classList.toggle("header__burger_opened");
   responseList.classList.toggle("header__list-response_opened");
 }

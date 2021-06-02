@@ -20,3 +20,9 @@
 .callback__submit-btn:focus {
   opacity: 0.8;
 }
+
+@media (max-width: 480px) {
+  .callback__submit-btn {
+    font-size: 15px;
+  }
+}

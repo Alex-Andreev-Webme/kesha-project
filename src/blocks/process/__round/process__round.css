@@ -18,3 +18,30 @@
 .process__grid-item:last-of-type .process__round::after {
    content: "";
 }
+
+@media (max-width: 768px) {
+   .process__round {
+      min-width: 100px;
+      min-height: 100px;
+   }
+
+   .process__round::after {
+      transform: translate(-50%, 90%) scale(0.7);
+   }
+}
+
+@media (max-width: 420px) {
+   .process__round {
+      position: absolute;
+      min-width:0 ;
+      min-height: 0;
+      width: 35px;
+      height: 35px;
+      top: -16px;
+      left: -8px;
+   }
+
+   .process__round::after {
+      display: none;
+   }
+}

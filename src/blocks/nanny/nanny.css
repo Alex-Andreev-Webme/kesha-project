@@ -2,3 +2,13 @@
   padding: 50px 0 100px 0;
   background-image: var(--gradientDefault);
 }
+
+@media (max-width: 768px) {
+  .nanny {
+    background-image: none;
+    background: linear-gradient(rgb( 81, 161, 255, .6), #fff);
+    padding-bottom: 50px;
+  }
+}
+
+

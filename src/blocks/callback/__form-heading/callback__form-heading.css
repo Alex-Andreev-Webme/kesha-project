@@ -21,3 +21,15 @@
   border-radius: 50%;
   background-color: #fff;
 }
+
+@media (max-width: 480px) {
+  .callback__form-heading {
+    font-size: 20px;
+    padding: 35px 0;
+  }
+
+  .callback__form-heading::before {
+    width: 15px;
+    height: 15px;
+  }
+}

@@ -1,3 +1,9 @@
 .callback__form-label {
   font-size: 15px;
 }
+
+@media (max-width: 480px) {
+  .callback__form-label {
+    font-size: 12px;
+  }
+}
