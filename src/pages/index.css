@@ -185,3 +185,10 @@
 @import url("../blocks/services/__paragraph/services__paragraph.css");
 @import url("../blocks/services/__cards/services__cards.css");
 @import url("../blocks/partners/_page/partners_page_services.css");
+
+/* Вакансии */
+@import url("../blocks/vacancies/vacancies.css");
+@import url("../blocks/vacancies/__text/vacancies__text.css");
+@import url("../blocks/vacancies/__paragraph/vacancies__paragraph.css");
+@import url("../blocks/vacancies/__action/vacancies__action.css");
+@import url("../blocks/vacancies/__link/vacancies__link.css");

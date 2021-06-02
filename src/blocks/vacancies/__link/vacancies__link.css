@@ -1,0 +1,22 @@
+.vacancies__link {
+   margin-top: 15px;
+   padding: 20px 40px;
+   font-size: 15px;
+   font-weight: 500;
+   color: var(--whiteColor);
+   background-color: #1dd1a1;
+   border-radius: 30px;
+   text-decoration: none;
+   transition: ease 0.3s;
+}
+
+.vacancies__link:hover {
+   opacity: 0.8;
+}
+
+@media (max-width: 768px) {
+   .vacancies__link {
+      padding: 15px 25px;
+      margin-right: 5px;
+   }
+}
