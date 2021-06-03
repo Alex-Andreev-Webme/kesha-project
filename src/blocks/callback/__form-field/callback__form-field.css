@@ -1,6 +1,5 @@
 .callback__form-field {
    box-sizing: border-box;
-   margin-bottom: 30px;
    padding: 10px;
    width: 100%;
    font-size: 20px;
@@ -10,6 +9,7 @@
    outline: none;
    border-radius: 4px;
    transition: ease 0.3s;
+   position: relative;
 }
 
 .callback__form-field:focus {
@@ -17,7 +17,7 @@
 }
 
 @media (max-width: 480px) {
-  .callback__form-field {
-    font-size: 16px;
-  }
+   .callback__form-field {
+      font-size: 16px;
+   }
 }

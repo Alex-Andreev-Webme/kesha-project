@@ -11,99 +11,116 @@
 <body class="page">
 	<div class="page__wrapper">
 
-	<div class="popup popup_type_callback">
-		<div class="popup__container">
-			<button type="button" class="popup__close-btn"></button>
-			<div class="callback">
-				<p class="callback__form-heading">Заполните форму ниже</p>
-				<form action="#" name="callback-form" class="callback__form">
-					<input type="text" name="userName" class="callback__form-field" placeholder="Ваше имя*" required>
-					<input type="text" name="userPhone" class="callback__form-field" placeholder="Телефон*" required>
-					<input type="checkbox" name="termsOfUse" id="terms-of-use-1" class="callback__form-checkbox" required>
-					<label for="terms-of-use-1" class="callback__form-label">
-						<div class="callback__label-wrap">
-							согласен на обработку персональных данных в соответствии c
-							<a href="policy-info.html" target="_blank" class="callback__info">политикой конфиденциальности</a>
+		<div class="popup popup_type_callback">
+			<div class="popup__container">
+				<button type="button" class="popup__close-btn"></button>
+				<div class="callback">
+					<p class="callback__form-heading">Заполните форму ниже</p>
+					<form action="#" name="callback-form" class="callback__form">
+
+						<div class="callback__input-section">
+							<input id="userName" type="text" name="userName" class="callback__form-field"
+								placeholder="Ваше имя*" minlength="3" required>
+							<span class="callback__form-field-error userName-error"></span>
 						</div>
-					</label>
-					<button type="submit" class="callback__submit-btn">Отправить</button>
-				</form>
+
+						<div class="callback__input-section">
+							<input id="userPhone" type="text" name="userPhone" class="callback__form-field"
+								placeholder="Телефон*" minlength="7" required>
+							<span class="callback__form-field-error userPhone-error"></span>
+						</div>
+
+						<div class="callback__input-section">
+							<input id="termsOfUse-1" type="checkbox" name="termsOfUse"
+								class="callback__form-checkbox callback__form-field" required>
+							<label for="termsOfUse-1" class="callback__form-label">
+								<div class="callback__label-wrap">
+									согласен на обработку персональных данных в соответствии c
+									<a href="policy-info.html" target="_blank" class="callback__info">политикой
+										конфиденциальности</a>
+								</div>
+							</label>
+							<span class="callback__form-field-error termsOfUse-error"></span>
+						</div>
+
+						<button type="submit" class="callback__submit-btn">Отправить</button>
+					</form>
+				</div>
 			</div>
 		</div>
-	</div>
 
-	<div class="popup popup_type_docs">
-		<div class="popup__container">
-			<button type="button" class="popup__close-btn"></button>
-			<ul class="popup__list">
-				<li class="popup__list-el">
-					Паспорт
-				</li>
-				<li class="popup__list-el">
-					Диплом об образовании
-				</li>
-				<li class="popup__list-el">
-					Сертификаты о пройденных курсах
-				</li>
-				<li class="popup__list-el">
-					Рекомендации с предыдущего места работы
-				</li>
-				<li class="popup__list-el">
-					Медицинские справки (при наличии)
-				</li>
-				<li class="popup__list-el">
-					Справка об отсутствии судимости
-				</li>
-				<li class="popup__list-el">
-					Справка об отсутствии судимости
-				</li>
-				<li class="popup__list-el">
-					Справка об отсутствии судимости
-				</li>
-			</ul>
+		<div class="popup popup_type_docs">
+			<div class="popup__container">
+				<button type="button" class="popup__close-btn"></button>
+				<ul class="popup__list">
+					<li class="popup__list-el">
+						Паспорт
+					</li>
+					<li class="popup__list-el">
+						Диплом об образовании
+					</li>
+					<li class="popup__list-el">
+						Сертификаты о пройденных курсах
+					</li>
+					<li class="popup__list-el">
+						Рекомендации с предыдущего места работы
+					</li>
+					<li class="popup__list-el">
+						Медицинские справки (при наличии)
+					</li>
+					<li class="popup__list-el">
+						Справка об отсутствии судимости
+					</li>
+					<li class="popup__list-el">
+						Справка об отсутствии судимости
+					</li>
+					<li class="popup__list-el">
+						Справка об отсутствии судимости
+					</li>
+				</ul>
+			</div>
 		</div>
-	</div>
 
-	<div class="popup popup_type_check">
-		<div class="popup__container">
-			<button type="button" class="popup__close-btn"></button>
-			<ul class="popup__list">
-				<li class="popup__list-el">
-					Уголовные, гражданские, административные дела
-				</li>
-				<li class="popup__list-el">
-					Архив судов общей юриспруденции
-				</li>
-				<li class="popup__list-el">
-					ФССП
-				</li>
-				<li class="popup__list-el">
-					Арбитражные суды
-				</li>
-				<li class="popup__list-el">
-					Банкротство
-				</li>
-				<li class="popup__list-el">
-					Налоговые задолженности
-				</li>
-				<li class="popup__list-el">
-					Налоговые задолженности
-				</li>
-				<li class="popup__list-el">
-					Налоговые задолженности
-				</li>
-			</ul>
+		<div class="popup popup_type_check">
+			<div class="popup__container">
+				<button type="button" class="popup__close-btn"></button>
+				<ul class="popup__list">
+					<li class="popup__list-el">
+						Уголовные, гражданские, административные дела
+					</li>
+					<li class="popup__list-el">
+						Архив судов общей юриспруденции
+					</li>
+					<li class="popup__list-el">
+						ФССП
+					</li>
+					<li class="popup__list-el">
+						Арбитражные суды
+					</li>
+					<li class="popup__list-el">
+						Банкротство
+					</li>
+					<li class="popup__list-el">
+						Налоговые задолженности
+					</li>
+					<li class="popup__list-el">
+						Налоговые задолженности
+					</li>
+					<li class="popup__list-el">
+						Налоговые задолженности
+					</li>
+				</ul>
+			</div>
 		</div>
-	</div>
 
 
-	<header class="header">
-		<div class="section">
-			<div class="header__contacts">
-				<div class="header__col">
-					<a href="mailto:begemotik.corporate@gmail.com" class="header__mail">begemotik@corporate.ru</a>
-					<p class="header__adress">г.&nbsp;Санкт-Петербург, ул.&nbsp;Пушкинская, д.&nbsp;15</p>
-					<!-- <div class="header__social">
+		<header class="header">
+			<div class="section">
+				<div class="header__contacts">
+					<div class="header__col">
+						<a href="mailto:begemotik.corporate@gmail.com" class="header__mail">begemotik@corporate.ru</a>
+						<p class="header__adress">г.&nbsp;Санкт-Петербург, ул.&nbsp;Пушкинская, д.&nbsp;15</p>
+						<!-- <div class="header__social">
 						<ul class="header__list">
 							<a href="https://yandex.ru/" target="_blank" class="header__link header__link_type_social">
 								<li class="header__list-el">
@@ -124,325 +141,354 @@
 							</a>
 						</ul>
 					</div> -->
-				</div>
-				<div class="header__col header__col_aligned">
-					<a href="tel:+78120000000" class="header__phone">+7 (812) 000-00-00</a>
-					<p class="header__phone-label">Приём звонков и заявок с&nbsp;10:00 до&nbsp;21:00</p>
-					<div class="header__wrap-for-btn-and-burger">
-						<button type="button" class="call-btn call-btn_place_header shake">Заказать звонок</button>
-						<div class="header__burger">
-							<span></span>
-					  		<span></span>
-							<span></span>
+					</div>
+					<div class="header__col header__col_aligned">
+						<a href="tel:+78120000000" class="header__phone">+7 (812) 000-00-00</a>
+						<p class="header__phone-label">Приём звонков и заявок с&nbsp;10:00 до&nbsp;21:00</p>
+						<div class="header__wrap-for-btn-and-burger">
+							<button type="button" class="call-btn call-btn_place_header shake">Заказать звонок</button>
+							<div class="header__burger">
+								<span></span>
+								<span></span>
+								<span></span>
+							</div>
 						</div>
 					</div>
+					<ul class="header__list-response">
+						<li>Главная</li>
+						<li>Услуги</li>
+						<li>Отзывы</li>
+						<li>Вакансии</li>
+						<li>Контакты</li>
+						<li>О нас</li>
+					</ul>
 				</div>
-				<ul class="header__list-response">
-					<li>Главная</li>
-					<li>Услуги</li>
-					<li>Отзывы</li>
-					<li>Вакансии</li>
-					<li>Контакты</li>
-					<li>О нас</li>
-				</ul>
+				<nav class="header__menu">
+					<ul class="header__list header__list_type_menu">
+						<a href="index.html" class="header__link header__link_type_menu">
+							<li class="header__list-el">Главная</li>
+						</a>
+						<a href="services.html" class="header__link header__link_type_menu">
+							<li class="header__list-el">Услуги</li>
+						</a>
+						<a href="reviews.html" class="header__link header__link_type_menu">
+							<li class="header__list-el">Отзывы</li>
+						</a>
+						<a href="vacancies.html" class="header__link header__link_type_menu">
+							<li class="header__list-el">Вакансии</li>
+						</a>
+						<a href="contacts.html" class="header__link header__link_type_menu">
+							<li class="header__list-el">Контакты</li>
+						</a>
+						<a href="about.html" class="header__link header__link_type_menu">
+							<li class="header__list-el">О нас</li>
+						</a>
+					</ul>
+				</nav>
 			</div>
-			<nav class="header__menu">
-				<ul class="header__list header__list_type_menu">
-					<a href="index.html" class="header__link header__link_type_menu">
-						<li class="header__list-el">Главная</li>
-					</a>
-					<a href="services.html" class="header__link header__link_type_menu">
-						<li class="header__list-el">Услуги</li>
-					</a>
-					<a href="reviews.html" class="header__link header__link_type_menu">
-						<li class="header__list-el">Отзывы</li>
-					</a>
-					<a href="vacancies.html" class="header__link header__link_type_menu">
-						<li class="header__list-el">Вакансии</li>
-					</a>
-					<a href="contacts.html" class="header__link header__link_type_menu">
-						<li class="header__list-el">Контакты</li>
-					</a>
-					<a href="about.html" class="header__link header__link_type_menu">
-						<li class="header__list-el">О нас</li>
-					</a>
-				</ul>
-			</nav>
-		</div>
-	</header>
+		</header>
 
-	<main class="main">
+		<main class="main">
 
-		<section class="intro">
-			<div class="section">
-				<div class="intro__content">
-					<h1 class="intro__title">Агенство нянь в&nbsp;<span>Санкт-Петербурге</span> и&nbsp;Ленинградской области</h1>
-					<img src="<%=require('./images/logo.svg')%>" alt="Логотип Бегемотик" class="logo">
+			<section class="intro">
+				<div class="section">
+					<div class="intro__content">
+						<h1 class="intro__title">Агенство нянь в&nbsp;<span>Санкт-Петербурге</span> и&nbsp;Ленинградской
+							области</h1>
+						<img src="<%=require('./images/logo.svg')%>" alt="Логотип Бегемотик" class="logo">
+					</div>
 				</div>
-			</div>
-		</section>
+			</section>
 
-		<section class="services">
-			<div class="section">
-				<ul class="cards">
-					<li class="cards__item">
-						<div class="cards__circle">
-							<img src="<%=require('./images/baby.svg')%>" class="cards__pic">
-						</div>
-						<div class="cards__text">
-							<h2 class="cards__title">Няня для младенца</h2>
-							<p class="cards__description">от 4 недель до 1 года</p>
-							<p class="cards__description cards__description_bordered">от 350 до 450 &#8381;/час</p>
-						</div>
-					</li>
-					<li class="cards__item">
-						<div class="cards__circle">
-							<img src="<%=require('./images/baby.svg')%>" class="cards__pic">
-						</div>
-						<div class="cards__text">
-							<h2 class="cards__title">Няня-воспитатель</h2>
-							<p class="cards__description">от 1 года до 7 лет</p>
-							<p class="cards__description cards__description_bordered">от 300 до 350 &#8381;/час</p>
-						</div>
-					</li>
-					<li class="cards__item">
-						<div class="cards__circle">
-							<img src="<%=require('./images/baby.svg')%>" class="cards__pic">
-						</div>
-						<div class="cards__text">
-							<h2 class="cards__title">Няня-воспитатель</h2>
-							<p class="cards__description">со знанием иностранного языка</p>
-							<p class="cards__description cards__description_bordered">от 500 до 1000 &#8381;/час</p>
-						</div>
-					</li>
-					<li class="cards__item">
-						<div class="cards__circle">
-							<img src="<%=require('./images/baby.svg')%>" class="cards__pic">
-						</div>
-						<div class="cards__text">
-							<h2 class="cards__title">Гувернантка для школьника</h2>
-							<p class="cards__description">ребенку от 7 лет</p>
-							<p class="cards__description cards__description_bordered">от 400 до 500 &#8381;/час</p>
-						</div>
-					</li>
-					<li class="cards__item">
-						<div class="cards__circle">
-							<img src="<%=require('./images/baby.svg')%>" class="cards__pic">
-						</div>
-						<div class="cards__text">
-							<h2 class="cards__title">Няня-логопед</h2>
-							<p class="cards__description">какой-то текст</p>
-							<p class="cards__description cards__description_bordered">от 500 до 1500 &#8381;/час</p>
-						</div>
-					</li>
-					<li class="cards__item">
-						<div class="cards__circle">
-							<img src="<%=require('./images/baby.svg')%>" class="cards__pic">
-						</div>
-						<div class="cards__text">
-							<h2 class="cards__title">Няня особым детям</h2>
-							<p class="cards__description">с медицинским образованием</p>
-							<p class="cards__description cards__description_bordered">от 450 до 650 &#8381;/час</p>
-						</div>
-					</li>
-				</ul>
-			</div>
-		</section>
+			<section class="services">
+				<div class="section">
+					<ul class="cards">
+						<li class="cards__item">
+							<div class="cards__circle">
+								<img src="<%=require('./images/baby.svg')%>" class="cards__pic">
+							</div>
+							<div class="cards__text">
+								<h2 class="cards__title">Няня для младенца</h2>
+								<p class="cards__description">от 4 недель до 1 года</p>
+								<p class="cards__description cards__description_bordered">от 350 до 450 &#8381;/час</p>
+							</div>
+						</li>
+						<li class="cards__item">
+							<div class="cards__circle">
+								<img src="<%=require('./images/baby.svg')%>" class="cards__pic">
+							</div>
+							<div class="cards__text">
+								<h2 class="cards__title">Няня-воспитатель</h2>
+								<p class="cards__description">от 1 года до 7 лет</p>
+								<p class="cards__description cards__description_bordered">от 300 до 350 &#8381;/час</p>
+							</div>
+						</li>
+						<li class="cards__item">
+							<div class="cards__circle">
+								<img src="<%=require('./images/baby.svg')%>" class="cards__pic">
+							</div>
+							<div class="cards__text">
+								<h2 class="cards__title">Няня-воспитатель</h2>
+								<p class="cards__description">со знанием иностранного языка</p>
+								<p class="cards__description cards__description_bordered">от 500 до 1000 &#8381;/час</p>
+							</div>
+						</li>
+						<li class="cards__item">
+							<div class="cards__circle">
+								<img src="<%=require('./images/baby.svg')%>" class="cards__pic">
+							</div>
+							<div class="cards__text">
+								<h2 class="cards__title">Гувернантка для школьника</h2>
+								<p class="cards__description">ребенку от 7 лет</p>
+								<p class="cards__description cards__description_bordered">от 400 до 500 &#8381;/час</p>
+							</div>
+						</li>
+						<li class="cards__item">
+							<div class="cards__circle">
+								<img src="<%=require('./images/baby.svg')%>" class="cards__pic">
+							</div>
+							<div class="cards__text">
+								<h2 class="cards__title">Няня-логопед</h2>
+								<p class="cards__description">какой-то текст</p>
+								<p class="cards__description cards__description_bordered">от 500 до 1500 &#8381;/час</p>
+							</div>
+						</li>
+						<li class="cards__item">
+							<div class="cards__circle">
+								<img src="<%=require('./images/baby.svg')%>" class="cards__pic">
+							</div>
+							<div class="cards__text">
+								<h2 class="cards__title">Няня особым детям</h2>
+								<p class="cards__description">с медицинским образованием</p>
+								<p class="cards__description cards__description_bordered">от 450 до 650 &#8381;/час</p>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</section>
 
-		<section class="features">
-			<div class="section">
-				<h2 class="section__title">Наши преимущества</h2>
-				<ul class="features__grid">
-					<li class="features__list-el">
-						<div class="features__icon features__icon_type_contract"></div>
-						<div class="features__text">
-							<h3 class="features__title">Заключение официального договора</h3>
-							<p class="features__description">Замещающий текст под развернутое описание</p>
-						</div>
-					</li>
-					<li class="features__list-el">
-						<div class="features__icon features__icon_type_freeday"></div>
-						<div class="features__text">
-							<h3 class="features__title">Пробный день бесплатно</h3>
-							<p class="features__description">Замещающий текст под развернутое описание</p>
-						</div>
-					</li>
-					<li class="features__list-el">
-						<div class="features__icon features__icon_type_documents"></div>
-						<div class="features__text">
-							<h3 class="features__title">
-								Предоставление <span class="span-accent span-accent_type_docs">документов</span> кандидата
-							</h3>
-							<p class="features__description">Замещающий текст под развернутое описание</p>
-						</div>
-					</li>
-					<li class="features__list-el">
-						<div class="features__icon features__icon_type_change"></div>
-						<div class="features__text">
-							<h3 class="features__title">Бесплатная замена кандидата</h3>
-							<p class="features__description">Вы можете бесплатно заменить кандидата в любое время</p>
-						</div>
-					</li>
-					<li class="features__list-el">
-						<div class="features__icon features__icon_type_interview"></div>
-						<div class="features__text">
-							<h3 class="features__title">Собеседование с&nbsp;кандидатами у нас в&nbsp;офисе или онлайн
-							</h3>
-							<p class="features__description">Замещающий текст под развернутое описание</p>
-						</div>
-					</li>
-					<li class="features__list-el">
-						<div class="features__icon features__icon_type_check"></div>
-						<div class="features__text">
-							<h3 class="features__title">
-								<span class="span-accent span-accent_type_check">Проверка</span> кандидатов
-							</h3>
-							<p class="features__description">Поправить вёрстку позже</p>
-						</div>
-					</li>
-				</ul>
-			</div>
-		</section>
+			<section class="features">
+				<div class="section">
+					<h2 class="section__title">Наши преимущества</h2>
+					<ul class="features__grid">
+						<li class="features__list-el">
+							<div class="features__icon features__icon_type_contract"></div>
+							<div class="features__text">
+								<h3 class="features__title">Заключение официального договора</h3>
+								<p class="features__description">Замещающий текст под развернутое описание</p>
+							</div>
+						</li>
+						<li class="features__list-el">
+							<div class="features__icon features__icon_type_freeday"></div>
+							<div class="features__text">
+								<h3 class="features__title">Пробный день бесплатно</h3>
+								<p class="features__description">Замещающий текст под развернутое описание</p>
+							</div>
+						</li>
+						<li class="features__list-el">
+							<div class="features__icon features__icon_type_documents"></div>
+							<div class="features__text">
+								<h3 class="features__title">
+									Предоставление <span class="span-accent span-accent_type_docs">документов</span> кандидата
+								</h3>
+								<p class="features__description">Замещающий текст под развернутое описание</p>
+							</div>
+						</li>
+						<li class="features__list-el">
+							<div class="features__icon features__icon_type_change"></div>
+							<div class="features__text">
+								<h3 class="features__title">Бесплатная замена кандидата</h3>
+								<p class="features__description">Вы можете бесплатно заменить кандидата в любое время</p>
+							</div>
+						</li>
+						<li class="features__list-el">
+							<div class="features__icon features__icon_type_interview"></div>
+							<div class="features__text">
+								<h3 class="features__title">Собеседование с&nbsp;кандидатами у нас в&nbsp;офисе или онлайн
+								</h3>
+								<p class="features__description">Замещающий текст под развернутое описание</p>
+							</div>
+						</li>
+						<li class="features__list-el">
+							<div class="features__icon features__icon_type_check"></div>
+							<div class="features__text">
+								<h3 class="features__title">
+									<span class="span-accent span-accent_type_check">Проверка</span> кандидатов
+								</h3>
+								<p class="features__description">Поправить вёрстку позже</p>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</section>
 
-		<section class="nanny">
-			<div class="section">
-				<h2 class="section__title section__title_light">Порекомендовать няню</h2>
-				<div class="nanny__content">
-					<div class="callback">
-						<p class="callback__form-heading">Заполните форму ниже</p>
-						<form action="#" name="callbackForm" class="callback__form" novalidate autocomplete="off">
-							<input id="userName" type="text" name="userName" class="callback__form-field" placeholder="Ваше имя*" required minlength="3">
-							<span class="callback__form-field-error userName-error"></span>
+			<section class="nanny">
+				<div class="section">
+					<h2 class="section__title section__title_light">Порекомендовать няню</h2>
+					<div class="nanny__content">
+						<div class="callback">
+							<p class="callback__form-heading">Заполните форму ниже</p>
+							<form action="#" name="callbackForm" class="callback__form" novalidate autocomplete="off">
 
-							<input id="userPhone" type="text" name="userPhone" class="callback__form-field" placeholder="Телефон*" required minlength="7">
-							<span class="callback__form-field-error userPhone-error"></span>
-							
-							<input id="termsOfUse" type="checkbox" name="termsOfUse" class="callback__form-checkbox callback__form-field"
-								required>
-							<label for="termsOfUse" class="callback__form-label">
-								<div class="callback__label-wrap">
-									согласен на обработку персональных данных в соответствии c
-									<a href="policy-info.html" target="_blank" class="callback__info">политикой конфиденциальности</a>
+								<div class="callback__input-section">
+									<input id="userName" type="text" name="userName" class="callback__form-field"
+										placeholder="Ваше имя*" minlength="3" required>
+									<span class="callback__form-field-error userName-error"></span>
 								</div>
-							</label>
-							<span class="callback__form-field-error termsOfUse-error"></span>	
 
-							<button type="submit" class="callback__submit-btn">Отправить</button>
-						</form>
-					</div>
-				</div>
-			</div>
-		</section>
-
-		<section class="process">
-			<div class="section">
-				<h2 class="section__title">Как происходит подбор</h2>
-				<ul class="process__grid">
-					<li class="process__grid-item">
-						<div class="process__round">
-							<span class="process__number">1</span>
-						</div>
-						<p class="process__text">
-							Вы звоните по телефону <span>+7 (812) 000-00-00</span> или оставляете заявку на&nbsp;нашем сайте
-						</p>
-					</li>
-					<li class="process__grid-item">
-						<div class="process__round">
-							<span class="process__number">2</span>
-						</div>
-						<p class="process__text">
-							С Вами связывается наш специалист для уточнения графика и&nbsp;задач няни
-						</p>
-					</li>
-					<li class="process__grid-item">
-						<div class="process__round">
-							<span class="process__number">3</span>
-						</div>
-						<p class="process__text">
-							В течение дня мы отправим Вам резюме подходящих кандидатов
-						</p>
-					</li>
-					<li class="process__grid-item">
-						<div class="process__round">
-							<span class="process__number">4</span>
-						</div>
-						<p class="process__text">
-							Проводим собеседование с нянями у нас в офисе, у Вас дома или&nbsp;онлайн
-						</p>
-					</li>
-					<li class="process__grid-item">
-						<div class="process__round">
-							<span class="process__number">5</span>
-						</div>
-						<p class="process__text">
-							Подписываем договор и Вы вносите оплату согласно выбранному тарифу
-						</p>
-					</li>
-					<li class="process__grid-item">
-						<div class="process__round">
-							<span class="process__number">6</span>
-						</div>
-						<p class="process__text">
-							Няня готова приступить к своим обязанностям!
-						</p>
-					</li>
-				</ul>
-			</div>
-		</section>
-
-		<section class="question">
-			<div class="section">
-				<div class="question__content">
-					<div class="callback">
-						<p class="callback__form-heading">Заполните форму ниже</p>
-						<form action="#" name="callback-form" class="callback__form">
-							<input type="text" name="userName" class="callback__form-field" placeholder="Ваше имя*" required>
-							<input type="text" name="userPhone" class="callback__form-field" placeholder="Телефон*" required>
-							<input type="checkbox" name="termsOfUse" id="terms-of-use-3" class="callback__form-checkbox"
-								required>
-							<label for="terms-of-use-3" class="callback__form-label">
-								<div class="callback__label-wrap">
-									согласен на обработку персональных данных в соответствии c
-									<a href="policy-info.html" target="_blank" class="callback__info">политикой конфиденциальности</a>
+								<div class="callback__input-section">
+									<input id="userPhone" type="text" name="userPhone" class="callback__form-field"
+										placeholder="Телефон*" minlength="7" required>
+									<span class="callback__form-field-error userPhone-error"></span>
 								</div>
-							</label>
-							<button type="submit" class="callback__submit-btn">Отправить</button>
-						</form>
-					</div>
-					<div class="question__text">
-						<h2 class="section__title section__title_light section__title_question">Остались вопросы?</h2>
-						<p class="question__paragraph">Оставьте заявку и&nbsp;мы&nbsp;свяжемся с&nbsp;Вами!</p>
+
+								<div class="callback__input-section">
+									<input id="termsOfUse-2" type="checkbox" name="termsOfUse"
+										class="callback__form-checkbox callback__form-field" required>
+									<label for="termsOfUse-2" class="callback__form-label">
+										<div class="callback__label-wrap">
+											согласен на обработку персональных данных в соответствии c
+											<a href="policy-info.html" target="_blank" class="callback__info">политикой
+												конфиденциальности</a>
+										</div>
+									</label>
+									<span class="callback__form-field-error termsOfUse-error"></span>
+								</div>
+
+								<button type="submit" class="callback__submit-btn">Отправить</button>
+							</form>
+						</div>
 					</div>
 				</div>
-			</div>
-		</section>
+			</section>
 
-		<section class="partners">
-			<div class="section">
-				<h2 class="section__title">Наши партнеры</h2>
-				<img src="<%=require('./images/baby-girl.svg')%>" class="partners__pic"></img>
-			</div>
-		</section>
-
-		<section class="about">
-			<div class="section">
-				<h2 class="section__title">О нас</h2>
-				<div class="about__text">
-					<p class="about__text-item">
-						Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellat eveniet eius deleniti quam aut?
-						Atque mollitia animi incidunt optio, excepturi autem cupiditate, placeat in saepe sint eum consectetur
-						nam, repellat laudantium molestiae eius pariatur assumenda labore repellendus laboriosam. Dicta,
-						laborum beatae? Aperiam dolores ab laudantium. Consectetur, neque libero eaque porro, illo sed
-						distinctio exercitationem illum voluptatem corporis molestias dolor obcaecati voluptas ipsam fuga
-						dolores eum expedita voluptatibus esse nostrum non ab dignissimos. Enim nihil distinctio, iste nobis
-						tenetur culpa consequuntur dolore iusto cum dicta autem accusamus explicabo consectetur odio esse
-						omnis ut, deleniti ducimus laboriosam! Iste ut laboriosam maiores nobis.
-					</p>
+			<section class="process">
+				<div class="section">
+					<h2 class="section__title">Как происходит подбор</h2>
+					<ul class="process__grid">
+						<li class="process__grid-item">
+							<div class="process__round">
+								<span class="process__number">1</span>
+							</div>
+							<p class="process__text">
+								Вы звоните по телефону <span>+7 (812) 000-00-00</span> или оставляете заявку на&nbsp;нашем сайте
+							</p>
+						</li>
+						<li class="process__grid-item">
+							<div class="process__round">
+								<span class="process__number">2</span>
+							</div>
+							<p class="process__text">
+								С Вами связывается наш специалист для уточнения графика и&nbsp;задач няни
+							</p>
+						</li>
+						<li class="process__grid-item">
+							<div class="process__round">
+								<span class="process__number">3</span>
+							</div>
+							<p class="process__text">
+								В течение дня мы отправим Вам резюме подходящих кандидатов
+							</p>
+						</li>
+						<li class="process__grid-item">
+							<div class="process__round">
+								<span class="process__number">4</span>
+							</div>
+							<p class="process__text">
+								Проводим собеседование с нянями у нас в офисе, у Вас дома или&nbsp;онлайн
+							</p>
+						</li>
+						<li class="process__grid-item">
+							<div class="process__round">
+								<span class="process__number">5</span>
+							</div>
+							<p class="process__text">
+								Подписываем договор и Вы вносите оплату согласно выбранному тарифу
+							</p>
+						</li>
+						<li class="process__grid-item">
+							<div class="process__round">
+								<span class="process__number">6</span>
+							</div>
+							<p class="process__text">
+								Няня готова приступить к своим обязанностям!
+							</p>
+						</li>
+					</ul>
 				</div>
-			</div>
-		</section>
+			</section>
 
-	</main>
+			<section class="question">
+				<div class="section">
+					<div class="question__content">
+						<div class="callback">
+							<p class="callback__form-heading">Заполните форму ниже</p>
+							<form action="#" name="callback-form" class="callback__form">
+
+								<div class="callback__input-section">
+									<input id="userName" type="text" name="userName" class="callback__form-field"
+										placeholder="Ваше имя*" minlength="3" required>
+									<span class="callback__form-field-error userName-error"></span>
+								</div>
+
+								<div class="callback__input-section">
+									<input id="userPhone" type="text" name="userPhone" class="callback__form-field"
+										placeholder="Телефон*" minlength="7" required>
+									<span class="callback__form-field-error userPhone-error"></span>
+								</div>
+
+								<div class="callback__input-section">
+									<input id="termsOfUse-3" type="checkbox" name="termsOfUse"
+										class="callback__form-checkbox callback__form-field" required>
+									<label for="termsOfUse-3" class="callback__form-label">
+										<div class="callback__label-wrap">
+											согласен на обработку персональных данных в соответствии c
+											<a href="policy-info.html" target="_blank" class="callback__info">политикой
+												конфиденциальности</a>
+										</div>
+									</label>
+									<span class="callback__form-field-error termsOfUse-error"></span>
+								</div>
+
+								<button type="submit" class="callback__submit-btn">Отправить</button>
+							</form>
+						</div>
+						<div class="question__text">
+							<h2 class="section__title section__title_light section__title_question">Остались вопросы?</h2>
+							<p class="question__paragraph">Оставьте заявку и&nbsp;мы&nbsp;свяжемся с&nbsp;Вами!</p>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="partners">
+				<div class="section">
+					<h2 class="section__title">Наши партнеры</h2>
+					<img src="<%=require('./images/baby-girl.svg')%>" class="partners__pic"></img>
+				</div>
+			</section>
+
+			<section class="about">
+				<div class="section">
+					<h2 class="section__title">О нас</h2>
+					<div class="about__text">
+						<p class="about__text-item">
+							Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellat eveniet eius deleniti quam aut?
+							Atque mollitia animi incidunt optio, excepturi autem cupiditate, placeat in saepe sint eum
+							consectetur
+							nam, repellat laudantium molestiae eius pariatur assumenda labore repellendus laboriosam. Dicta,
+							laborum beatae? Aperiam dolores ab laudantium. Consectetur, neque libero eaque porro, illo sed
+							distinctio exercitationem illum voluptatem corporis molestias dolor obcaecati voluptas ipsam fuga
+							dolores eum expedita voluptatibus esse nostrum non ab dignissimos. Enim nihil distinctio, iste
+							nobis
+							tenetur culpa consequuntur dolore iusto cum dicta autem accusamus explicabo consectetur odio esse
+							omnis ut, deleniti ducimus laboriosam! Iste ut laboriosam maiores nobis.
+						</p>
+					</div>
+				</div>
+			</section>
+
+		</main>
 
 		<footer class="footer">
 			<div class="section">
@@ -524,7 +570,7 @@
 			</div>
 		</footer>
 
-</div>
+	</div>
 </body>
 
 </html>
