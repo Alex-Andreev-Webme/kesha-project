@@ -8,3 +8,9 @@
   border-radius: 0 30px 30px 30px;
   overflow: scroll;
 }
+
+@media (max-width: 480px) {
+  .popup__list {
+    width: 290px;
+  }
+}
