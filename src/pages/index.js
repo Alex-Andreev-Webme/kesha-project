@@ -3,7 +3,7 @@
 import "./index.css";
 import "../utils/constants";
 import Section from "../components/Section";
-import {reviews, VALIDATION_SETTINGS} from "../utils/constants";
+import { reviews, VALIDATION_SETTINGS } from "../utils/constants";
 import Card from "../components/Card";
 import FormValidator from "../components/FormValidator";
 
@@ -122,7 +122,7 @@ if (window.location.pathname.indexOf("reviews.html") != -1) {
 }
 // reviews
 
-// -- Попап c формой обратной связи -- //
+// Попап c формой обратной связи
 
 const callBtns = document.querySelectorAll(".call-btn");
 const popups = document.querySelectorAll(".popup");
@@ -182,9 +182,7 @@ popups.forEach((popup) => {
    });
 });
 
-// -- Попап c формой обратной связи -- //
-
-// -- Попап с документами/проверкой кандидатов -- //
+// Попап с документами/проверкой кандидатов
 
 const docsPopupTrigger = document.querySelector(".span-accent_type_docs");
 const docsPopup = document.querySelector(".popup_type_docs");
@@ -206,23 +204,18 @@ if (checkPopupTrigger) {
 
 // Таб на странице «О нас»
 
-// const tabButtons = document.querySelectorAll(".about__question");
-// const tabAnswer = document.querySelector(".about__answer");
+const tabTitles = document.querySelectorAll(".about__question");
 
-// // -- Бургер меню -- //
+if (tabTitles) {
+   tabTitles.forEach((item) => {
+      item.addEventListener("click", () => {
+         item.classList.toggle("about__question_opened");
+         item.nextElementSibling.classList.toggle("about__answer_visible");
+      });
+   });
+}
 
-// const tabTitles = document.querySelectorAll(".about__question");
-
-// if (tabTitles) {
-//    tabTitles.forEach((item) => {
-//       item.addEventListener("click", () => {
-//          item.classList.toggle("about__question_opened");
-//          item.nextElementSibling.classList.toggle("about__answer_visible");
-//       });
-//    });
-// }
-
-// // Мобильное меню
+// Мобильное меню
 
 const burgerBtn = document.querySelector(".header__burger");
 const responseList = document.querySelector(".header__list-response");
@@ -240,28 +233,6 @@ function handleBurgerMenu() {
    } else {
       ableScroll();
    }
-}
-
-// function showAnswer() {
-//    tabAnswer.classList.toggle("about__answer_visible");
-// }
-
-// if (tabButtons) {
-//    tabButtons.forEach((triggerEl) => {
-//       triggerEl.addEventListener("click", () => {
-//          showAnswer();
-//       });
-//    });
-
-
-// Блок кода повторяется
-
-// burgerBtn.classList.toggle("header__burger_opened");
-// responseList.classList.toggle("header__list-response_opened");
-// }
-
-   burgerBtn.classList.toggle("header__burger_opened");
-   responseList.classList.toggle("header__list-response_opened");
 }
 
 // Валидация форм
