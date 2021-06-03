@@ -228,8 +228,31 @@ const formTwoValidator = new FormValidator(VALIDATION_SETTINGS, formTwo);
 const formThree = document.querySelector("#callback-form-3");
 const formThreeValidator = new FormValidator(VALIDATION_SETTINGS, formThree);
 
-formOneValidator.enableValidation();
-formTwoValidator.enableValidation();
-formThreeValidator.enableValidation();
+const currentPage = window.location.pathname;
+
+switch (currentPage) {
+   case "/index.html":
+      formOneValidator.enableValidation();
+      formTwoValidator.enableValidation();
+      formThreeValidator.enableValidation();
+      break;
+   case "/services.html":
+      formOneValidator.enableValidation();
+      formTwoValidator.enableValidation();
+      break;
+   case "reviews.html":
+      formOneValidator.enableValidation();
+      break;
+   case "/vacancies.html":
+      formOneValidator.enableValidation();
+      break;
+   case "/contacts.html":
+      formOneValidator.enableValidation();
+      formTwoValidator.enableValidation();
+      break;
+   case "/about.html":
+      formOneValidator.enableValidation();
+      break;
+}
 
 // Валидация форм
