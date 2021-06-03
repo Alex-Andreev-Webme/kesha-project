@@ -5,3 +5,26 @@
 .footer__list-el:last-child {
   margin-bottom: 0;
 }
+
+@media (max-width: 768px) {
+  .footer__list-el {
+    margin-right: 30px;
+  }
+
+  .footer__list-el:last-of-type {
+    margin-right: 0px;
+  }
+}
+
+@media (max-width: 525px) {
+  .footer__list-el {
+    margin-right: 20px;
+    font-weight: normal;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer__list-el {
+    margin-bottom: 0;
+  }
+}

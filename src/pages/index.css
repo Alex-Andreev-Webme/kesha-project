@@ -111,6 +111,7 @@
 @import url("../blocks/section/__title/_align/section__title_align_left.css");
 @import url("../blocks/question/__text/question__text.css");
 @import url("../blocks/question/__paragraph/question__paragraph.css");
+@import url("../blocks/section/__title/_question/section__title_question.css");
 
 /* Partners */
 

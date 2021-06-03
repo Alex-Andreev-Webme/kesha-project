@@ -1,3 +1,10 @@
 .question__content {
   display: flex;
 }
+
+@media (max-width: 768px) {
+  .question__content {
+    flex-direction: column-reverse;
+    justify-content: center;
+  }
+}

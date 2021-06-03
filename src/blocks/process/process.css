@@ -8,3 +8,9 @@
     padding-bottom: 50px;
   }
 }
+
+@media (max-width: 480px) {
+  .process {
+    padding-top: 35px;
+  }
+}

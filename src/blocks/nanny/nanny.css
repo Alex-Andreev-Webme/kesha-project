@@ -11,4 +11,10 @@
   }
 }
 
+@media (max-width: 480px) {
+  .nanny {
+    padding-top: 35px;
+  }
+}
+
 

@@ -2,3 +2,17 @@
   display: block;
   margin: 100px auto 0 auto;
 }
+
+@media (max-width: 768px) {
+  .partners__pic {
+    height: 250px;
+    margin-top: 40px;
+  }
+}
+
+@media (max-width: 480px) {
+  .partners__pic {
+    height: 150px;
+    margin-top: 25px;
+  }
+}

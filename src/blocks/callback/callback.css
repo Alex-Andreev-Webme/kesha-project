@@ -1,10 +1,18 @@
 .callback {
-  width: 380px;
+  max-width: 380px;
+  min-width: 380px;
   border-radius: 30px;
   background-color: #fff;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
   overflow: hidden;
   position: relative;
+}
+
+@media (max-width: 768px) {
+  .callback {
+    margin: auto;
+    min-width: 290px;
+  }
 }
 
 @media (max-width: 480px) {
