@@ -3,9 +3,7 @@
 import "./index.css";
 import "../utils/constants";
 import Section from "../components/Section";
-
 import { reviews, VALIDATION_SETTINGS } from "../utils/constants";
-
 import Card from "../components/Card";
 import FormValidator from "../components/FormValidator";
 
