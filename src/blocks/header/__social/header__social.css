@@ -1,5 +1,4 @@
 .header__social {
-	margin-top: auto;
-	display: none;
-	flex-direction: column;
+   margin-top: auto;
+   flex-direction: column;
 }
