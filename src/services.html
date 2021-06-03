@@ -5,7 +5,7 @@
    <meta charset="UTF-8" />
    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-   <title>Бегемотик - агентство нянь в Санкт-Петербурге и ЛО</title>
+   <title>Услуги</title>
 </head>
 
 <body class="page">
@@ -15,7 +15,7 @@
             <button type="button" class="popup__close-btn"></button>
             <div class="callback">
                <p class="callback__form-heading">Заполните форму ниже</p>
-               <form action="#" name="callback-form" class="callback__form">
+               <form action="#" name="callback-form" class="callback__form" novalidate autocomplete="off">
 
                   <div class="callback__input-section">
                      <input id="userName" type="text" name="userName" class="callback__form-field"
@@ -440,11 +440,8 @@
             <div class="section">
                <div class="question__content">
                   <div class="callback">
-
-                     <p class="callback__form-heading">
-                        Заполните форму ниже
-                     </p>
-                     <form action="#" name="callback-form" class="callback__form">
+                     <p class="callback__form-heading">Заполните форму ниже</p>
+                     <form action="#" name="callback-form" class="callback__form" novalidate autocomplete="off">
                         <div class="callback__input-section">
                            <input id="userName" type="text" name="userName" class="callback__form-field"
                               placeholder="Ваше имя*" minlength="3" required>
