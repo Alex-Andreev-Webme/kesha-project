@@ -134,13 +134,13 @@ const callbackForm = document.querySelector(".callback__form");
 function openPopup(popupEl) {
    popupEl.classList.add("popup_visible");
    document.addEventListener("keydown", handleEscClose);
-   ableScroll();
+   disableScroll();
 }
 
 function closePopup(popupEl) {
    popupEl.classList.remove("popup_visible");
    document.removeEventListener("keydown", handleEscClose);
-   disableScroll();
+   ableScroll();
    callbackForm.reset();
 }
 
@@ -151,11 +151,12 @@ function handleEscClose(event) {
    }
 }
 
-function ableScroll() {
+// Отключаем скролл на бади
+function disableScroll() {
    body.classList.add("page_noscroll");
 }
 
-function disableScroll() {
+function ableScroll() {
    body.classList.remove("page_noscroll");
 }
 
@@ -228,9 +229,17 @@ const responseList = document.querySelector(".header__list-response");
 burgerBtn.addEventListener("click", handleBurgerMenu);
 
 function handleBurgerMenu() {
-  burgerBtn.classList.toggle("header__burger_opened");
-  responseList.classList.toggle("header__list-response_opened");
-// }
+   burgerBtn.classList.toggle("header__burger_opened");
+   responseList.classList.toggle("header__list-response_opened");
+   if (
+      burgerBtn.classList.contains("header__burger_opened") &&
+      responseList.classList.contains("header__list-response_opened")
+   ) {
+      disableScroll();
+   } else {
+      ableScroll();
+   }
+}
 
 // function showAnswer() {
 //    tabAnswer.classList.toggle("about__answer_visible");
@@ -242,6 +251,9 @@ function handleBurgerMenu() {
 //          showAnswer();
 //       });
 //    });
-   burgerBtn.classList.toggle("header__burger_opened");
-   responseList.classList.toggle("header__list-response_opened");
-}
+
+// Блок кода повторяется
+
+// burgerBtn.classList.toggle("header__burger_opened");
+// responseList.classList.toggle("header__list-response_opened");
+// }
