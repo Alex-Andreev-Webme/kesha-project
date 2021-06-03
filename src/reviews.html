@@ -8,47 +8,46 @@
    <title>Отзывы</title>
 </head>
 
-<body class="page">
+<body class="page page_load">
    <div class="page__wrapper">
       <div class="popup popup_type_callback">
-         <div class="popup__container">
-            <button type="button" class="popup__close-btn"></button>
-            <div class="callback">
-               <p class="callback__form-heading">Заполните форму ниже</p>
-               <form action="#" name="callback-form" class="callback__form" novalidate autocomplete="off">
+			<div class="popup__container">
+				<button type="button" class="popup__close-btn"></button>
+				<div class="callback">
+					<p class="callback__form-heading">Заполните форму ниже</p>
+					<form action="#" name="callback-form" id="callback-form-1" class="callback__form" novalidate
+						autocomplete="off">
 
-                  <div class="callback__input-section">
-                     <input id="userName" type="text" name="userName" class="callback__form-field"
-                        placeholder="Ваше имя*" minlength="3" required>
-                     <span class="callback__form-field-error userName-error"></span>
-                  </div>
+						<div class="callback__input-section">
+							<input type="text" name="userName" class="callback__form-field" placeholder="Ваше имя*"
+								minlength="3" required>
+							<span class="callback__form-field-error userName-error"></span>
+						</div>
 
-                  <div class="callback__input-section">
-                     <input id="userPhone" type="text" name="userPhone" class="callback__form-field"
-                        placeholder="Телефон*" minlength="7" required>
-                     <span class="callback__form-field-error userPhone-error"></span>
-                  </div>
+						<div class="callback__input-section">
+							<input type="text" name="userPhone" class="callback__form-field" placeholder="Телефон*"
+								minlength="7" required>
+							<span class="callback__form-field-error userPhone-error"></span>
+						</div>
 
-                  <div class="callback__input-section">
-                     <input id="termsOfUse-1" type="checkbox" name="termsOfUse"
-                        class="callback__form-checkbox callback__form-field" required>
-                     <label for="termsOfUse-1" class="callback__form-label">
-                        <div class="callback__label-wrap">
-                           согласен на обработку персональных данных в соответствии c
-                           <a href="policy-info.html" target="_blank" class="callback__info">политикой
-                              конфиденциальности</a>
-                        </div>
-                     </label>
-                     <span class="callback__form-field-error termsOfUse-error"></span>
-                  </div>
+						<div class="callback__input-section">
+							<input id="termsOfUse-1" type="checkbox" name="termsOfUse"
+								class="callback__form-checkbox callback__form-field" required>
+							<label for="termsOfUse-1" class="callback__form-label">
+								<div class="callback__label-wrap">
+									согласен на обработку персональных данных в соответствии c
+									<a href="policy-info.html" target="_blank" class="callback__info">политикой
+										конфиденциальности</a>
+								</div>
+							</label>
+							<span class="callback__form-field-error termsOfUse-error"></span>
+						</div>
 
-                  <button type="submit" class="callback__submit-btn">
-                     Отправить
-                  </button>
-               </form>
-            </div>
-         </div>
-      </div>
+						<button type="submit" class="callback__submit-btn">Отправить</button>
+					</form>
+				</div>
+			</div>
+		</div>
 
       <header class="header">
          <div class="section">
