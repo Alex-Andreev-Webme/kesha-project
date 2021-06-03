@@ -310,17 +310,23 @@
 				<div class="nanny__content">
 					<div class="callback">
 						<p class="callback__form-heading">Заполните форму ниже</p>
-						<form action="#" name="callback-form" class="callback__form">
-							<input type="text" name="userName" class="callback__form-field" placeholder="Ваше имя*" required>
-							<input type="text" name="userPhone" class="callback__form-field" placeholder="Телефон*" required>
-							<input type="checkbox" name="termsOfUse" id="terms-of-use-2" class="callback__form-checkbox"
+						<form action="#" name="callbackForm" class="callback__form" novalidate autocomplete="off">
+							<input id="userName" type="text" name="userName" class="callback__form-field" placeholder="Ваше имя*" required minlength="3">
+							<span class="callback__form-field-error userName-error"></span>
+
+							<input id="userPhone" type="text" name="userPhone" class="callback__form-field" placeholder="Телефон*" required minlength="7">
+							<span class="callback__form-field-error userPhone-error"></span>
+							
+							<input id="termsOfUse" type="checkbox" name="termsOfUse" class="callback__form-checkbox callback__form-field"
 								required>
-							<label for="terms-of-use-2" class="callback__form-label">
+							<label for="termsOfUse" class="callback__form-label">
 								<div class="callback__label-wrap">
 									согласен на обработку персональных данных в соответствии c
 									<a href="policy-info.html" target="_blank" class="callback__info">политикой конфиденциальности</a>
 								</div>
 							</label>
+							<span class="callback__form-field-error termsOfUse-error"></span>	
+
 							<button type="submit" class="callback__submit-btn">Отправить</button>
 						</form>
 					</div>

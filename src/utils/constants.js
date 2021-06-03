@@ -35,4 +35,12 @@ const reviews = [
   },
 ];
 
-export { reviews };
+const VALIDATION_SETTINGS = {
+  inputSelector: ".callback__form-field",
+  submitButtonSelector: ".callback__submit-btn",
+  inactiveButtonClass: "callback__submit-btn_disabled",
+  inputErrorClass: ".callback__input-error",
+  errorClass: "callback__input-error_active",
+};
+
+export { reviews, VALIDATION_SETTINGS };

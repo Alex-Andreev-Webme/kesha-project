@@ -18,6 +18,7 @@
 @import url("../blocks/callback/__form-label/callback__form-label.css");
 @import url("../blocks/callback/__info/callback__info.css");
 @import url("../blocks/callback/__submit-btn/callback__submit-btn.css");
+@import url("../blocks/callback/__submit-btn/_disabled/callback__submit-btn_disabled.css");
 
 /* Header */
 
