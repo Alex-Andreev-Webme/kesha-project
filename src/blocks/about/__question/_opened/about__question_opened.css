@@ -1,0 +1,6 @@
+.about__question_opened {
+}
+
+.about__question_opened::after {
+   transform: rotate(0);
+}

@@ -104,6 +104,7 @@
 @import url("../blocks/process/__round/process__round.css");
 @import url("../blocks/process/__number/process__number.css");
 @import url("../blocks/process/__text/process__text.css");
+
 /* Quetion */
 
 @import url("../blocks/question/question.css");
@@ -122,6 +123,7 @@
 
 @import url("../blocks/about/about.css");
 @import url("../blocks/about/__text/about__text.css");
+@import url("../blocks/about/__text-item/about__text-item.css");
 
 /* Footer */
 
@@ -173,7 +175,21 @@
 
 @import url("../blocks/about/__faq/about__faq.css");
 @import url("../blocks/about/__list/about__list.css");
-@import url("../blocks/about//__list-el/about__list-el.css");
+@import url("../blocks/about/__list-el/about__list-el.css");
 @import url("../blocks/about/__question/about__question.css");
+@import url("../blocks/about/__question/_opened/about__question_opened.css");
 @import url("../blocks/about/__answer/about__answer.css");
 @import url("../blocks/about/__answer/_visible/about__answer_visible.css");
+
+/* Внутренняя страница  Services */
+@import url("../blocks/services/__text/services__text.css");
+@import url("../blocks/services/__paragraph/services__paragraph.css");
+@import url("../blocks/services/__cards/services__cards.css");
+@import url("../blocks/partners/_page/partners_page_services.css");
+
+/* Вакансии */
+@import url("../blocks/vacancies/vacancies.css");
+@import url("../blocks/vacancies/__text/vacancies__text.css");
+@import url("../blocks/vacancies/__paragraph/vacancies__paragraph.css");
+@import url("../blocks/vacancies/__action/vacancies__action.css");
+@import url("../blocks/vacancies/__link/vacancies__link.css");
