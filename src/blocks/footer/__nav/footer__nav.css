@@ -1,3 +1,10 @@
 .footer__nav {
   display: flex;
 }
+
+@media (max-width: 768px) {
+  .footer__nav {
+    flex-direction: column-reverse;
+    margin-bottom: 10px;
+  }
+}

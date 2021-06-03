@@ -4,3 +4,18 @@
   font-size: 35px;
   color: var(--whiteColor);
 }
+
+@media (max-width: 768px) {
+  .question__paragraph {
+    margin: 20px 0 45px ;
+    font-size: 24px;
+    max-width: none;
+  }
+}
+
+@media (max-width: 480px) {
+  .question__paragraph {
+    margin: 10px 0 25px;
+    font-size: 18px;
+  }
+}

@@ -3,3 +3,13 @@
   font-size: 15px;
   color: rgba(255, 255, 255, 0.5);
 }
+
+@media (max-width: 480px) {
+  .footer__paragraph {
+    font-size: 9px;
+  }
+
+  .footer__paragraph .footer__link {
+    font-size: 9px;
+  }
+}

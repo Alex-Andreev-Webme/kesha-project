@@ -15,3 +15,9 @@
 .callback__form-field:focus {
    box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.2);
 }
+
+@media (max-width: 480px) {
+  .callback__form-field {
+    font-size: 16px;
+  }
+}

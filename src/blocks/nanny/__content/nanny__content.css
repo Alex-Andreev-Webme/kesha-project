@@ -3,3 +3,9 @@
   display: flex;
   justify-content: center;
 }
+
+@media (max-width: 480px) {
+  .nanny__content {
+    margin-top: 25px;
+  }
+}

@@ -204,27 +204,44 @@ if (checkPopupTrigger) {
 
 // Таб на странице «О нас»
 
-const tabTitles = document.querySelectorAll(".about__question");
+// const tabButtons = document.querySelectorAll(".about__question");
+// const tabAnswer = document.querySelector(".about__answer");
 
-if (tabTitles) {
-   tabTitles.forEach((item) => {
-      item.addEventListener("click", () => {
-         item.classList.toggle("about__question_opened");
-         item.nextElementSibling.classList.toggle("about__answer_visible");
-      });
-   });
-}
+// // -- Бургер меню -- //
 
-// Мобильное меню
+// const tabTitles = document.querySelectorAll(".about__question");
+
+// if (tabTitles) {
+//    tabTitles.forEach((item) => {
+//       item.addEventListener("click", () => {
+//          item.classList.toggle("about__question_opened");
+//          item.nextElementSibling.classList.toggle("about__answer_visible");
+//       });
+//    });
+// }
+
+// // Мобильное меню
 
 const burgerBtn = document.querySelector(".header__burger");
-// const responseMenu = document.querySelector(".header__response-menu");
 const responseList = document.querySelector(".header__list-response");
 
 burgerBtn.addEventListener("click", handleBurgerMenu);
 
 function handleBurgerMenu() {
-   // responseMenu.classList.toggle("header__response-menu_opened");
+  burgerBtn.classList.toggle("header__burger_opened");
+  responseList.classList.toggle("header__list-response_opened");
+// }
+
+// function showAnswer() {
+//    tabAnswer.classList.toggle("about__answer_visible");
+// }
+
+// if (tabButtons) {
+//    tabButtons.forEach((triggerEl) => {
+//       triggerEl.addEventListener("click", () => {
+//          showAnswer();
+//       });
+//    });
    burgerBtn.classList.toggle("header__burger_opened");
    responseList.classList.toggle("header__list-response_opened");
 }

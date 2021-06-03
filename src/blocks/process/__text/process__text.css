@@ -3,3 +3,35 @@
   font-size: 28px;
   font-weight: 500;
 }
+
+.process__text span {
+  white-space: nowrap;
+}
+
+@media (max-width: 768px) {
+  .process__text {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 580px) {
+  .process__text {
+    font-size: 18px;
+    margin-left: 25px;
+    font-weight: normal;
+  }
+}
+
+@media (max-width: 420px) {
+  .process__text {
+    padding: 10px 20px 10px 35px;
+    background-color: #fff;
+    border-radius: 20px;
+    font-size: 14px;
+    /* text-align: center; */
+    background-color: var(--blueColor);
+    color: #fff;
+    box-shadow: 0 0 10px rgb(0, 0, 0, .3);
+    margin-left: 0;
+  }
+}

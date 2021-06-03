@@ -9,13 +9,13 @@
     }
   }
 
-@media (max-width: 1023px) {
+@media (max-width: 1024px) {
     .logo {
         height: 144px;
     }
 }
 
-@media (max-width: 767px) {
+@media (max-width: 768px) {
     .logo {
         height: 88px;
 

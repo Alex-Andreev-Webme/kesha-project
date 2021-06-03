@@ -3,3 +3,9 @@
   display: flex;
   flex-direction: column;
 }
+
+@media (max-width: 480px) {
+  .callback__form {
+    padding: 25px
+  }
+}

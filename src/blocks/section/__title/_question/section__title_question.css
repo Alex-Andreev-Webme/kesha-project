@@ -1,0 +1,10 @@
+.section__title_question {
+    text-align: left;
+    padding: 0;
+}
+
+@media (max-width: 768px) {
+    .section__title_question {
+        text-align: center;
+    }
+}
