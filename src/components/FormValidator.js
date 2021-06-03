@@ -26,6 +26,7 @@ export default class FormValidator {
 
     if (isInputNotValid) {
       const errorMessage = inputElement.validationMessage;
+      console.log("errorMessage", errorMessage);
 
       this._showInputError(inputElement, errorMessage);
     } else {
@@ -34,7 +35,8 @@ export default class FormValidator {
   };
 
   _toggleButtonState = () => {
-    const findAtLeastOneNotValid = (inputElement) => !inputElement.validity.valid;
+    const findAtLeastOneNotValid = (inputElement) =>
+      !inputElement.validity.valid;
     const hasNotValidInput = this._inputList.some(findAtLeastOneNotValid);
 
     if (hasNotValidInput) {
@@ -51,7 +53,9 @@ export default class FormValidator {
     //   event.preventDefault();
     // });
 
-    this._inputList = Array.from(this._form.querySelectorAll(this._inputSelector));
+    this._inputList = Array.from(
+      this._form.querySelectorAll(this._inputSelector)
+    );
     this._buttonElement = this._form.querySelector(this._submitButtonSelector);
 
     const inputListIterator = (inputElement) => {
@@ -69,7 +73,7 @@ export default class FormValidator {
 
   enableValidation() {
     this._setEventListeners();
-  };
+  }
 
   clearValidation() {
     this._inputList.forEach(this._hideInputError);
