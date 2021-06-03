@@ -3,8 +3,9 @@
 import "./index.css";
 import "../utils/constants";
 import Section from "../components/Section";
-import { reviews } from "../utils/constants";
+import { reviews, VALIDATION_SETTINGS } from "../utils/constants";
 import Card from "../components/Card";
+import FormValidator from "../components/FormValidator";
 
 // -- Плавная прокрутка до элемента --
 const header = document.querySelector(".header");
@@ -121,7 +122,7 @@ if (window.location.pathname.indexOf("reviews.html") != -1) {
 }
 // reviews
 
-// -- Попап c формой обратной связи -- //
+// Попап c формой обратной связи
 
 const callBtns = document.querySelectorAll(".call-btn");
 const popups = document.querySelectorAll(".popup");
@@ -134,13 +135,13 @@ const callbackForm = document.querySelector(".callback__form");
 function openPopup(popupEl) {
    popupEl.classList.add("popup_visible");
    document.addEventListener("keydown", handleEscClose);
-   ableScroll();
+   disableScroll();
 }
 
 function closePopup(popupEl) {
    popupEl.classList.remove("popup_visible");
    document.removeEventListener("keydown", handleEscClose);
-   disableScroll();
+   ableScroll();
    callbackForm.reset();
 }
 
@@ -151,11 +152,12 @@ function handleEscClose(event) {
    }
 }
 
-function ableScroll() {
+// Отключаем скролл на бади
+function disableScroll() {
    body.classList.add("page_noscroll");
 }
 
-function disableScroll() {
+function ableScroll() {
    body.classList.remove("page_noscroll");
 }
 
@@ -180,9 +182,7 @@ popups.forEach((popup) => {
    });
 });
 
-// -- Попап c формой обратной связи -- //
-
-// -- Попап с документами/проверкой кандидатов -- //
+// Попап с документами/проверкой кандидатов
 
 const docsPopupTrigger = document.querySelector(".span-accent_type_docs");
 const docsPopup = document.querySelector(".popup_type_docs");
@@ -204,23 +204,18 @@ if (checkPopupTrigger) {
 
 // Таб на странице «О нас»
 
-// const tabButtons = document.querySelectorAll(".about__question");
-// const tabAnswer = document.querySelector(".about__answer");
+const tabTitles = document.querySelectorAll(".about__question");
 
-// // -- Бургер меню -- //
+if (tabTitles) {
+   tabTitles.forEach((item) => {
+      item.addEventListener("click", () => {
+         item.classList.toggle("about__question_opened");
+         item.nextElementSibling.classList.toggle("about__answer_visible");
+      });
+   });
+}
 
-// const tabTitles = document.querySelectorAll(".about__question");
-
-// if (tabTitles) {
-//    tabTitles.forEach((item) => {
-//       item.addEventListener("click", () => {
-//          item.classList.toggle("about__question_opened");
-//          item.nextElementSibling.classList.toggle("about__answer_visible");
-//       });
-//    });
-// }
-
-// // Мобильное меню
+// Мобильное меню
 
 const burgerBtn = document.querySelector(".header__burger");
 const responseList = document.querySelector(".header__list-response");
@@ -228,20 +223,22 @@ const responseList = document.querySelector(".header__list-response");
 burgerBtn.addEventListener("click", handleBurgerMenu);
 
 function handleBurgerMenu() {
-  burgerBtn.classList.toggle("header__burger_opened");
-  responseList.classList.toggle("header__list-response_opened");
-// }
-
-// function showAnswer() {
-//    tabAnswer.classList.toggle("about__answer_visible");
-// }
-
-// if (tabButtons) {
-//    tabButtons.forEach((triggerEl) => {
-//       triggerEl.addEventListener("click", () => {
-//          showAnswer();
-//       });
-//    });
    burgerBtn.classList.toggle("header__burger_opened");
    responseList.classList.toggle("header__list-response_opened");
+   if (
+      burgerBtn.classList.contains("header__burger_opened") &&
+      responseList.classList.contains("header__list-response_opened")
+   ) {
+      disableScroll();
+   } else {
+      ableScroll();
+   }
 }
+
+// Валидация форм
+
+const cbForm = document.forms.callbackForm;
+const cbFormValidator = new FormValidator(VALIDATION_SETTINGS, cbForm);
+cbFormValidator.enableValidation();
+
+// Валидация форм
