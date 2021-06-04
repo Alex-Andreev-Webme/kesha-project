@@ -1,35 +1,41 @@
 .callback__form-heading {
-  margin: 0;
-  padding: 45px 0;
-  font-size: 24px;
-  font-weight: 500;
-  color: var(--whiteColor);
-  background-color: var(--blueColor);
-  background-image: url("../../../images/bg-circle.svg");
-  background-repeat: no-repeat;
-  background-position: top right;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+   margin: 0;
+   padding: 45px 0;
+   font-size: 24px;
+   font-weight: 500;
+   color: var(--whiteColor);
+   background-color: var(--blueColor);
+   background-image: url("../../../images/bg-circle.svg");
+   background-repeat: no-repeat;
+   background-position: top right;
+   display: flex;
+   align-items: center;
+   justify-content: center;
 }
 
 .callback__form-heading::before {
-  content: "";
-  margin-right: 5px;
-  width: 20px;
-  height: 20px;
-  border-radius: 50%;
-  background-color: #fff;
+   content: "";
+   margin-right: 5px;
+   width: 20px;
+   height: 20px;
+   border-radius: 50%;
+   background-color: #fff;
 }
 
 @media (max-width: 480px) {
-  .callback__form-heading {
-    font-size: 20px;
-    padding: 35px 0;
-  }
+   .callback__form-heading {
+      font-size: 20px;
+      padding: 35px 0;
+   }
 
-  .callback__form-heading::before {
-    width: 15px;
-    height: 15px;
-  }
+   .callback__form-heading::before {
+      width: 15px;
+      height: 15px;
+   }
+}
+
+@media (max-width: 375px) {
+   .callback__form-heading {
+      padding: 15px 0;
+   }
 }
