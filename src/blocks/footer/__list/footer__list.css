@@ -13,3 +13,9 @@
     flex-wrap: wrap;
   }
 }
+
+@media (max-width: 340px) {
+  .footer__list {
+    flex-direction: column;
+  }
+}

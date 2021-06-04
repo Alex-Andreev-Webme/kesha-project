@@ -19,3 +19,10 @@
     margin-bottom: 0;
   }
 }
+
+@media (max-width: 340px) {
+  .footer__col-title {
+    margin-top: 30px;
+    margin-bottom: 10px;
+  }
+}
