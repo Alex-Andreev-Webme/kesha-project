@@ -26,3 +26,14 @@
     background-color: var(--blueColor);
     color: #fff;
 }
+
+.header__list-response li:last-of-type {
+    cursor: default;
+    position: absolute;
+    bottom: 15vh;
+}
+
+.header__list-response li:last-of-type:hover {
+    background-color: #fff;
+    color: var(--greyColor);
+}

@@ -14,7 +14,7 @@
 		display: none;
 		font-size: 12px;
 		margin-top: 0;
-		margin-left: 5px;
+		margin-left: 0px;
 	}
 
 	.header__phone-label::before {
@@ -25,5 +25,9 @@
 		content: url("../../../images/phone-icon.svg");
 		margin-left: 5px;
 		vertical-align: middle;
+	}
+
+	.header__phone-label_response {
+		display: flex;
 	}
 }
