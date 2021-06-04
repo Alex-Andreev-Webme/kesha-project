@@ -20,4 +20,6 @@
    -moz-text-size-adjust: 100%;
    text-rendering: optimizeLegibility;
    background-color: #f5f5f5;
+   outline: none;
+   -webkit-tap-highlight-color: transparent;
 }
