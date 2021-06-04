@@ -7,31 +7,10 @@ import { reviews, VALIDATION_SETTINGS } from "../utils/constants";
 import Card from "../components/Card";
 import FormValidator from "../components/FormValidator";
 
-// -- Плавная прокрутка до элемента --
-const header = document.querySelector(".header");
-const anchors = document.querySelectorAll('.header a[href^="#"]');
-
-// Цикл по всем ссылкам
-for (let anchor of anchors) {
-   anchor.addEventListener("click", function (evt) {
-      evt.preventDefault(); // Предотвратить стандартное поведение ссылок
-      // Атрибут href у ссылки, если его нет то перейти к body (наверх не плавно)
-      const goto = anchor.hasAttribute("href")
-         ? anchor.getAttribute("href")
-         : "body";
-      // Плавная прокрутка до элемента с i d = href у ссылки
-      const gotoBlock = document.querySelector(goto);
-      const gotoBlockValue =
-         gotoBlock.getBoundingClientRect().top +
-         pageYOffset -
-         header.offsetHeight;
-      window.scrollTo({
-         top: gotoBlockValue,
-         behavior: "smooth",
-      });
-   });
-}
-// -- Плавная прокрутка до элемента --
+// window.onload = function () {
+//    body.classList.remove("page_load");
+//    window.scrollTo(0, 0);
+// };
 
 // -- Обработка сабмита формы --
 function getInputValues(form) {
@@ -143,6 +122,7 @@ function closePopup(popupEl) {
    document.removeEventListener("keydown", handleEscClose);
    ableScroll();
    callbackForm.reset();
+   formOneValidator.clearValidation();
 }
 
 function handleEscClose(event) {
@@ -220,7 +200,9 @@ if (tabTitles) {
 const burgerBtn = document.querySelector(".header__burger");
 const responseList = document.querySelector(".header__list-response");
 
-burgerBtn.addEventListener("click", handleBurgerMenu);
+if (burgerBtn) {
+   burgerBtn.addEventListener("click", handleBurgerMenu);
+}
 
 function handleBurgerMenu() {
    burgerBtn.classList.toggle("header__burger_opened");
@@ -237,8 +219,40 @@ function handleBurgerMenu() {
 
 // Валидация форм
 
-const cbForm = document.forms.callbackForm;
-const cbFormValidator = new FormValidator(VALIDATION_SETTINGS, cbForm);
-cbFormValidator.enableValidation();
+const formOne = document.querySelector("#callback-form-1");
+const formOneValidator = new FormValidator(VALIDATION_SETTINGS, formOne);
+
+const formTwo = document.querySelector("#callback-form-2");
+const formTwoValidator = new FormValidator(VALIDATION_SETTINGS, formTwo);
+
+const formThree = document.querySelector("#callback-form-3");
+const formThreeValidator = new FormValidator(VALIDATION_SETTINGS, formThree);
+
+const currentPage = window.location.pathname;
+
+switch (currentPage) {
+   case "/services.html":
+      formOneValidator.enableValidation();
+      formTwoValidator.enableValidation();
+      break;
+   case "/reviews.html":
+      formOneValidator.enableValidation();
+      break;
+   case "/vacancies.html":
+      formOneValidator.enableValidation();
+      break;
+   case "/contacts.html":
+      formOneValidator.enableValidation();
+      formTwoValidator.enableValidation();
+      break;
+   case "/about.html":
+      formOneValidator.enableValidation();
+      break;
+   default:
+      formOneValidator.enableValidation();
+      formTwoValidator.enableValidation();
+      formThreeValidator.enableValidation();
+      break;
+}
 
 // Валидация форм

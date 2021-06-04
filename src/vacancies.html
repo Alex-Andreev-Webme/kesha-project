@@ -5,27 +5,29 @@
    <meta charset="UTF-8" />
    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-   <title>Бегемотик - агентство нянь в Санкт-Петербурге и ЛО</title>
+   <title>Вакансии</title>
 </head>
 
 <body class="page">
    <div class="page__wrapper">
-      <div class="popup popup_type_callback">
+
+      <div hidden class="popup popup_type_callback">
          <div class="popup__container">
             <button type="button" class="popup__close-btn"></button>
             <div class="callback">
                <p class="callback__form-heading">Заполните форму ниже</p>
-               <form action="#" name="callback-form" class="callback__form">
+               <form action="#" name="callback-form" id="callback-form-1" class="callback__form" novalidate
+                  autocomplete="off">
 
                   <div class="callback__input-section">
-                     <input id="userName" type="text" name="userName" class="callback__form-field"
-                        placeholder="Ваше имя*" minlength="3" required>
+                     <input type="text" name="userName" class="callback__form-field" placeholder="Ваше имя*"
+                        minlength="3" required>
                      <span class="callback__form-field-error userName-error"></span>
                   </div>
 
                   <div class="callback__input-section">
-                     <input id="userPhone" type="text" name="userPhone" class="callback__form-field"
-                        placeholder="Телефон*" minlength="7" required>
+                     <input type="text" name="userPhone" class="callback__form-field" placeholder="Телефон*"
+                        minlength="7" required>
                      <span class="callback__form-field-error userPhone-error"></span>
                   </div>
 
@@ -42,9 +44,7 @@
                      <span class="callback__form-field-error termsOfUse-error"></span>
                   </div>
 
-                  <button type="submit" class="callback__submit-btn">
-                     Отправить
-                  </button>
+                  <button type="submit" class="callback__submit-btn">Отправить</button>
                </form>
             </div>
          </div>
@@ -96,16 +96,26 @@
                      </div>
                   </div>
                </div>
-               <!-- <div class="header__response-menu"> -->
                <ul class="header__list-response">
-                  <li>Главная</li>
-                  <li>Услуги</li>
-                  <li>Отзывы</li>
-                  <li>Вакансии</li>
-                  <li>Контакты</li>
-                  <li>О нас</li>
+                  <a href="index.html" class="header__link header__link_type_menu">
+                     <li class="header__list-el">Главная</li>
+                  </a>
+                  <a href="services.html" class="header__link header__link_type_menu">
+                     <li class="header__list-el">Услуги</li>
+                  </a>
+                  <a href="reviews.html" class="header__link header__link_type_menu">
+                     <li class="header__list-el">Отзывы</li>
+                  </a>
+                  <a href="vacancies.html" class="header__link header__link_type_menu">
+                     <li class="header__list-el">Вакансии</li>
+                  </a>
+                  <a href="contacts.html" class="header__link header__link_type_menu">
+                     <li class="header__list-el">Контакты</li>
+                  </a>
+                  <a href="about.html" class="header__link header__link_type_menu">
+                     <li class="header__list-el">О нас</li>
+                  </a>
                </ul>
-               <!-- </div> -->
             </div>
             <nav class="header__menu">
                <ul class="header__list header__list_type_menu">
