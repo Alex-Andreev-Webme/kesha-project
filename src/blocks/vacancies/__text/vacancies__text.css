@@ -1,3 +1,18 @@
 .vacancies__text {
    margin-top: 100px;
+   text-indent: 20px;
+}
+
+@media (max-width: 768px) {
+   .vacancies__text {
+      margin-top: 25px;
+      text-align: justify;
+   }
+}
+
+@media (max-width: 480px) {
+   .vacancies__text {
+      margin-top: 15px;
+      text-indent: 0;
+   }
 }

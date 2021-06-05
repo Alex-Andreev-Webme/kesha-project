@@ -1,3 +1,15 @@
 .contacts {
-   padding: 100px 0;
+   padding: 100px 0 0;
+}
+
+@media (max-width: 768px) {
+   .contacts {
+      padding-top: 50px;
+   }
+}
+
+@media (max-width: 480px) {
+   .contacts {
+      padding-top: 25px;
+   }
 }

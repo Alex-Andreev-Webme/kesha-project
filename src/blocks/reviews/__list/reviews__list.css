@@ -3,5 +3,24 @@
    padding: 0;
    list-style: none;
    display: grid;
-   row-gap: 150px;
+   row-gap: 120px;
+}
+
+@media (max-width: 1280px) {
+   .reviews__list {
+      margin: 50px 15px 0;
+   }
+}
+
+@media (max-width: 768px) {
+   .reviews__list {
+      margin: 25px 10px 0;
+      row-gap: 70px;
+   }
+}
+
+@media (max-width: 480px) {
+   .reviews__list {
+      row-gap: 50px;
+   }
 }

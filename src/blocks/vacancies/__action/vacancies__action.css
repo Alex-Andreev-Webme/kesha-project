@@ -1,6 +1,24 @@
 .vacancies__action {
    margin-top: 50px;
    display: flex;
-   flex-direction: column;
+   flex-direction: row;
    align-items: flex-start;
+}
+
+@media (max-width: 768px) {
+   .vacancies__action {
+      margin-top: 30px;
+      align-items: center;
+   }
+}
+
+@media (max-width: 480px) {
+   .vacancies__action {
+      margin-top: 20px;
+      flex-direction: column;
+   }
+
+   .vacancies__action .call-btn {
+      margin-right: 0;
+   }
 }

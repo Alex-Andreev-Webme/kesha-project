@@ -3,3 +3,9 @@
    font-size: 24px;
    font-weight: 500;
 }
+
+@media (max-width: 480px) {
+   .contacts__title {
+      font-size: 20px;
+   }
+}

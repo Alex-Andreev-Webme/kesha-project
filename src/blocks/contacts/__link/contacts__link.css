@@ -11,3 +11,26 @@
 .contacts__link:hover {
    color: var(--blueColor);
 }
+@media (max-width: 768px) {
+   .contacts__link {
+      margin-top: 10px;
+      font-size: 16px;
+   }
+
+   .contacts__link::before {
+      content: url("../../../images/geo-icon.svg");
+      margin-right: 10px;
+   }
+}
+
+@media (max-width: 480px) {
+   .contacts__link {
+      margin-top: 5px;
+      font-size: 12px;
+   }
+
+   .contacts__link::before {
+      content: none;
+      margin-right: 0;
+   }
+}

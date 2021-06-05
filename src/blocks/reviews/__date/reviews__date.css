@@ -1,3 +1,9 @@
 .reviews__date {
    margin: 0;
 }
+
+@media (max-width: 480px) {
+   .reviews__date {
+      font-size: 16px;
+   }
+}

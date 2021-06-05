@@ -9,3 +9,21 @@
 .reviews__heart-icon:last-child {
    margin-right: 0;
 }
+
+@media (max-width: 768px) {
+   .reviews__heart-icon {
+      width: 20px;
+      height: 20px;
+   }
+}
+
+@media (max-width: 480px) {
+   .reviews__heart-icon {
+      width: 12px;
+      height: 12px;
+   }
+
+   .reviews__heart-icon:last-child {
+      margin-right: 5px;
+   }
+}

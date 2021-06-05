@@ -1,7 +1,25 @@
 .contacts__info {
    margin-top: 50px;
+   margin-bottom: 20px;
    display: flex;
    flex-direction: column;
    align-items: flex-start;
    font-size: 20px;
+}
+
+@media (max-width: 1280px) {
+   .contacts__info {
+      margin: 50px 15px 20px;
+   }
+}
+
+@media (max-width: 768px) {
+   .contacts__info {
+      margin: 20px 15px 15px;
+   }
+}
+@media (max-width: 480px) {
+   .contacts__info {
+      margin-top: 10px;
+   }
 }

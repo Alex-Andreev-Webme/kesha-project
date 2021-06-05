@@ -5,3 +5,15 @@
    content: url("../../../../images/mail-icon.svg");
    margin-right: 15px;
 }
+
+@media (max-width: 480px) {
+   .contacts__link_type_mail {
+      margin-top: 5px;
+      font-size: 12px;
+   }
+
+   .contacts__link_type_mail::before {
+      content: none;
+      margin-right: 0;
+   }
+}

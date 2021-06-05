@@ -9,3 +9,27 @@
    content: url("../../../images/geo-icon.svg");
    margin-right: 15px;
 }
+
+@media (max-width: 768px) {
+   .contacts__adress {
+      margin-top: 10px;
+      font-size: 16px;
+   }
+
+   .contacts__adress::before {
+      content: url("../../../images/geo-icon.svg");
+      margin-right: 10px;
+   }
+}
+
+@media (max-width: 480px) {
+   .contacts__adress {
+      margin-top: 5px;
+      font-size: 12px;
+   }
+
+   .contacts__adress::before {
+      content: none;
+      margin-right: 0;
+   }
+}

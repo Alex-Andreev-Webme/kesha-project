@@ -10,6 +10,7 @@
    outline: none;
    cursor: pointer;
    transition: ease 0.3s;
+   margin-bottom: 10px;
 }
 
 .reviews__filter-btn:last-child {
@@ -18,4 +19,10 @@
 
 .reviews__filter-btn:hover {
    opacity: 0.8;
+}
+
+@media (max-width: 480px) {
+   .reviews__filter-btn {
+      margin-right: 0;
+   }
 }

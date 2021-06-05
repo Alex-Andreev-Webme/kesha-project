@@ -3,3 +3,17 @@
    font-size: 20px;
    line-height: 1.5;
 }
+
+@media (max-width: 768px) {
+   .reviews__text {
+      font-size: 16px;
+      margin-top: 20px;
+   }
+}
+
+@media (max-width: 480px) {
+   .reviews__text {
+      text-align: justify;
+      margin-top: 15px;
+   }
+}

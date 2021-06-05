@@ -1,3 +1,22 @@
 .vacancies {
    padding: 100px 0;
 }
+
+@media (max-width: 1280px) {
+   .vacancies {
+      margin: 0 15px;
+   }
+}
+
+@media (max-width: 768px) {
+   .vacancies {
+      padding: 50px 0;
+   }
+}
+
+@media (max-width: 480px) {
+   .vacancies {
+      padding: 25px 0;
+      margin: 0 10px;
+   }
+}

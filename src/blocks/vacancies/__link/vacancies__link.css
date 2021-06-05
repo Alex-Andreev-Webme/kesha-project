@@ -1,5 +1,4 @@
 .vacancies__link {
-   margin-top: 15px;
    padding: 20px 40px;
    font-size: 15px;
    font-weight: 500;
@@ -8,6 +7,7 @@
    border-radius: 30px;
    text-decoration: none;
    transition: ease 0.3s;
+   margin-left: 15px;
 }
 
 .vacancies__link:hover {
@@ -17,6 +17,12 @@
 @media (max-width: 768px) {
    .vacancies__link {
       padding: 15px 25px;
-      margin-right: 5px;
+   }
+}
+
+@media (max-width: 480px) {
+   .vacancies__link {
+      margin-top: 15px;
+      margin-left: 0px;
    }
 }

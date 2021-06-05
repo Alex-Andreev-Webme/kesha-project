@@ -1,3 +1,29 @@
 .contacts__map {
    margin-top: 100px;
 }
+
+@media (max-width: 1280px) {
+   .contacts__map {
+      margin: 100px 15px;
+   }
+}
+
+@media (max-width: 768px) {
+   .contacts__map {
+      margin: 20px 15px;
+   }
+
+   .contacts__map iframe {
+      height: 400px;
+   }
+}
+
+@media (max-width: 480px) {
+   .contacts__map {
+      margin: 15px 0;
+   }
+
+   .contacts__map iframe {
+      height: 300px;
+   }
+}

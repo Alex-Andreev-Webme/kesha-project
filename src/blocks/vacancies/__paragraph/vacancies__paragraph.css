@@ -7,3 +7,25 @@
    padding-bottom: 50px;
    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
 }
+
+@media (max-width: 768px) {
+   .vacancies__paragraph {
+      font-size: 18px;
+      margin-bottom: 20px;
+   }
+
+   .vacancies__paragraph:last-of-type {
+      padding-bottom: 25px;
+   }
+}
+
+@media (max-width: 480px) {
+   .vacancies__paragraph {
+      font-size: 16px;
+      margin-bottom: 15px;
+   }
+
+   .vacancies__paragraph:last-of-type {
+      padding-bottom: 20px;
+   }
+}

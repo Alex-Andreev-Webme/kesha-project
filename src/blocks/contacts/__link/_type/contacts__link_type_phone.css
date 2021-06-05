@@ -5,3 +5,16 @@
    content: url("../../../../images/call-icon.svg");
    margin-right: 15px;
 }
+
+@media (max-width: 480px) {
+   .contacts__link_type_phone {
+      margin-top: 5px;
+      font-size: 16px;
+      font-weight: normal;
+   }
+
+   .contacts__link_type_phone::before {
+      content: none;
+      margin-right: 0;
+   }
+}

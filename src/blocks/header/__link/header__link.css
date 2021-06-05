@@ -9,3 +9,9 @@
 	color: var(--blueColor);
 	border-color: var(--blueColor);
 }
+
+@media (max-width: 768px) {
+	.header__link {
+		transition: 0s;
+	}
+}

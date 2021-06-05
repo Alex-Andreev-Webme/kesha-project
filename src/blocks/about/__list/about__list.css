@@ -4,4 +4,11 @@
    list-style: none;
    display: grid;
    row-gap: 30px;
+   margin-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+   .about__list {
+      row-gap: 15px;
+   }
 }
