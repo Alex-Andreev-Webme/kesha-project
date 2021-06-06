@@ -31,11 +31,8 @@
 @import url("../blocks/header/__col/header__col.css");
 @import url("../blocks/header/__mail/header__mail.css.css");
 @import url("../blocks/header/__adress/header__adress.css");
-@import url("../blocks/header/__social/header__social.css");
 @import url("../blocks/header/__list/header__list.css");
 @import url("../blocks/header/__link/header__link.css");
-@import url("../blocks/header/__link/_type/header__link_type_social.css");
-@import url("../blocks/social-icon/social-icon.css");
 @import url("../blocks/header/__col/_aligned/header__col_aligned.css");
 @import url("../blocks/header/__phone/header__phone.css");
 @import url("../blocks/header/__phone-label/header__phone-label.css");
