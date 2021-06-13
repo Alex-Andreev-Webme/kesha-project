@@ -1,16 +1,16 @@
 .services {
-  padding-top: 100px;
+  padding-top: 50px;
 }
 
 @media (max-width: 1023px) {
   .services {
-    padding-top: 50px;
+    padding-top: 30px;
   }
 }
 
 @media (max-width: 768px) {
   .services {
-    padding-top: 40px;
+    padding-top: 20px;
     display: flex;
   }
 }

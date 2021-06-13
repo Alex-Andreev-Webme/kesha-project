@@ -1,8 +1,7 @@
 .about__text {
-   margin: 100px 15px 0;
-   font-size: 22px;
+   margin: 50px 15px 0;
+   font-size: 18px;
    line-height: 1.5;
-   text-align: center;
 }
 
 @media (max-width: 768px) {
