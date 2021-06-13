@@ -1,7 +1,6 @@
 @import url("../vendor/normalize.css");
 @import url("../vendor/fonts/fonts.css");
 @import url("../blocks/page/page.css");
-/* @import url("../blocks/page/_load/page_load.css"); */
 @import url("../blocks/page/_noscroll/page_noscroll.css");
 @import url("../blocks/page/__wrapper/page__wrapper.css");
 
@@ -31,6 +30,7 @@
 @import url("../blocks/header/__col/header__col.css");
 @import url("../blocks/header/__mail/header__mail.css.css");
 @import url("../blocks/header/__adress/header__adress.css");
+@import url("../blocks/logo/_place/logo_place_header.css");
 @import url("../blocks/header/__list/header__list.css");
 @import url("../blocks/header/__link/header__link.css");
 @import url("../blocks/header/__col/_aligned/header__col_aligned.css");
@@ -84,7 +84,6 @@
 @import url("../blocks/features/__icon/_type/features__icon_type_change.css");
 @import url("../blocks/features/__icon/_type/features__icon_type_interview.css");
 @import url("../blocks/features/__icon/_type/features__icon_type_check.css");
-@import url("../blocks/features/__text/features__text.css");
 @import url("../blocks/features/__title/features__title.css");
 @import url("../blocks/span-accent/span-accent.css");
 @import url("../blocks/popup/__list/popup__list.css");

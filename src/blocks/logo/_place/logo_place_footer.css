@@ -1,19 +1,16 @@
 .logo_place_footer {
   width: 220px;
-  height: 220px;
 }
 
 @media (max-width: 768px) {
   .logo_place_footer {
-    width: 144px;
-    height: 144px;
+    width: 180px;
     margin: auto;
   }
 }
 
 @media (max-width: 480px) {
   .logo_place_footer {
-    width: 88px;
-    height: 88px;
+    width: 120px;
   }
 }

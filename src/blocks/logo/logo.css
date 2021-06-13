@@ -3,28 +3,20 @@
     margin-left: 15px;
 }
 
-@media (max-width: 1063px) {
-    .logo {
-        height: 240px;
-    }
-  }
-
 @media (max-width: 1024px) {
     .logo {
-        height: 144px;
+        width: 180px;
     }
 }
 
 @media (max-width: 768px) {
     .logo {
-        height: 88px;
-
+        width: 120px;
     }
 }
 
 @media (max-width: 537px) {
     .logo {
-        height: 118px;
         margin-top: 15px;
     }
 }
