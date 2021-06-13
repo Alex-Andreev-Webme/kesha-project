@@ -7,11 +7,6 @@ import { reviews, VALIDATION_SETTINGS } from "../utils/constants";
 import Card from "../components/Card";
 import FormValidator from "../components/FormValidator";
 
-// window.onload = function () {
-//    body.classList.remove("page_load");
-//    window.scrollTo(0, 0);
-// };
-
 // -- Обработка сабмита формы --
 function getInputValues(form) {
    const inputValues = {};
