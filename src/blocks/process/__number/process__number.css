@@ -5,7 +5,7 @@
   font-size: 35px;
   font-weight: 700;
   color: var(--whiteColor);
-  background-color: var(--blueColor);
+  background-color: #74b4ff;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
   display: flex;
   justify-content: center;
