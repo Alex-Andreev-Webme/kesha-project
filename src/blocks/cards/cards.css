@@ -4,13 +4,7 @@
   list-style: none;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 45px;
-}
-
-@media (max-width: 1150px) {
-  .cards {
-    gap: 30px
-  }
+  gap: 30px;
 }
 
 @media (max-width: 768px) {

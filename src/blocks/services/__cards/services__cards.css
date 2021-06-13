@@ -1,11 +1,11 @@
 .services__cards {
-   margin: 100px 0;
+   margin: 50px 0;
    display: flex;
    justify-content: center;
 }
 
 @media (max-width: 768px) {
    .services__cards {
-      margin: 50px 0;
+      margin: 30px 0;
    }
 }
