@@ -75,10 +75,6 @@ module.exports = {
          filename: "about.html",
          template: "./src/about.html",
       }),
-      new HtmlWebpackPlugin({
-         filename: "policy-info.html",
-         template: "./src/policy-info.html",
-      }),
       new CleanWebpackPlugin(),
       new MiniCssExtractPlugin(),
    ],
