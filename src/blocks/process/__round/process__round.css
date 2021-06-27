@@ -3,6 +3,7 @@
    min-height: 140px;
    border-radius: 50%;
    background: #fff url("../../../images/footprint.svg") center no-repeat;
+   background-size: contain;
    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
    position: relative;
 }
